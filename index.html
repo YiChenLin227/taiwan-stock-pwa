@@ -49,11 +49,10 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
 .pages-wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
   padding-top: calc(60px + env(safe-area-inset-top, 0px));
   padding-bottom: calc(var(--nav-h) + var(--safe-b)); }
-.pages { display: flex; height: 100%; overflow: hidden; }
-.page { flex: 0 0 100%; height: 100%; overflow-y: auto; padding: 14px 14px 20px;
-  scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
-  transition: opacity 0.2s; }
-.page.hidden { opacity: 0; pointer-events: none; }
+.pages { display: block; height: 100%; overflow: hidden; }
+.page { width: 100%; height: 100%; overflow-y: auto; padding: 14px 14px 20px;
+  scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+.page.hidden { display: none; }
 
 /* ── Bottom Nav ── */
 .bnav {
@@ -199,21 +198,25 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
       <div class="k">加權指數 07/01</div>
       <div class="v up">47,018</div>
       <div class="d up">+893（+1.94%）</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/indices/MI_5MINS_HIST.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 官網</a></div>
     </div>
     <div class="stat">
       <div class="k">今日預估開盤</div>
       <div class="v gold">46,500</div>
       <div class="d gold">~46,900 區間</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.taifex.com.tw/cht/5/afterHoursFutures" target="_blank" style="color:var(--acc);font-size:10px">📎 期交所夜盤</a></div>
     </div>
     <div class="stat">
       <div class="k">成交量</div>
       <div class="v acc">1.32 兆</div>
       <div class="d sub">量能充沛</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/indices/MI_5MINS_HIST.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 官網</a></div>
     </div>
     <div class="stat">
       <div class="k">台幣匯率</div>
       <div class="v dn">31.909</div>
       <div class="d dn">貶值 -0.36%</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://rate.bot.com.tw/xrt" target="_blank" style="color:var(--acc);font-size:10px">📎 台銀匯率</a></div>
     </div>
   </div>
 
@@ -222,21 +225,25 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
       <div class="k">台積電 ADR</div>
       <div class="v up">$446.68</div>
       <div class="d up">-3.51% ⚠️</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://finance.yahoo.com/quote/TSM/" target="_blank" style="color:var(--acc);font-size:10px">📎 Yahoo Finance</a></div>
     </div>
     <div class="stat">
       <div class="k">台指期夜盤</div>
       <div class="v">47,234</div>
-      <div class="d sub">參考（早盤前更新）</div>
+      <div class="d sub">⚠️ 待即時更新</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.taifex.com.tw/cht/5/afterHoursFutures" target="_blank" style="color:var(--acc);font-size:10px">📎 期交所查詢</a></div>
     </div>
     <div class="stat">
       <div class="k">關鍵支撐</div>
       <div class="v dn">46,500</div>
       <div class="d sub">跌破轉空</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3ATAIEX" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
     </div>
     <div class="stat">
       <div class="k">前高壓力</div>
       <div class="v">47,742</div>
       <div class="d sub">06/22 歷史高</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3ATAIEX" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
     </div>
   </div>
 
@@ -248,11 +255,23 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
   <div class="sec-hdr">美股連動</div>
   <div class="card">
     <table class="tbl">
-      <tr><th>指數</th><th>07/01</th><th>方向</th></tr>
-      <tr><td>那斯達克</td><td class="dn">+1.52%</td><td>↑ 表面樂觀</td></tr>
-      <tr><td>道瓊</td><td class="acc">微漲</td><td>↑ 溫和</td></tr>
-      <tr><td>費城半導體 SOX</td><td class="sub">待查證</td><td>—</td></tr>
-      <tr><td>TSM ADR</td><td class="up">-3.51%</td><td>⚠️ 壓台積電</td></tr>
+      <tr><th>指數</th><th>07/01</th><th>方向</th><th style="font-size:10px">來源</th></tr>
+      <tr>
+        <td>那斯達克</td><td class="dn">+1.52%</td><td>↑ 表面樂觀</td>
+        <td><a href="https://finance.yahoo.com/quote/%5EIXIC/" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
+      </tr>
+      <tr>
+        <td>道瓊</td><td class="acc">微漲</td><td>↑ 溫和</td>
+        <td><a href="https://finance.yahoo.com/quote/%5EDJI/" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
+      </tr>
+      <tr>
+        <td>費城半導體 SOX</td><td class="sub">⚠️ 待查證</td><td>—</td>
+        <td><a href="https://finance.yahoo.com/quote/%5ESOX/" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
+      </tr>
+      <tr>
+        <td>TSM ADR</td><td class="up">-3.51%</td><td>⚠️ 壓台積電</td>
+        <td><a href="https://finance.yahoo.com/quote/TSM/" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
+      </tr>
     </table>
   </div>
 
@@ -275,21 +294,25 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
       <div class="k">外資</div>
       <div class="v up">+323.76億</div>
       <div class="d sub">個股排名第1：台積電</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/foreign/twt38u.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 外資買賣超</a></div>
     </div>
     <div class="stat">
       <div class="k">投信</div>
       <div class="v up">+156.03億</div>
       <div class="d sub">積極加碼</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/trust/twt43u.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 投信買賣超</a></div>
     </div>
     <div class="stat">
       <div class="k">自營商</div>
       <div class="v up">+59.38億</div>
       <div class="d sub">同步買超</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/dealers/twt44u.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 自營商買賣超</a></div>
     </div>
     <div class="stat">
       <div class="k">三大合計</div>
       <div class="v up">+539.17億</div>
       <div class="d sub">近期高水位</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/StockBuySaleList.asp?RPT_CAT=BF&CHT_CAT2=DATE" target="_blank" style="color:var(--acc);font-size:10px">📎 Goodinfo 法人</a></div>
     </div>
   </div>
 
@@ -315,11 +338,13 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
       <div class="k">融資餘額變化</div>
       <div class="v dn">-21.5 億</div>
       <div class="d sub">散戶去槓桿（健康）</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/margin/MI_MARGN.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 融資融券</a></div>
     </div>
     <div class="stat">
       <div class="k">融券餘額</div>
       <div class="v">196,392張</div>
       <div class="d sub">券資比 2.09%</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.twse.com.tw/zh/trading/margin/MI_MARGN.html" target="_blank" style="color:var(--acc);font-size:10px">📎 TWSE 融資融券</a></div>
     </div>
   </div>
 
@@ -337,11 +362,12 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
       <div class="k">新台幣 07/01</div>
       <div class="v dn">31.909</div>
       <div class="d dn">貶值 -0.36%</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://rate.bot.com.tw/xrt" target="_blank" style="color:var(--acc);font-size:10px">📎 台銀牌告匯率</a></div>
     </div>
     <div class="stat">
       <div class="k">台指 Put/Call 比</div>
-      <div class="v sub">待即時查證</div>
-      <div class="d sub"><a href="https://www.taifex.com.tw" target="_blank" style="color:var(--acc)">期交所查詢</a></div>
+      <div class="v sub">⚠️ 待即時查證</div>
+      <div class="d sub" style="margin-top:4px"><a href="https://www.taifex.com.tw/cht/3/callAndputVolume" target="_blank" style="color:var(--acc);font-size:10px">📎 期交所 P/C 比</a></div>
     </div>
   </div>
 
@@ -373,10 +399,22 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
     </div>
     <div class="stock-body">
       <div class="stats">
-        <div class="stat"><div class="k">07/01 收盤</div><div class="v">2,520</div><div class="d up">+1.00%</div></div>
-        <div class="stat"><div class="k">外資 07/01</div><div class="v up">🥇 金額第1</div><div class="d sub">買超</div></div>
-        <div class="stat"><div class="k">RSI</div><div class="v gold">75.57</div><div class="d sub">短線超買</div></div>
-        <div class="stat"><div class="k">外資目標價</div><div class="v acc">$487.56</div><div class="d sub">ADR 共識</div></div>
+        <div class="stat">
+          <div class="k">07/01 收盤</div><div class="v">2,520</div><div class="d up">+1.00%</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2330" target="_blank" style="color:var(--acc);font-size:10px">📎 Goodinfo</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">外資 07/01</div><div class="v up">🥇 金額第1</div><div class="d sub">買超</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2330&CHT_CAT=DATE" target="_blank" style="color:var(--acc);font-size:10px">📎 外資買超明細</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">RSI</div><div class="v gold">75.57</div><div class="d sub">短線超買</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2330" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">外資目標價</div><div class="v acc">$487.56</div><div class="d sub">ADR 共識</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://finance.yahoo.com/quote/TSM/analysis/" target="_blank" style="color:var(--acc);font-size:10px">📎 Yahoo 分析師</a></div>
+        </div>
       </div>
       <div class="opbox">
         <div class="op-dir">📌 操作建議：<span class="gold">觀望/逢低佈局</span></div>
@@ -430,11 +468,15 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
         <div class="op-dir">📌 操作建議：<span class="dn">積極偏多</span></div>
         <div class="op-grid">
           <div class="op-item"><div class="lbl">近期趨勢</div><div class="val dn">強勢上漲</div></div>
-          <div class="op-item"><div class="lbl">外資動向</div><div class="val sub">待即時查證</div></div>
+          <div class="op-item"><div class="lbl">外資動向</div><div class="val sub">⚠️ 待查證</div></div>
           <div class="op-item"><div class="lbl">AI 訂單</div><div class="val dn">持續增長</div></div>
           <div class="op-item"><div class="lbl">關注點</div><div class="val gold">AI 晶片出貨</div></div>
         </div>
       </div>
+      <p style="font-size:11px;color:var(--sub);margin-top:8px">
+        📎 查證：<a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2454" target="_blank" style="color:var(--acc)">Goodinfo 2454</a>
+        ‧ <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2454&CHT_CAT=DATE" target="_blank" style="color:var(--acc)">外資買超明細</a>
+      </p>
     </div>
   </div>
 
@@ -460,6 +502,10 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
           <div class="op-item"><div class="lbl">注意</div><div class="val gold">ADR 連動風險</div></div>
         </div>
       </div>
+      <p style="font-size:11px;color:var(--sub);margin-top:8px">
+        📎 查證：<a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2327" target="_blank" style="color:var(--acc)">Goodinfo 2327</a>
+        ‧ <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2327&CHT_CAT=DATE" target="_blank" style="color:var(--acc)">外資買超明細</a>
+      </p>
     </div>
   </div>
 
@@ -539,146 +585,4 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
         <span class="icon">💱</span>
         <div>
           <strong>台幣開盤匯率</strong>
-          <div class="sub" style="font-size:12px">是否貶破 32？→ <a href="https://tw.stock.yahoo.com/exchange-rate" target="_blank" style="color:var(--acc)">Yahoo 匯率</a></div>
-        </div>
-      </li>
-      <li>
-        <span class="icon">🏛️</span>
-        <div>
-          <strong>Put/Call 比率</strong>
-          <div class="sub" style="font-size:12px">低於 0.8 偏多，高於 1.2 偏空 → <a href="https://www.taifex.com.tw/cht/3/callAndputVolume" target="_blank" style="color:var(--acc)">期交所查詢</a></div>
-        </div>
-      </li>
-      <li>
-        <span class="icon">💹</span>
-        <div>
-          <strong>外資現貨買超金額</strong>
-          <div class="sub" style="font-size:12px">今日是否繼續買超 100 億以上？→ <a href="https://www.twse.com.tw/zh/trading/foreign/twt38u.html" target="_blank" style="color:var(--acc)">TWSE</a></div>
-        </div>
-      </li>
-      <li>
-        <span class="icon">📅</span>
-        <div>
-          <strong>台積電法說會 7/16</strong>
-          <div class="sub" style="font-size:12px">法說前市場保守，若業績超預期將大幅反轉</div>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="sec-hdr">⚠️ 今日風控</div>
-  <div class="alert">
-    <div class="alert-title">設好停損，不賭單一方向</div>
-    <div style="font-size:13.5px;line-height:1.8">
-      • 台積電跌破 <strong>2,350</strong> 停損出場<br>
-      • TAIEX 跌破 <strong>46,500</strong> 減碼觀望<br>
-      • 避免在開盤前 15 分鐘追價<br>
-      • 法說會（7/16）前降低倉位比例
-    </div>
-  </div>
-
-  <div class="sec-hdr">免責聲明</div>
-  <div class="card" style="font-size:12px;color:var(--sub)">
-    本報告為 AI 自動彙整，僅供參考，<strong>非投資建議</strong>。所有數字均標示來源，
-    「待即時查證」欄位請自行以官方來源覆核後再進行操作決策。投資有風險，請審慎評估。
-  </div>
-
-</div>
-</div><!-- /pages -->
-</div><!-- /pages-wrap -->
-
-<!-- Bottom Nav -->
-<nav class="bnav">
-  <button class="bnav-btn active" id="nav-0" onclick="switchPage(0)">
-    <span class="bnav-icon">📈</span>
-    <span class="bnav-label">大盤</span>
-  </button>
-  <button class="bnav-btn" id="nav-1" onclick="switchPage(1)">
-    <span class="bnav-icon">🏛️</span>
-    <span class="bnav-label">法人</span>
-  </button>
-  <button class="bnav-btn" id="nav-2" onclick="switchPage(2)">
-    <span class="bnav-icon">📋</span>
-    <span class="bnav-label">個股</span>
-  </button>
-  <button class="bnav-btn" id="nav-3" onclick="switchPage(3)">
-    <span class="bnav-icon">⚡</span>
-    <span class="bnav-label">操盤</span>
-  </button>
-</nav>
-
-<script>
-// ── Navigation ──
-let currentPage = 0;
-function switchPage(idx) {
-  document.getElementById('page-' + currentPage).classList.add('hidden');
-  document.getElementById('nav-' + currentPage).classList.remove('active');
-  currentPage = idx;
-  document.getElementById('page-' + idx).classList.remove('hidden');
-  document.getElementById('nav-' + idx).classList.add('active');
-  document.getElementById('page-' + idx).scrollTop = 0;
-}
-
-// ── Collapsible ──
-function toggleCollapse(btn) {
-  btn.classList.toggle('open');
-  const content = btn.nextElementSibling;
-  content.classList.toggle('show');
-}
-
-// ── Charts ──
-const chartDefaults = {
-  plugins: { legend: { display: false }, tooltip: { backgroundColor: '#1a2129', titleColor: '#9fb0c0', bodyColor: '#e6edf3', borderColor: '#2c3947', borderWidth: 1 } },
-  scales: { x: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 }, maxRotation: 45 } },
-            y: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 } } } }
-};
-
-// TAIEX Chart
-const taixLabels = ['05/21','05/28','06/03','06/09','06/11','06/13','06/17','06/19','06/20','06/23','06/24','06/25','06/26','06/27','06/30','07/01'];
-const taixData =   [43820, 44210, 44650, 45120, 45380, 45920, 46100, 46820, 47120, 47380, 47600, 47742, 44220, 45360, 46125, 47018];
-
-new Chart(document.getElementById('taixChart'), {
-  type: 'line',
-  data: {
-    labels: taixLabels,
-    datasets: [{
-      data: taixData,
-      borderColor: '#38bdf8',
-      backgroundColor: 'rgba(56,189,248,0.08)',
-      borderWidth: 2,
-      pointRadius: 2.5,
-      pointBackgroundColor: '#38bdf8',
-      tension: 0.3,
-      fill: true
-    }]
-  },
-  options: { ...chartDefaults, responsive: true, maintainAspectRatio: true }
-});
-
-// Institutional Chart
-new Chart(document.getElementById('instChart'), {
-  type: 'bar',
-  data: {
-    labels: ['外資', '投信', '自營商'],
-    datasets: [{
-      data: [323.76, 156.03, 59.38],
-      backgroundColor: ['rgba(239,68,68,0.7)', 'rgba(56,189,248,0.7)', 'rgba(245,185,66,0.7)'],
-      borderColor: ['#ef4444', '#38bdf8', '#f5b942'],
-      borderWidth: 1.5,
-      borderRadius: 6
-    }]
-  },
-  options: {
-    ...chartDefaults,
-    responsive: true,
-    maintainAspectRatio: true,
-    indexAxis: 'y',
-    scales: {
-      x: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 } } },
-      y: { grid: { display: false }, ticks: { color: '#e6edf3', font: { size: 13, weight: '600' } } }
-    }
-  }
-});
-</script>
-</body>
-</html>
+          <div class="sub" style="font-size:12p
