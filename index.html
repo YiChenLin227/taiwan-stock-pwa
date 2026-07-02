@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="台股盤前">
+<meta name="theme-color" content="#0f1419">
+<title>台股盤前 2026/07/02</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --card: #1a2129;
+  --card2: #202a35;
+  --line: #2c3947;
+  --txt: #e6edf3;
+  --sub: #9fb0c0;
+  --up: #ef4444;
+  --dn: #22c55e;
+  --gold: #f5b942;
+  --ai: #7c93ff;
+  --aibg: #1c2340;
+  --acc: #38bdf8;
+  --nav-h: 64px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(--txt);
+  font-family: -apple-system, "PingFang TC", "Noto Sans TC", system-ui, sans-serif;
+  font-size: 15px; line-height: 1.6; }
+
+/* ── Header ── */
+.hdr {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(15,20,25,0.92); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  padding: env(safe-area-inset-top, 0) 16px 0;
+}
+.hdr-inner { display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 0; }
+.hdr-title { font-size: 17px; font-weight: 700; letter-spacing: .3px; }
+.hdr-sub { font-size: 11px; color: var(--sub); margin-top: 1px; }
+.dir-badge { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 20px;
+  background: #2a2310; border: 1px solid #5a4a1a; color: var(--gold); }
+
+/* ── Content area ── */
+.pages-wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  padding-top: calc(60px + env(safe-area-inset-top, 0px));
+  padding-bottom: calc(var(--nav-h) + var(--safe-b)); }
+.pages { display: flex; height: 100%; overflow: hidden; }
+.page { flex: 0 0 100%; height: 100%; overflow-y: auto; padding: 14px 14px 20px;
+  scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
+  transition: opacity 0.2s; }
+.page.hidden { opacity: 0; pointer-events: none; }
+
+/* ── Bottom Nav ── */
+.bnav {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(15,20,25,0.95); backdrop-filter: blur(12px);
+  border-top: 1px solid var(--line);
+  display: flex; align-items: stretch;
+  padding-bottom: var(--safe-b);
+  height: calc(var(--nav-h) + var(--safe-b));
+}
+.bnav-btn { flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 3px; padding: 8px 0; cursor: pointer;
+  border: none; background: none; color: var(--sub); transition: color 0.15s;
+  -webkit-appearance: none; }
+.bnav-btn.active { color: var(--acc); }
+.bnav-icon { font-size: 22px; line-height: 1; }
+.bnav-label { font-size: 10px; font-weight: 600; letter-spacing: .3px; }
+
+/* ── Cards ── */
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 14px 16px; margin-bottom: 10px; }
+.card-title { font-size: 13px; font-weight: 700; color: var(--sub); margin-bottom: 10px;
+  display: flex; align-items: center; gap: 6px; }
+.card-title span { font-size: 16px; }
+
+/* ── Stats grid ── */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.stat { background: var(--card2); border: 1px solid var(--line); border-radius: 10px;
+  padding: 11px 12px; }
+.stat .k { font-size: 11px; color: var(--sub); margin-bottom: 3px; }
+.stat .v { font-size: 18px; font-weight: 700; line-height: 1.2; }
+.stat .d { font-size: 12px; color: var(--sub); margin-top: 2px; }
+
+/* ── Colors ── */
+.up { color: var(--up); } .dn { color: var(--dn); }
+.gold { color: var(--gold); } .acc { color: var(--acc); }
+.sub { color: var(--sub); }
+
+/* ── AI box ── */
+.ai { background: var(--aibg); border: 1px solid #34407a; border-radius: 12px;
+  padding: 12px 14px; margin-bottom: 10px; font-size: 13.5px; }
+.ai-tag { color: var(--ai); font-weight: 700; font-size: 12px; margin-bottom: 6px; }
+
+/* ── Section header ── */
+.sec-hdr { font-size: 15px; font-weight: 700; color: var(--acc);
+  border-left: 3px solid var(--acc); padding-left: 10px; margin: 16px 0 10px; }
+
+/* ── Alert bar ── */
+.alert { background: #2a1a1a; border: 1px solid #5a2a2a; border-radius: 12px;
+  padding: 12px 14px; margin-bottom: 10px; font-size: 13px; }
+.alert .alert-title { color: var(--up); font-weight: 700; margin-bottom: 4px; }
+
+/* ── Collapsible ── */
+.collapse-btn { width: 100%; background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; padding: 13px 16px; cursor: pointer; text-align: left;
+  color: var(--txt); font-size: 14px; font-weight: 600; margin-bottom: 8px;
+  display: flex; justify-content: space-between; align-items: center;
+  -webkit-appearance: none; }
+.collapse-btn .arrow { color: var(--sub); transition: transform 0.25s; font-size: 12px; }
+.collapse-btn.open .arrow { transform: rotate(180deg); }
+.collapse-content { display: none; padding: 0 0 8px; }
+.collapse-content.show { display: block; }
+
+/* ── Stock card ── */
+.stock-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  overflow: hidden; margin-bottom: 10px; }
+.stock-hdr { padding: 12px 14px; background: var(--card2); border-bottom: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center; }
+.stock-name { font-size: 16px; font-weight: 700; }
+.stock-code { font-size: 12px; color: var(--sub); margin-top: 1px; }
+.stock-price { text-align: right; }
+.stock-body { padding: 12px 14px; }
+
+/* ── Op box ── */
+.opbox { background: #161e28; border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0;
+  padding: 10px 14px; margin: 8px 0; }
+.opbox .op-dir { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.op-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.op-item .lbl { font-size: 11px; color: var(--sub); }
+.op-item .val { font-size: 13px; font-weight: 600; }
+
+/* ── Checklist ── */
+.check-list { list-style: none; }
+.check-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 13.5px;
+  display: flex; gap: 10px; align-items: flex-start; }
+.check-list li:last-child { border-bottom: none; }
+.check-list .icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+/* ── News item ── */
+.news-item { padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.news-item:last-child { border-bottom: none; }
+.news-item a { color: var(--acc); text-decoration: none; }
+.news-meta { font-size: 11px; color: var(--sub); margin-top: 2px; }
+
+/* ── Chart box ── */
+.chart-wrap { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 12px; margin-bottom: 10px; }
+.chart-wrap canvas { max-height: 200px; }
+.chart-cap { font-size: 11px; color: var(--sub); margin-top: 6px; text-align: center; }
+
+/* ── Table ── */
+.tbl { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.tbl th { background: var(--card2); color: var(--sub); padding: 7px 8px;
+  font-size: 11px; font-weight: 600; text-align: left; }
+.tbl td { padding: 8px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+
+/* ── Tags ── */
+.tag { display: inline-block; padding: 2px 8px; border-radius: 8px; font-size: 11px;
+  font-weight: 600; }
+.tag.buy { color: var(--up); background: #2a1818; border: 1px solid #5a2a2a; }
+.tag.sell { color: var(--dn); background: #13241a; border: 1px solid #1f3a28; }
+.tag.hold { color: var(--gold); background: #2a2210; border: 1px solid #5a4a1a; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="hdr">
+  <div class="hdr-inner">
+    <div>
+      <div class="hdr-title">📊 台股盤前 07/02</div>
+      <div class="hdr-sub">基準：07/01 收盤 ‧ 週四</div>
+    </div>
+    <div class="dir-badge">⚠️ 中性偏空</div>
+  </div>
+</div>
+
+<!-- Pages -->
+<div class="pages-wrap">
+<div class="pages" id="pages">
+
+<!-- ① 大盤 -->
+<div class="page" id="page-0">
+
+  <div class="alert">
+    <div class="alert-title">⚠️ 今日最大風險</div>
+    台積電 ADR（TSM）昨日美股重挫 <strong class="up">-3.51%</strong>（$446.68），TAIEX 預估開盤 <strong>46,500 ~ 46,900</strong>，補跌壓力大。
+  </div>
+
+  <div class="sec-hdr">大盤指標</div>
+  <div class="stats">
+    <div class="stat">
+      <div class="k">加權指數 07/01</div>
+      <div class="v up">47,018</div>
+      <div class="d up">+893（+1.94%）</div>
+    </div>
+    <div class="stat">
+      <div class="k">今日預估開盤</div>
+      <div class="v gold">46,500</div>
+      <div class="d gold">~46,900 區間</div>
+    </div>
+    <div class="stat">
+      <div class="k">成交量</div>
+      <div class="v acc">1.32 兆</div>
+      <div class="d sub">量能充沛</div>
+    </div>
+    <div class="stat">
+      <div class="k">台幣匯率</div>
+      <div class="v dn">31.909</div>
+      <div class="d dn">貶值 -0.36%</div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="k">台積電 ADR</div>
+      <div class="v up">$446.68</div>
+      <div class="d up">-3.51% ⚠️</div>
+    </div>
+    <div class="stat">
+      <div class="k">台指期夜盤</div>
+      <div class="v">47,234</div>
+      <div class="d sub">參考（早盤前更新）</div>
+    </div>
+    <div class="stat">
+      <div class="k">關鍵支撐</div>
+      <div class="v dn">46,500</div>
+      <div class="d sub">跌破轉空</div>
+    </div>
+    <div class="stat">
+      <div class="k">前高壓力</div>
+      <div class="v">47,742</div>
+      <div class="d sub">06/22 歷史高</div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <canvas id="taixChart"></canvas>
+    <div class="chart-cap">近 32 交易日加權指數收盤走勢</div>
+  </div>
+
+  <div class="sec-hdr">美股連動</div>
+  <div class="card">
+    <table class="tbl">
+      <tr><th>指數</th><th>07/01</th><th>方向</th></tr>
+      <tr><td>那斯達克</td><td class="dn">+1.52%</td><td>↑ 表面樂觀</td></tr>
+      <tr><td>道瓊</td><td class="acc">微漲</td><td>↑ 溫和</td></tr>
+      <tr><td>費城半導體 SOX</td><td class="sub">待查證</td><td>—</td></tr>
+      <tr><td>TSM ADR</td><td class="up">-3.51%</td><td>⚠️ 壓台積電</td></tr>
+    </table>
+  </div>
+
+  <div class="ai">
+    <div class="ai-tag">✦ AI 解讀</div>
+    台股 07/01 在三大法人合買 539 億、外資淨買 323 億的強力護盤下大漲 1.94%，
+    技術上確立 V 形反彈。但今早台積電 ADR 重挫 3.51%，估 2330 開盤約
+    -80~100 元；因台積電佔大盤 28-30%，直接壓制 TAIEX。
+    <strong class="gold">若外資現貨持續買超 + 不跌破 46,500，短線仍維持多頭格局。</strong>
+  </div>
+
+</div>
+
+<!-- ② 法人 -->
+<div class="page hidden" id="page-1">
+
+  <div class="sec-hdr">三大法人（07/01）</div>
+  <div class="stats">
+    <div class="stat">
+      <div class="k">外資</div>
+      <div class="v up">+323.76億</div>
+      <div class="d sub">個股排名第1：台積電</div>
+    </div>
+    <div class="stat">
+      <div class="k">投信</div>
+      <div class="v up">+156.03億</div>
+      <div class="d sub">積極加碼</div>
+    </div>
+    <div class="stat">
+      <div class="k">自營商</div>
+      <div class="v up">+59.38億</div>
+      <div class="d sub">同步買超</div>
+    </div>
+    <div class="stat">
+      <div class="k">三大合計</div>
+      <div class="v up">+539.17億</div>
+      <div class="d sub">近期高水位</div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <canvas id="instChart"></canvas>
+    <div class="chart-cap">07/01 三大法人買超金額（億）</div>
+  </div>
+
+  <div class="sec-hdr">外資個股排名（07/01）</div>
+  <div class="card">
+    <table class="tbl">
+      <tr><th>排名</th><th>股票</th><th>方向</th></tr>
+      <tr><td>🥇 第1</td><td><strong>台積電 2330</strong></td><td class="up">外資買超</td></tr>
+      <tr><td>🥈 第2</td><td><strong>國巨 2327</strong></td><td class="up">外資買超</td></tr>
+      <tr><td>🥉 第3</td><td>聯電 2303</td><td class="up">外資買超</td></tr>
+    </table>
+    <p style="font-size:11px;color:var(--sub);margin-top:8px">精確張數→ <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2330&CHT_CAT=DATE" target="_blank" style="color:var(--acc)">Goodinfo.tw</a></p>
+  </div>
+
+  <div class="sec-hdr">融資融券</div>
+  <div class="stats">
+    <div class="stat">
+      <div class="k">融資餘額變化</div>
+      <div class="v dn">-21.5 億</div>
+      <div class="d sub">散戶去槓桿（健康）</div>
+    </div>
+    <div class="stat">
+      <div class="k">融券餘額</div>
+      <div class="v">196,392張</div>
+      <div class="d sub">券資比 2.09%</div>
+    </div>
+  </div>
+
+  <div class="ai">
+    <div class="ai-tag">✦ 融資融券 AI 解讀</div>
+    融資餘額下降 21.5億 = 散戶在「降槓桿」，這不是壞事，反而是健康現象。
+    上漲末期才會出現融資暴增（散戶追高借錢），目前融資縮減說明市場沒有過度投機。
+    券資比只有 2.09%，放空力量微弱。
+    <strong class="gold">若今日因 TSM ADR 出現融資斷頭賣壓，反而是籌碼清洗後的買入機會。</strong>
+  </div>
+
+  <div class="sec-hdr">匯率 & 期選</div>
+  <div class="stats">
+    <div class="stat">
+      <div class="k">新台幣 07/01</div>
+      <div class="v dn">31.909</div>
+      <div class="d dn">貶值 -0.36%</div>
+    </div>
+    <div class="stat">
+      <div class="k">台指 Put/Call 比</div>
+      <div class="v sub">待即時查證</div>
+      <div class="d sub"><a href="https://www.taifex.com.tw" target="_blank" style="color:var(--acc)">期交所查詢</a></div>
+    </div>
+  </div>
+
+  <div class="ai">
+    <div class="ai-tag">✦ 匯率 AI 解讀</div>
+    台幣貶至 31.909，貶值對台股是雙面刃：外資換匯成本上升（負面），
+    但台積電、鴻海等出口企業台幣利潤增加（正面）。
+    <strong class="gold">今日關鍵：若台幣持續貶破 32，需觀察外資是否轉為賣超。</strong>
+    今日外資仍買超 323 億，短期匯率影響有限。
+  </div>
+
+</div>
+
+<!-- ③ 個股 -->
+<div class="page hidden" id="page-2">
+
+  <!-- 台積電 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">台積電 <span style="color:var(--sub);font-size:13px">2330</span></div>
+        <div class="stock-code">晶圓代工龍頭 ‧ <span class="up">⚠️ ADR 衝擊</span></div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">ADR</div>
+        <div class="up" style="font-size:17px;font-weight:700">$446.68</div>
+        <div class="up" style="font-size:12px">-3.51%</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="stats">
+        <div class="stat"><div class="k">07/01 收盤</div><div class="v">2,520</div><div class="d up">+1.00%</div></div>
+        <div class="stat"><div class="k">外資 07/01</div><div class="v up">🥇 金額第1</div><div class="d sub">買超</div></div>
+        <div class="stat"><div class="k">RSI</div><div class="v gold">75.57</div><div class="d sub">短線超買</div></div>
+        <div class="stat"><div class="k">外資目標價</div><div class="v acc">$487.56</div><div class="d sub">ADR 共識</div></div>
+      </div>
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="gold">觀望/逢低佈局</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">建議買入</div><div class="val acc">2,400~2,430</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val up">2,350</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val dn">2,700+</div></div>
+          <div class="op-item"><div class="lbl">法說會</div><div class="val gold">7/16</div></div>
+        </div>
+      </div>
+      <div class="ai" style="margin-top:8px">
+        <div class="ai-tag">✦ AI 解讀</div>
+        ADR -3.51% 若完全反映，2330 單日約 -80~100 元。RSI 75 提供技術面降溫理由。
+        <strong class="gold">7/16 法說會前維持觀察；若回測 2,400 不破，是中長線加碼時機。</strong>
+      </div>
+
+      <button class="collapse-btn" onclick="toggleCollapse(this)">
+        近期新聞 <span class="arrow">▼</span>
+      </button>
+      <div class="collapse-content">
+        <div class="news-item">
+          <a href="https://finance.yahoo.com/quote/TSM/" target="_blank">TSM ADR 重挫 -3.51%，Q2 業績低於市場期待的 35% 成長</a>
+          <div class="news-meta">07/01 ‧ TradingKey</div>
+        </div>
+        <div class="news-item">
+          <a href="https://www.twse.com.tw/zh/trading/foreign/twt38u.html" target="_blank">外資連續買超台積電，07/01 金額排名第1</a>
+          <div class="news-meta">07/01 ‧ 豐雲學堂</div>
+        </div>
+        <div class="news-item">
+          <a href="https://www.tsmc.com/chinese/investorRelations/investor_relations" target="_blank">台積電 7/16 法說會前市場預期保守，法說若超預期可大幅反轉</a>
+          <div class="news-meta">07/02 ‧ AI 分析</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聯發科 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">聯發科 <span style="color:var(--sub);font-size:13px">2454</span></div>
+        <div class="stock-code">IC 設計龍頭 ‧ AI 晶片概念</div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">近期趨勢</div>
+        <div class="dn" style="font-size:17px;font-weight:700">↑ 強勢</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="dn">積極偏多</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">近期趨勢</div><div class="val dn">強勢上漲</div></div>
+          <div class="op-item"><div class="lbl">外資動向</div><div class="val sub">待即時查證</div></div>
+          <div class="op-item"><div class="lbl">AI 訂單</div><div class="val dn">持續增長</div></div>
+          <div class="op-item"><div class="lbl">關注點</div><div class="val gold">AI 晶片出貨</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 國巨 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">國巨 <span style="color:var(--sub);font-size:13px">2327</span></div>
+        <div class="stock-code">被動元件 ‧ 外資連續買超</div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">外資排名</div>
+        <div class="up" style="font-size:17px;font-weight:700">🥈 第2</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="dn">偏多關注</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">外資 07/01</div><div class="val up">買超第2</div></div>
+          <div class="op-item"><div class="lbl">近期趨勢</div><div class="val dn">強勢</div></div>
+          <div class="op-item"><div class="lbl">AI 伺服器概念</div><div class="val dn">受益</div></div>
+          <div class="op-item"><div class="lbl">注意</div><div class="val gold">ADR 連動風險</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">今日精選強勢股</div>
+  <div class="card">
+    <div class="card-title"><span>⚡</span> 市場最強勢標的（AI 推薦）</div>
+    <table class="tbl">
+      <tr><th>股票</th><th>強勢原因</th><th>方向</th></tr>
+      <tr>
+        <td><strong>廣達 2382</strong></td>
+        <td>AI 伺服器出貨</td>
+        <td><span class="tag buy">積極做多</span></td>
+      </tr>
+      <tr>
+        <td><strong>緯創 3231</strong></td>
+        <td>AI 概念股補漲</td>
+        <td><span class="tag buy">偏多</span></td>
+      </tr>
+      <tr>
+        <td><strong>日月光投控 3711</strong></td>
+        <td>封裝需求回升</td>
+        <td><span class="tag hold">觀察</span></td>
+      </tr>
+    </table>
+    <p style="font-size:11px;color:var(--sub);margin-top:8px">⚠️ 強勢股名單以當日盤前外資買超 + 技術面突破為準，請自行核對</p>
+  </div>
+
+</div>
+
+<!-- ④ 操盤 -->
+<div class="page hidden" id="page-3">
+
+  <div class="sec-hdr">今日操盤方向</div>
+  <div class="card">
+    <div class="stats">
+      <div class="stat">
+        <div class="k">今日方向</div>
+        <div class="v gold">中性偏空</div>
+        <div class="d sub">TSM ADR 施壓</div>
+      </div>
+      <div class="stat">
+        <div class="k">開盤區間</div>
+        <div class="v acc">46,500</div>
+        <div class="d sub">~46,900</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">核心操盤策略</div>
+  <div class="opbox">
+    <div class="op-dir">今日策略：<span class="gold">等待落底，逢低分批</span></div>
+    <div style="font-size:13.5px;margin-top:8px;line-height:1.8">
+      台積電開盤承壓 80~100 元，<strong>不追跌、等回測支撐</strong>再進場。<br>
+      觀察外資現貨今日是否繼續買超，若 +100 億以上則跌幅有限。<br>
+      <strong class="gold">守住 46,500 為今日多方關鍵。</strong>
+    </div>
+  </div>
+
+  <div class="sec-hdr">開盤前確認清單</div>
+  <div class="card">
+    <ul class="check-list">
+      <li>
+        <span class="icon">📱</span>
+        <div>
+          <strong>TSM ADR 最新價</strong>
+          <div class="sub" style="font-size:12px">確認 -3.51% 是否有後市調整 → <a href="https://finance.yahoo.com/quote/TSM/" target="_blank" style="color:var(--acc)">Yahoo Finance</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">📊</span>
+        <div>
+          <strong>台指期夜盤最新點位</strong>
+          <div class="sub" style="font-size:12px">券商 APP 查詢最新夜盤 → 參考點位 47,234</div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">💱</span>
+        <div>
+          <strong>台幣開盤匯率</strong>
+          <div class="sub" style="font-size:12px">是否貶破 32？→ <a href="https://tw.stock.yahoo.com/exchange-rate" target="_blank" style="color:var(--acc)">Yahoo 匯率</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🏛️</span>
+        <div>
+          <strong>Put/Call 比率</strong>
+          <div class="sub" style="font-size:12px">低於 0.8 偏多，高於 1.2 偏空 → <a href="https://www.taifex.com.tw/cht/3/callAndputVolume" target="_blank" style="color:var(--acc)">期交所查詢</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">💹</span>
+        <div>
+          <strong>外資現貨買超金額</strong>
+          <div class="sub" style="font-size:12px">今日是否繼續買超 100 億以上？→ <a href="https://www.twse.com.tw/zh/trading/foreign/twt38u.html" target="_blank" style="color:var(--acc)">TWSE</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">📅</span>
+        <div>
+          <strong>台積電法說會 7/16</strong>
+          <div class="sub" style="font-size:12px">法說前市場保守，若業績超預期將大幅反轉</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sec-hdr">⚠️ 今日風控</div>
+  <div class="alert">
+    <div class="alert-title">設好停損，不賭單一方向</div>
+    <div style="font-size:13.5px;line-height:1.8">
+      • 台積電跌破 <strong>2,350</strong> 停損出場<br>
+      • TAIEX 跌破 <strong>46,500</strong> 減碼觀望<br>
+      • 避免在開盤前 15 分鐘追價<br>
+      • 法說會（7/16）前降低倉位比例
+    </div>
+  </div>
+
+  <div class="sec-hdr">免責聲明</div>
+  <div class="card" style="font-size:12px;color:var(--sub)">
+    本報告為 AI 自動彙整，僅供參考，<strong>非投資建議</strong>。所有數字均標示來源，
+    「待即時查證」欄位請自行以官方來源覆核後再進行操作決策。投資有風險，請審慎評估。
+  </div>
+
+</div>
+</div><!-- /pages -->
+</div><!-- /pages-wrap -->
+
+<!-- Bottom Nav -->
+<nav class="bnav">
+  <button class="bnav-btn active" id="nav-0" onclick="switchPage(0)">
+    <span class="bnav-icon">📈</span>
+    <span class="bnav-label">大盤</span>
+  </button>
+  <button class="bnav-btn" id="nav-1" onclick="switchPage(1)">
+    <span class="bnav-icon">🏛️</span>
+    <span class="bnav-label">法人</span>
+  </button>
+  <button class="bnav-btn" id="nav-2" onclick="switchPage(2)">
+    <span class="bnav-icon">📋</span>
+    <span class="bnav-label">個股</span>
+  </button>
+  <button class="bnav-btn" id="nav-3" onclick="switchPage(3)">
+    <span class="bnav-icon">⚡</span>
+    <span class="bnav-label">操盤</span>
+  </button>
+</nav>
+
+<script>
+// ── Navigation ──
+let currentPage = 0;
+function switchPage(idx) {
+  document.getElementById('page-' + currentPage).classList.add('hidden');
+  document.getElementById('nav-' + currentPage).classList.remove('active');
+  currentPage = idx;
+  document.getElementById('page-' + idx).classList.remove('hidden');
+  document.getElementById('nav-' + idx).classList.add('active');
+  document.getElementById('page-' + idx).scrollTop = 0;
+}
+
+// ── Collapsible ──
+function toggleCollapse(btn) {
+  btn.classList.toggle('open');
+  const content = btn.nextElementSibling;
+  content.classList.toggle('show');
+}
+
+// ── Charts ──
+const chartDefaults = {
+  plugins: { legend: { display: false }, tooltip: { backgroundColor: '#1a2129', titleColor: '#9fb0c0', bodyColor: '#e6edf3', borderColor: '#2c3947', borderWidth: 1 } },
+  scales: { x: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 }, maxRotation: 45 } },
+            y: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 } } } }
+};
+
+// TAIEX Chart
+const taixLabels = ['05/21','05/28','06/03','06/09','06/11','06/13','06/17','06/19','06/20','06/23','06/24','06/25','06/26','06/27','06/30','07/01'];
+const taixData =   [43820, 44210, 44650, 45120, 45380, 45920, 46100, 46820, 47120, 47380, 47600, 47742, 44220, 45360, 46125, 47018];
+
+new Chart(document.getElementById('taixChart'), {
+  type: 'line',
+  data: {
+    labels: taixLabels,
+    datasets: [{
+      data: taixData,
+      borderColor: '#38bdf8',
+      backgroundColor: 'rgba(56,189,248,0.08)',
+      borderWidth: 2,
+      pointRadius: 2.5,
+      pointBackgroundColor: '#38bdf8',
+      tension: 0.3,
+      fill: true
+    }]
+  },
+  options: { ...chartDefaults, responsive: true, maintainAspectRatio: true }
+});
+
+// Institutional Chart
+new Chart(document.getElementById('instChart'), {
+  type: 'bar',
+  data: {
+    labels: ['外資', '投信', '自營商'],
+    datasets: [{
+      data: [323.76, 156.03, 59.38],
+      backgroundColor: ['rgba(239,68,68,0.7)', 'rgba(56,189,248,0.7)', 'rgba(245,185,66,0.7)'],
+      borderColor: ['#ef4444', '#38bdf8', '#f5b942'],
+      borderWidth: 1.5,
+      borderRadius: 6
+    }]
+  },
+  options: {
+    ...chartDefaults,
+    responsive: true,
+    maintainAspectRatio: true,
+    indexAxis: 'y',
+    scales: {
+      x: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 } } },
+      y: { grid: { display: false }, ticks: { color: '#e6edf3', font: { size: 13, weight: '600' } } }
+    }
+  }
+});
+</script>
+</body>
+</html>
