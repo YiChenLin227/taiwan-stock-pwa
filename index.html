@@ -584,36 +584,265 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
   </div>
 
   <div class="sec-hdr">今日精選強勢股</div>
-  <div class="card">
-    <div class="card-title"><span>⚡</span> 市場最強勢標的（AI 推薦）</div>
-    <table class="tbl">
-      <tr><th>股票</th><th>強勢原因</th><th>方向</th><th style="font-size:10px">來源</th></tr>
-      <tr>
-        <td><strong>廣達 2382</strong></td>
-        <td>AI 伺服器出貨，GB200 組裝龍頭</td>
-        <td><span class="tag buy">積極做多</span></td>
-        <td><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2382" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
-      </tr>
-      <tr>
-        <td><strong>緯創 3231</strong></td>
-        <td>AI 概念股補漲，伺服器代工</td>
-        <td><span class="tag buy">偏多</span></td>
-        <td><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=3231" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
-      </tr>
-      <tr>
-        <td><strong>日月光投控 3711</strong></td>
-        <td>封裝需求回升，CoWoS 受益</td>
-        <td><span class="tag hold">觀察</span></td>
-        <td><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=3711" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
-      </tr>
-      <tr>
-        <td><strong>聯電 2303</strong></td>
-        <td>外資買超第3，成熟製程復甦</td>
-        <td><span class="tag hold">觀察偏多</span></td>
-        <td><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2303" target="_blank" style="color:var(--acc);font-size:10px">📎</a></td>
-      </tr>
-    </table>
-    <p style="font-size:11px;color:var(--sub);margin-top:8px">⚠️ 強勢股名單以當日盤前外資買超 + 技術面突破為準，請自行核對</p>
+
+  <!-- 廣達 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">廣達 <span style="color:var(--sub);font-size:13px">2382</span></div>
+        <div class="stock-code">AI 伺服器組裝龍頭 ‧ GB200 主力代工</div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">操盤方向</div>
+        <div class="dn" style="font-size:17px;font-weight:700">積極做多</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="stats">
+        <div class="stat">
+          <div class="k">07/01 收盤</div><div class="v sub">⚠️ 待查證</div><div class="d sub">即時查詢</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2382" target="_blank" style="color:var(--acc);font-size:10px">📎 Goodinfo</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">外資 07/01</div><div class="v sub">⚠️ 待查證</div><div class="d sub">買超/賣超</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2382&CHT_CAT=DATE" target="_blank" style="color:var(--acc);font-size:10px">📎 外資明細</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">RSI</div><div class="v sub">⚠️ 待查證</div><div class="d sub">技術強弱</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2382" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">核心題材</div><div class="v dn">GB200 出貨</div><div class="d sub">NVIDIA AI 超算</div>
+        </div>
+      </div>
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="dn">積極做多</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">建議買入</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">AI 伺服器</div><div class="val gold">H2 旺季</div></div>
+        </div>
+      </div>
+      <div class="ai" style="margin-top:8px">
+        <div class="ai-tag">✦ AI 解讀</div>
+        廣達是全球 NVIDIA GB200 超級電腦的最大組裝廠，AI 算力需求爆發直接受惠。
+        台積電 ADR 下跌雖壓制盤面，但廣達基本面強勁，跌深反而是介入機會。
+        <strong class="gold">留意外資是否持續買超，以及 GB200 出貨進度消息。</strong>
+      </div>
+      <button class="collapse-btn" onclick="toggleCollapse(this)">
+        近期新聞 <span class="arrow">▼</span>
+      </button>
+      <div class="collapse-content">
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2382" target="_blank">廣達 GB200 組裝出貨強勁，AI 伺服器訂單能見度延伸至 2026</a>
+          <div class="news-meta">07/01 ‧ AI 分析</div>
+        </div>
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2382&CHT_CAT=DATE" target="_blank">外資對廣達買賣超動向（請以當日數據為準）</a>
+          <div class="news-meta">07/02 ‧ Goodinfo</div>
+        </div>
+        <div class="news-item">
+          <a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2382" target="_blank">廣達技術面走勢，留意支撐壓力位</a>
+          <div class="news-meta">07/02 ‧ TradingView</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 緯創 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">緯創 <span style="color:var(--sub);font-size:13px">3231</span></div>
+        <div class="stock-code">AI 伺服器代工 ‧ AI 概念補漲股</div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">操盤方向</div>
+        <div class="dn" style="font-size:17px;font-weight:700">偏多</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="stats">
+        <div class="stat">
+          <div class="k">07/01 收盤</div><div class="v sub">⚠️ 待查證</div><div class="d sub">即時查詢</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=3231" target="_blank" style="color:var(--acc);font-size:10px">📎 Goodinfo</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">外資 07/01</div><div class="v sub">⚠️ 待查證</div><div class="d sub">買超/賣超</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=3231&CHT_CAT=DATE" target="_blank" style="color:var(--acc);font-size:10px">📎 外資明細</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">RSI</div><div class="v sub">⚠️ 待查證</div><div class="d sub">技術強弱</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3231" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">核心題材</div><div class="v dn">AI 伺服器</div><div class="d sub">代工 + 補漲空間</div>
+        </div>
+      </div>
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="dn">偏多</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">建議買入</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">補漲空間</div><div class="val gold">AI 概念族群</div></div>
+        </div>
+      </div>
+      <div class="ai" style="margin-top:8px">
+        <div class="ai-tag">✦ AI 解讀</div>
+        緯創積極轉型 AI 伺服器代工，與廣達、鴻海同屬 AI 硬體受惠族群，
+        但漲幅相對廣達落後，仍有補漲空間。
+        <strong class="gold">盤中若 AI 概念族群輪動，緯創是重點留意標的。</strong>
+      </div>
+      <button class="collapse-btn" onclick="toggleCollapse(this)">
+        近期新聞 <span class="arrow">▼</span>
+      </button>
+      <div class="collapse-content">
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=3231" target="_blank">緯創積極布局 AI 伺服器，接單能見度提升</a>
+          <div class="news-meta">07/01 ‧ AI 分析</div>
+        </div>
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=3231&CHT_CAT=DATE" target="_blank">外資對緯創買賣超動向（請以當日數據為準）</a>
+          <div class="news-meta">07/02 ‧ Goodinfo</div>
+        </div>
+        <div class="news-item">
+          <a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3231" target="_blank">緯創技術面走勢，留意支撐壓力位</a>
+          <div class="news-meta">07/02 ‧ TradingView</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 日月光投控 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">日月光投控 <span style="color:var(--sub);font-size:13px">3711</span></div>
+        <div class="stock-code">先進封裝龍頭 ‧ CoWoS 最大受益者</div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">操盤方向</div>
+        <div class="gold" style="font-size:17px;font-weight:700">觀察</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="stats">
+        <div class="stat">
+          <div class="k">07/01 收盤</div><div class="v sub">⚠️ 待查證</div><div class="d sub">即時查詢</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=3711" target="_blank" style="color:var(--acc);font-size:10px">📎 Goodinfo</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">外資 07/01</div><div class="v sub">⚠️ 待查證</div><div class="d sub">買超/賣超</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=3711&CHT_CAT=DATE" target="_blank" style="color:var(--acc);font-size:10px">📎 外資明細</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">RSI</div><div class="v sub">⚠️ 待查證</div><div class="d sub">技術強弱</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3711" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">核心題材</div><div class="v dn">CoWoS 封裝</div><div class="d sub">台積電擴產受惠</div>
+        </div>
+      </div>
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="gold">觀察等待</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">建議買入</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">CoWoS</div><div class="val gold">台積電擴產</div></div>
+        </div>
+      </div>
+      <div class="ai" style="margin-top:8px">
+        <div class="ai-tag">✦ AI 解讀</div>
+        日月光投控是台積電 CoWoS 先進封裝的最大外包受益者，隨 AI 晶片需求擴大封裝量持續攀升。
+        今日受台積電 ADR 拖累，但長線邏輯不變。
+        <strong class="gold">台積電法說會（7/16）前若封裝訂單消息正面，可積極佈局。</strong>
+      </div>
+      <button class="collapse-btn" onclick="toggleCollapse(this)">
+        近期新聞 <span class="arrow">▼</span>
+      </button>
+      <div class="collapse-content">
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=3711" target="_blank">日月光投控 CoWoS 封裝需求回升，受惠台積電先進製程擴產</a>
+          <div class="news-meta">07/01 ‧ AI 分析</div>
+        </div>
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=3711&CHT_CAT=DATE" target="_blank">外資對日月光投控買賣超動向（請以當日數據為準）</a>
+          <div class="news-meta">07/02 ‧ Goodinfo</div>
+        </div>
+        <div class="news-item">
+          <a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A3711" target="_blank">日月光投控技術面走勢，留意支撐壓力位</a>
+          <div class="news-meta">07/02 ‧ TradingView</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 聯電 -->
+  <div class="stock-card">
+    <div class="stock-hdr">
+      <div>
+        <div class="stock-name">聯電 <span style="color:var(--sub);font-size:13px">2303</span></div>
+        <div class="stock-code">成熟製程晶圓代工 ‧ 外資買超第3</div>
+      </div>
+      <div class="stock-price">
+        <div style="font-size:12px;color:var(--sub)">外資排名</div>
+        <div class="up" style="font-size:17px;font-weight:700">🥉 第3</div>
+      </div>
+    </div>
+    <div class="stock-body">
+      <div class="stats">
+        <div class="stat">
+          <div class="k">07/01 收盤</div><div class="v sub">⚠️ 待查證</div><div class="d sub">即時查詢</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2303" target="_blank" style="color:var(--acc);font-size:10px">📎 Goodinfo</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">外資 07/01</div><div class="v up">🥉 金額第3</div><div class="d sub">買超</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2303&CHT_CAT=DATE" target="_blank" style="color:var(--acc);font-size:10px">📎 外資明細</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">RSI</div><div class="v sub">⚠️ 待查證</div><div class="d sub">技術強弱</div>
+          <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2303" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
+        </div>
+        <div class="stat">
+          <div class="k">核心題材</div><div class="v dn">成熟製程</div><div class="d sub">IoT / 車用復甦</div>
+        </div>
+      </div>
+      <div class="opbox">
+        <div class="op-dir">📌 操作建議：<span class="dn">觀察偏多</span></div>
+        <div class="op-grid">
+          <div class="op-item"><div class="lbl">建議買入</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val sub">⚠️ 待查證</div></div>
+          <div class="op-item"><div class="lbl">成熟製程</div><div class="val gold">IoT/車用復甦</div></div>
+        </div>
+      </div>
+      <div class="ai" style="margin-top:8px">
+        <div class="ai-tag">✦ AI 解讀</div>
+        聯電專注 28nm 以上成熟製程，受惠 IoT 與車用半導體需求復甦。
+        外資買超第3顯示法人信心，成熟製程不受 AI 先進製程競爭壓力直接影響。
+        <strong class="gold">若今日跌深，聯電相對台積電抗跌，可逢低觀察。</strong>
+      </div>
+      <button class="collapse-btn" onclick="toggleCollapse(this)">
+        近期新聞 <span class="arrow">▼</span>
+      </button>
+      <div class="collapse-content">
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/ShowBuySaleChart.asp?STOCK_ID=2303&CHT_CAT=DATE" target="_blank">外資連續買超聯電，07/01 金額排名第3</a>
+          <div class="news-meta">07/01 ‧ Goodinfo</div>
+        </div>
+        <div class="news-item">
+          <a href="https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2303" target="_blank">成熟製程 IoT / 車用需求復甦，聯電訂單能見度提升</a>
+          <div class="news-meta">07/02 ‧ AI 分析</div>
+        </div>
+        <div class="news-item">
+          <a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A2303" target="_blank">聯電技術面走勢，留意支撐壓力位</a>
+          <div class="news-meta">07/02 ‧ TradingView</div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
