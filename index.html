@@ -585,4 +585,144 @@ html, body { height: 100%; overflow: hidden; background: var(--bg); color: var(-
         <span class="icon">💱</span>
         <div>
           <strong>台幣開盤匯率</strong>
-          <div class="sub" style="font-size:12p
+          <div class="sub" style="font-size:12x">是否貶破 32？→ <a href="https://tw.stock.yahoo.com/exchange-rate" target="_blank" style="color:var(--acc)">Yahoo 匯率</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🏛️</span>
+        <div>
+          <strong>Put/Call 比率</strong>
+          <div class="sub" style="font-size:12px">低於 0.8 偏多，高於 1.2 偏空 → <a href="https://www.taifex.com.tw/cht/3/callAndputVolume" target="_blank" style="color:var(--acc)">期交所查詢</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">💹</span>
+        <div>
+          <strong>外資現貨買超金額</strong>
+          <div class="sub" style="font-size:12px">今日是否繼續買超 100 億以上？→ <a href="https://www.twse.com.tw/zh/trading/foreign/twt38u.html" target="_blank" style="color:var(--acc)">TWSE</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="icon">📅</span>
+        <div>
+          <strong>台積電法說會 7/16</strong>
+          <div class="sub" style="font-size:12px">法說前市場保守，若業績超預期將大幅反轉</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sec-hdr">⚠️ 今日風控</div>
+  <div class="alert">
+    <div class="alert-title">設好停損，不賭單一方向</div>
+    <div style="font-size:13.5px;line-height:1.8">
+      • 台積電跌破 <strong>2,350</strong> 停損出場<br>
+      • TAIEX 跌破 <strong>46,500</strong> 減碼觀望<br>
+      • 避免在開盤前 15 分鐘追價<br>
+      • 法說會（7/16）前降低倉位比例
+    </div>
+  </div>
+
+  <div class="sec-hdr">免責聲明</div>
+  <div class="card" style="font-size:12px;color:var(--sub)">
+    本報告為 AI 自動彙整，僅供參考，<strong>非投資建議</strong>。所有數字均標示來源，
+    「待即時查證」欄位請自行以官方來源覆核後再進行操作決策。投資有風險，請審慎評估。
+  </div>
+
+</div>
+</div><!-- /pages -->
+</div><!-- /pages-wrap -->
+
+<!-- Bottom Nav -->
+<nav class="bnav">
+  <button class="bnav-btn active" id="nav-0" onclick="switchPage(0)">
+    <span class="bnav-icon">📈</span>
+    <span class="bnav-label">大盤</span>
+  </button>
+  <button class="bnav-btn" id="nav-1" onclick="switchPage(1)">
+    <span class="bnav-icon">🏛️</span>
+    <span class="bnav-label">法人</span>
+  </button>
+  <button class="bnav-btn" id="nav-2" onclick="switchPage(2)">
+    <span class="bnav-icon">📋</span>
+    <span class="bnav-label">個股</span>
+  </button>
+  <button class="bnav-btn" id="nav-3" onclick="switchPage(3)">
+    <span class="bnav-icon">⚡</span>
+    <span class="bnav-label">操盤</span>
+  </button>
+</nav>
+
+<script>
+// ── Navigation ──
+let currentPage = 0;
+function switchPage(idx) {
+  document.getElementById('page-' + currentPage).classList.add('hidden');
+  document.getElementById('nav-' + currentPage).classList.remove('active');
+  currentPage = idx;
+  document.getElementById('page-' + idx).classList.remove('hidden');
+  document.getElementById('nav-' + idx).classList.add('active');
+  document.getElementById('page-' + idx).scrollTop = 0;
+}
+
+// ── Collapsible ──
+function toggleCollapse(btn) {
+  btn.classList.toggle('open');
+  const content = btn.nextElementSibling;
+  content.classList.toggle('show');
+}
+
+// ── Charts ──
+const chartDefaults = {
+  plugins: { legend: { display: false }, tooltip: { backgroundColor: '#1a2129', titleColor: '#9fb0c0', bodyColor: '#e6edf3', borderColor: '#2c3947', borderWidth: 1 } },
+  scales: { x: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 }, maxRotation: 45 } },
+            y: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 } } } }
+};
+
+const taixLabels = ['05/21','05/28','06/03','06/09','06/11','06/13','06/17','06/19','06/20','06/23','06/24','06/25','06/26','06/27','06/30','07/01'];
+const taixData =   [43820, 44210, 44650, 45120, 45380, 45920, 46100, 46820, 47120, 47380, 47600, 47742, 44220, 45360, 46125, 47018];
+
+new Chart(document.getElementById('taixChart'), {
+  type: 'line',
+  data: {
+    labels: taixLabels,
+    datasets: [{
+      data: taixData,
+      borderColor: '#38bdf8',
+      backgroundColor: 'rgba(56,189,248,0.08)',
+      borderWidth: 2,
+      pointRadius: 2.5,
+      pointBackgroundColor: '#38bdf8',
+      tension: 0.3,
+      fill: true
+    }]
+  },
+  options: { ...chartDefaults, responsive: true, maintainAspectRatio: true }
+});
+
+new Chart(document.getElementById('instChart'), {
+  type: 'bar',
+  data: {
+    labels: ['外資', '投信', '自營商'],
+    datasets: [{
+      data: [323.76, 156.03, 59.38],
+      backgroundColor: ['rgba(239,68,68,0.7)', 'rgba(56,189,248,0.7)', 'rgba(245,185,66,0.7)'],
+      borderColor: ['#ef4444', '#38bdf8', '#f5b942'],
+      borderWidth: 1.5,
+      borderRadius: 6
+    }]
+  },
+  options: {
+    ...chartDefaults,
+    responsive: true,
+    maintainAspectRatio: true,
+    indexAxis: 'y',
+    scales: {
+      x: { grid: { color: '#2c3947' }, ticks: { color: '#9fb0c0', font: { size: 10 } } },
+      y: { grid: { display: false }, ticks: { color: '#e6edf3', font: { size: 13, weight: '600' } } }
+    }
+  }
+});
+</script>
+</body>
+</html>
