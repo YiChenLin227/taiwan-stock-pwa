@@ -177,7 +177,7 @@ def fetch_institutional(date):
                     matched.append(f"自營商={net}")
             print(f"[fetch_institutional] 匹配: {matched}")
 
-            def to_yi(v): return round(v / 100000, 2)
+            def to_yi(v): return round(v / 100000000, 2)
             return {
                 "foreign_net_yi": str(to_yi(foreign_net)),
                 "trust_net_yi": str(to_yi(trust_net)),
