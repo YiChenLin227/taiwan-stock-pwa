@@ -1,0 +1,7 @@
+{
+  "status": "api_error",
+  "attempt": 3,
+  "error": "錯誤（第3次）: AttributeError: 'ThinkingBlock' object has no attribute 'text'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/taiwan-stock-pwa/taiwan-stock-pwa/scripts/analyze.py\", line 308, in call_claude\n    raw = message.content[0].text.strip()\n          ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/main.py\", line 1042, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'ThinkingBlock' object has no attribute 'text'\n",
+  "ts": "2026-07-03 09:47:58 UTC"
+}
