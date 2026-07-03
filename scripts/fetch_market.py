@@ -140,63 +140,63 @@ def fetch_volume(date):
     return {"volume_trillion": NA, "volume_source": source}
 
 
-def _parse_t86_rows(rows, source):
-    """解析 T86 rows，回傳法人資料 dict"""
-    foreign_net = trust_net = dealer_net = 0
-    matched = []
-    print(f"[fetch_institutional] T86 共 {len(rows)} 行")
-    for row in rows:
-        name = str(row[0]).strip() if row else ""
-        print(f"[fetch_institutional]   row[0]={repr(name)}, col6={row[6] if len(row)>6 else 'N/A'}")
-        try:
-            net = int(str(row[6]).replace(",", "").replace("+", "").strip()) if len(row) > 6 else 0
-        except:
-            net = 0
-        if "外資及陸資" in name and "不含外資自營商" in name:
-            foreign_net = net
-            matched.append(f"外資={net}")
-        elif name == "投信":
-            trust_net = net
-            matched.append(f"投信={net}")
-        elif "自營商" in name and "避險" not in name and "外資" not in name:
-            dealer_net = net
-            matched.append(f"自營商={net}")
-    print(f"[fetch_institutional] 匹配: {matched}")
-
-    def to_yi(v): return round(v / 100000, 2)
-    return {
-        "foreign_net_yi": str(to_yi(foreign_net)),
-        "trust_net_yi": str(to_yi(trust_net)),
-        "dealer_net_yi": str(to_yi(dealer_net)),
-        "total_net_yi": str(to_yi(foreign_net + trust_net + dealer_net)),
-        "institutional_source": source
-    }
-
-
 def fetch_institutional(date):
-    url = f"https://www.twse.com.tw/rwd/zh/fund/T86?response=json&date={date}&selectType=ALLBUT0999"
+    """
+    使用 BFI82U（三大法人買賣超日報）取得法人總計資料。
+    BFI82U 直接給出各機構別的買賣超「金額」摘要，col3 = 買賣超金額(千元)。
+    （T86 是各股票明細表，ALLBUT0999 不含總計列，不適合此用途。）
+    """
     source = "https://www.twse.com.tw/zh/trading/foreign/twt38u.html"
+    url = f"https://www.twse.com.tw/rwd/zh/fund/BFI82U?response=json&type=day&dayDate={date}"
 
     data, err = _twse_get(url, retries=3, delay=5)
     if data:
-        if data.get("stat") != "OK":
-            print(f"[fetch_institutional] stat={data.get('stat')}")
-        else:
-            return _parse_t86_rows(data.get("data", []), source)
+        stat = data.get("stat", "")
+        rows = data.get("data", [])
+        print(f"[fetch_institutional] BFI82U stat={stat} 共 {len(rows)} 行")
 
-    # OpenAPI 備援
-    open_url = f"https://openapi.twse.com.tw/v1/funds/T86?date={date}"
-    print(f"[fetch_institutional] 改用 OpenAPI: {open_url}")
+        if stat == "OK" and rows:
+            foreign_net = trust_net = dealer_net = 0
+            matched = []
+            for row in rows:
+                name = str(row[0]).strip() if row else ""
+                # col3 = 買賣超金額(千元)
+                try:
+                    net = int(str(row[3]).replace(",", "").replace("+", "").strip()) if len(row) > 3 else 0
+                except:
+                    net = 0
+                print(f"[fetch_institutional]   name={repr(name)}, col3={row[3] if len(row)>3 else 'N/A'}, net={net}")
+                if "外資及陸資" in name and "不含外資自營商" in name:
+                    foreign_net = net
+                    matched.append(f"外資={net}")
+                elif name == "投信":
+                    trust_net = net
+                    matched.append(f"投信={net}")
+                elif "自營商" in name and "避險" not in name and "外資" not in name:
+                    dealer_net = net
+                    matched.append(f"自營商={net}")
+            print(f"[fetch_institutional] 匹配: {matched}")
+
+            def to_yi(v): return round(v / 100000, 2)
+            return {
+                "foreign_net_yi": str(to_yi(foreign_net)),
+                "trust_net_yi": str(to_yi(trust_net)),
+                "dealer_net_yi": str(to_yi(dealer_net)),
+                "total_net_yi": str(to_yi(foreign_net + trust_net + dealer_net)),
+                "institutional_source": source
+            }
+        else:
+            print(f"[fetch_institutional] BFI82U stat={stat} 或無資料")
+
+    # 備援：OpenAPI BFI82U
+    open_url = f"https://openapi.twse.com.tw/v1/funds/BFI82U?date={date}"
+    print(f"[fetch_institutional] 改用 OpenAPI BFI82U: {open_url}")
     try:
         r2 = requests.get(open_url, headers=FULL_HEADERS, timeout=20)
         print(f"[fetch_institutional] OpenAPI status={r2.status_code} body_len={len(r2.content)}")
         if r2.content:
             open_data = r2.json()
-            # OpenAPI 回傳格式：{"stat":"OK","data":[...]} 或 [{"Code":..., ...}]
-            if isinstance(open_data, dict) and open_data.get("stat") == "OK":
-                return _parse_t86_rows(open_data.get("data", []), source)
-            # OpenAPI 也可能是不同結構，直接印出前3筆便於除錯
-            print(f"[fetch_institutional] OpenAPI 回傳: {str(open_data)[:300]}")
+            print(f"[fetch_institutional] OpenAPI 回傳前500字: {str(open_data)[:500]}")
     except Exception as e:
         print(f"[fetch_institutional] OpenAPI 錯誤: {e}")
 
