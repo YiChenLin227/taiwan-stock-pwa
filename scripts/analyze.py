@@ -280,6 +280,19 @@ def _extract_json(raw: str) -> dict:
     raise ValueError("Cannot extract valid JSON from response")
 
 
+
+def _write_debug(info: dict):
+    """把 API 呼叫結果寫入 debug 檔，讓 workflow log 可見"""
+    import json as _json
+    from datetime import datetime as _dt
+    info["ts"] = _dt.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    try:
+        with open("../debug_ai.json", "w", encoding="utf-8") as f:
+            _json.dump(info, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass  # never crash on debug
+
+
 def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
     """呼叫 Claude API，失敗自動重試"""
     client = anthropic.Anthropic(api_key=api_key)
@@ -288,22 +301,28 @@ def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
         try:
             print(f"  [Claude API] 第 {attempt} 次呼叫...")
             message = client.messages.create(
-                model="claude-sonnet-4-5",
+                model="claude-sonnet-5",
                 max_tokens=8192,
                 messages=[{"role": "user", "content": prompt}]
             )
             raw = message.content[0].text.strip()
             result = _extract_json(raw)
             print(f"  [Claude API] 成功，選出 {len(result.get('top_stocks',[]))} 隻精選股")
+            _write_debug({"status": "ok", "attempt": attempt, "top_stocks_count": len(result.get('top_stocks',[]))})
             return result
 
         except (json.JSONDecodeError, ValueError) as e:
-            print(f"  [Claude API] JSON 解析失敗（第{attempt}次）: {e}")
+            err_msg = f"JSON 解析失敗（第{attempt}次）: {e}"
+            print(f"  [Claude API] {err_msg}")
+            _write_debug({"status": "json_error", "attempt": attempt, "error": err_msg, "raw_preview": raw[:300] if 'raw' in dir() else ""})
             if attempt == max_retries:
                 return _fallback_result()
             time.sleep(5)
         except Exception as e:
-            print(f"  [Claude API] 錯誤（第{attempt}次）: {e}")
+            import traceback
+            err_msg = f"錯誤（第{attempt}次）: {type(e).__name__}: {e}"
+            print(f"  [Claude API] {err_msg}")
+            _write_debug({"status": "api_error", "attempt": attempt, "error": err_msg, "traceback": traceback.format_exc()})
             if attempt == max_retries:
                 return _fallback_result()
             time.sleep(10)
