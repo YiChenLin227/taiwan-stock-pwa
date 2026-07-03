@@ -113,7 +113,7 @@ def main():
 
     try:
         from render_html import render
-        render(render_data, output_path="./index.html")
+        render(render_data, output_path="../index.html")
         log("  ✅ index.html written")
     except Exception as e:
         log(f"  ❌ Render error: {e}")
@@ -308,9 +308,15 @@ def _build_render_data(market, futures, stocks, news, ai):
         }
 
     ai_fixed = ai.get("fixed_stocks",{})
-    s2330_raw = stocks.get("stock_2330",{})
-    s2454_raw = stocks.get("stock_2454",{})
-    s2327_raw = stocks.get("stock_2327",{})
+
+    # fetch_stocks returns FLAT keys like "2330_close", "2330_rsi", etc.
+    def get_stock_dict(code):
+        prefix = f"{code}_"
+        return {k[len(prefix):]: v for k, v in stocks.items() if k.startswith(prefix)}
+
+    s2330_raw = get_stock_dict("2330")
+    s2454_raw = get_stock_dict("2454")
+    s2327_raw = get_stock_dict("2327")
     s2330_raw.setdefault("name","台積電"); s2330_raw.setdefault("desc","晶圓代工龍頭")
     s2454_raw.setdefault("name","聯發科"); s2454_raw.setdefault("desc","IC 設計龍頭 ‧ AI 晶片 / AI PC 概念")
     s2327_raw.setdefault("name","國巨");  s2327_raw.setdefault("desc","被動元件龍頭")
@@ -320,7 +326,7 @@ def _build_render_data(market, futures, stocks, news, ai):
     stock_2327 = build_stock_render("2327", ai_fixed.get("2327",{}), s2327_raw)
     stock_2330["extra_label"] = "外資目標價"
     stock_2330["extra_css"] = "acc"
-    stock_2330["extra_value"] = stocks.get("tsm_target_price","—")
+    stock_2330["extra_value"] = s2330_raw.get("target_price", stocks.get("tsm_target_price","—"))
     stock_2330["extra_desc"] = "ADR 分析師共識"
     stock_2330["op4_label"] = "法說會"
     stock_2330["op4_value"] = ai.get("tsmc_earnings_date","待確認")
@@ -330,7 +336,9 @@ def _build_render_data(market, futures, stocks, news, ai):
     top_stocks = []
     for s in ai_top:
         code = s.get("code","")
-        raw = stocks.get(f"stock_{code}", {})
+        raw = {k[len(code)+1:]: v for k, v in stocks.items() if k.startswith(f"{code}_")}
+        if not raw:
+            raw = stocks.get(f"stock_{code}", {})
         # Try candidates pool for additional data
         cand_data = {}
         for c in candidates_data if 'candidates_data' in dir() else []:
