@@ -230,26 +230,59 @@ def fetch_foreign_top(date):
 
 
 def fetch_margin(date):
-    url = f"https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?response=json&date={date}&selectType=MS"
+    """
+    MI_MARGN fields: [項目, 買進, 賣出, 現金(券)償還, 前日餘額, 今日餘額]
+    Rows: 融資(交易單位), 融券(交易單位), 融資金額(仟元)
+    - margin_change_yi: 融資金額 今日餘額 - 前日餘額 (仟元 → 億)
+    - short_balance: 融券(交易單位) 今日餘額 (張)
+    Falls back to previous trading day if today's data not available yet.
+    """
     source = "https://www.twse.com.tw/zh/trading/margin/MI_MARGN.html"
-    data, err = _twse_get(url)
-    if data and data.get("stat") == "OK":
-        margin_change = short_balance = NA
+
+    def _try_date(d):
+        url = f"https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?response=json&date={d}&selectType=MS"
+        data, err = _twse_get(url)
+        if not data or data.get("stat") != "OK":
+            return None, err
+        margin_yi = NA
+        short_bal = NA
         for table in data.get("tables", []):
             for row in table.get("data", []):
-                item = str(row[0]) if row else ""
-                if "融資" in item and "餘額" in item and len(row) > 2:
+                item = str(row[0]).strip() if row else ""
+                # col4=前日餘額, col5=今日餘額
+                if "融資金額" in item and len(row) >= 6:
                     try:
-                        margin_change = row[2].replace(",", "")
-                    except:
-                        pass
-                if "融券" in item and "餘額" in item and len(row) > 2:
+                        today_val = int(row[5].replace(",", ""))
+                        prev_val  = int(row[4].replace(",", ""))
+                        change_qian = today_val - prev_val  # 仟元
+                        margin_yi = round(change_qian / 100000, 2)  # 億 (float for sign_css in update.py)
+                        print(f"[fetch_margin] 融資金額 today={today_val} prev={prev_val} change={change_qian}仟元 → {margin_yi}億")
+                    except Exception as e:
+                        print(f"[fetch_margin] 融資金額 parse error: {e} row={row}")
+                elif "融券" in item and "交易單位" in item and len(row) >= 6:
                     try:
-                        short_balance = row[2].replace(",", "")
-                    except:
-                        pass
-        return {"margin_change": margin_change, "short_balance": short_balance, "margin_source": source}
-    print(f"[fetch_margin] 無資料: {err}")
+                        short_bal = row[5].replace(",", "")  # 張，今日餘額
+                        print(f"[fetch_margin] 融券餘額={short_bal}張")
+                    except Exception as e:
+                        print(f"[fetch_margin] 融券 parse error: {e}")
+        return (margin_yi, short_bal), None
+
+    result, err = _try_date(date)
+    if result:
+        return {"margin_change": result[0], "short_balance": result[1], "margin_source": source}
+
+    # Fallback: try previous trading day (data published ~8-9pm TW time)
+    from datetime import datetime, timedelta
+    d = datetime.strptime(date, "%Y%m%d") - timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    prev_date = d.strftime("%Y%m%d")
+    print(f"[fetch_margin] {date} 無資料，試前一交易日 {prev_date}")
+    result2, err2 = _try_date(prev_date)
+    if result2:
+        return {"margin_change": result2[0], "short_balance": result2[1], "margin_source": source}
+
+    print(f"[fetch_margin] 最終失敗: {err}")
     return {"margin_change": NA, "short_balance": NA, "margin_source": source}
 
 

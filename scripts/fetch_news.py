@@ -36,23 +36,34 @@ def fetch_yahoo_tw_news(limit=5) -> list:
 
 def fetch_digitimes_news(limit=3) -> list:
     """DigiTimes 科技產業新聞 RSS"""
-    url = "https://www.digitimes.com.tw/tech/rss.xml"
+    # New URL (old /tech/rss.xml returns 404)
+    urls = [
+        "https://www.digitimes.com.tw/tech/rss/xml/xmlrss_10_0.xml",  # 科技/產業
+        "https://www.digitimes.com.tw/tech/rss/xml/xmlrss_10_20.xml", # 半導體
+    ]
     source = "https://www.digitimes.com.tw/"
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
-        root = ET.fromstring(r.content)
-        items = root.findall(".//item")
-        news = []
-        for item in items[:limit]:
-            title = item.findtext("title", "")
-            link  = item.findtext("link", "")
-            pub   = item.findtext("pubDate", "")
-            if title:
-                news.append({"title": title.strip(), "url": link.strip(), "date": pub[:16], "source": "DigiTimes"})
-        return news
-    except Exception as e:
-        print(f"[fetch_digitimes_news] 錯誤: {e}")
-        return [{"title": NA, "url": source, "date": "", "source": "DigiTimes"}]
+    for url in urls:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            print(f"[fetch_digitimes_news] {url} status={r.status_code} len={len(r.content)}")
+            # Guard: DigiTimes returns HTML (login page) instead of XML when blocked
+            if b"<html" in r.content[:100].lower() or b"<!DOCTYPE" in r.content[:100]:
+                print(f"[fetch_digitimes_news] 回傳 HTML 非 XML，可能需登入")
+                continue
+            root = ET.fromstring(r.content)
+            items = root.findall(".//item")
+            news = []
+            for item in items[:limit]:
+                title = item.findtext("title", "")
+                link  = item.findtext("link", "")
+                pub   = item.findtext("pubDate", "")
+                if title:
+                    news.append({"title": title.strip(), "url": link.strip(), "date": pub[:16], "source": "DigiTimes"})
+            if news:
+                return news
+        except Exception as e:
+            print(f"[fetch_digitimes_news] {url} 錯誤: {e}")
+    return [{"title": "DigiTimes 科技產業新聞", "url": source, "date": "", "source": "DigiTimes"}]
 
 
 def fetch_fred_events(api_key: str, days_ahead=14) -> list:
