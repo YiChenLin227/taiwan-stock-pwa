@@ -143,6 +143,19 @@ def _build_render_data(market, futures, stocks, news, ai):
     # Determine trading date label
     trading_date = market.get("trading_date", "前日")
 
+    # ── Safe numeric helper ───────────────────────────────────────────────────
+    def safe_float(val, default=0.0):
+        """Convert to float safely; returns default for ⚠️ strings or None."""
+        if val is None:
+            return default
+        s = str(val).replace("%","").replace("+","").replace(",","").replace("億","").strip()
+        if not s or "⚠" in s or "無法" in s:
+            return default
+        try:
+            return float(s)
+        except (ValueError, TypeError):
+            return default
+
     # CSS helpers
     def pct_css(val):
         try:
@@ -361,7 +374,7 @@ def _build_render_data(market, futures, stocks, news, ai):
         "taiex_change_pct": str(taiex_change_pct), "taiex_css": taiex_css,
         "open_range_low": str(open_lo), "open_range_high": str(open_hi),
         "volume_trillion": str(market.get("volume_trillion","")),
-        "volume_desc": "量能充沛" if float(str(market.get("volume_trillion",0) or 0)) > 1.0 else "量能普通",
+        "volume_desc": "量能充沛" if safe_float(market.get("volume_trillion",0)) > 1.0 else "量能普通",
         "twd_usd": str(twd_usd), "fx_change_pct": str(fx_change_pct),
         "fx_change_desc": fx_desc, "fx_css": fx_css,
         "tsm_adr_close": str(adr_close), "tsm_adr_change_pct": str(adr_pct), "tsm_adr_css": adr_css,
@@ -389,15 +402,15 @@ def _build_render_data(market, futures, stocks, news, ai):
         "dealer_net_yi": fmt_yi(dealer_net), "dealer_css": sign_css(dealer_net),
         "dealer_desc": inst_desc(dealer_net,"自營商"),
         "total_net_yi": fmt_yi(total_net), "total_css": sign_css(total_net),
-        "total_desc": "近期高水位" if float(str(total_net or 0))>400 else inst_desc(total_net),
+        "total_desc": "近期高水位" if safe_float(total_net)>400 else inst_desc(total_net),
         "foreign_top3": top3,
-        "foreign_net_raw": float(str(foreign_net or 0)),
-        "trust_net_raw": float(str(trust_net or 0)),
-        "dealer_net_raw": float(str(dealer_net or 0)),
+        "foreign_net_raw": safe_float(foreign_net),
+        "trust_net_raw": safe_float(trust_net),
+        "dealer_net_raw": safe_float(dealer_net),
         # Margin
         "margin_change_yi": str(market.get("margin_change","")),
         "margin_change_css": sign_css(market.get("margin_change",0)),
-        "margin_change_desc": "散戶去槓桿（健康）" if float(str(market.get("margin_change",0) or 0))<0 else "融資擴大（留意風險）",
+        "margin_change_desc": "散戶去槓桿（健康）" if safe_float(market.get("margin_change",0))<0 else "融資擴大（留意風險）",
         "short_balance": str(market.get("short_balance","")),
         "short_ratio_pct": str(market.get("short_ratio_pct","")),
         # PC
@@ -407,8 +420,8 @@ def _build_render_data(market, futures, stocks, news, ai):
         "nasdaq_change": nasdaq_ch, "nasdaq_css": idx_css(nasdaq_ch), "nasdaq_desc": idx_desc(nasdaq_ch,"那斯達克"),
         "dji_change": dji_ch, "dji_css": idx_css(dji_ch), "dji_desc": idx_desc(dji_ch,"道瓊"),
         "sox_change": sox_ch, "sox_css": idx_css(sox_ch), "sox_desc": idx_desc(sox_ch,"SOX"),
-        "vix": vix_val, "vix_css": "up" if float(str(vix_val or 0))>25 else "dn",
-        "vix_desc": "⚠️ 恐慌升高" if float(str(vix_val or 0))>25 else "↓ 市場平靜",
+        "vix": vix_val, "vix_css": "up" if safe_float(vix_val)>25 else "dn",
+        "vix_desc": "⚠️ 恐慌升高" if safe_float(vix_val)>25 else "↓ 市場平靜",
         "gold_change": gold_ch, "gold_css": idx_css(gold_ch), "gold_desc": idx_desc(gold_ch,"黃金"),
         "brent_change": brent_ch, "brent_css": idx_css(brent_ch), "brent_desc": idx_desc(brent_ch,"原油"),
         "nikkei_change": nikkei_ch, "nikkei_css": idx_css(nikkei_ch), "nikkei_desc": idx_desc(nikkei_ch,"日股"),
@@ -451,10 +464,4 @@ def _default_sectors():
         {"num":"④","name":"先進封裝","reps":"日月光投控(3711)・京元電(2449)・矽格(6257)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"法說會"},
         {"num":"⑤","name":"被動元件","reps":"國巨(2327)・華新科(2492)・禾伸堂(3026)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"法說會"},
         {"num":"⑥","name":"電源 / 散熱","reps":"台達電(2308)・奇鋐(3017)・建準(2421)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"法說會"},
-        {"num":"⑦","name":"記憶體","reps":"南亞科(2408)・群聯(8299)・威剛(3260)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"—"},
-        {"num":"⑧","name":"網通 / 光連接器","reps":"台光電(2383)・正崴(2392)・上詮(3363)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"—"},
-    ]
-
-
-if __name__ == "__main__":
-    main()
+        {"num":"⑦","name":"記憶體","reps":"南亞科(2408)・群聯(8299)・威剛(3260)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫�

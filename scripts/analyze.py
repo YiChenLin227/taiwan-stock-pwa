@@ -229,6 +229,63 @@ VIX恐慌指數：{stocks.get('vix_close',NA)}
     return prompt
 
 
+def _extract_json(raw: str) -> dict:
+    """嘗試從可能截斷的回應中提取有效 JSON"""
+    # 1. 去掉 markdown code block
+    if "```" in raw:
+        parts = raw.split("```")
+        for part in parts:
+            if part.startswith("json"):
+                raw = part[4:].strip()
+                break
+            elif part.strip().startswith("{"):
+                raw = part.strip()
+                break
+    raw = raw.strip()
+
+    # 2. 找到第一個 { 開始
+    start = raw.find("{")
+    if start > 0:
+        raw = raw[start:]
+
+    # 3. 直接解析
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+
+    # 4. 截斷修復：找最後一個完整的 } 並補齊
+    # 計算括號深度，找最後一個平衡點
+    depth = 0
+    last_balanced = -1
+    in_str = False
+    escape = False
+    for i, ch in enumerate(raw):
+        if escape:
+            escape = False
+            continue
+        if ch == "\\":
+            escape = True
+            continue
+        if ch == '"' and not escape:
+            in_str = not in_str
+            continue
+        if not in_str:
+            if ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    last_balanced = i
+    if last_balanced > 0:
+        try:
+            return json.loads(raw[:last_balanced + 1])
+        except json.JSONDecodeError:
+            pass
+
+    raise ValueError("無法從回應提取有效 JSON")
+
+
 def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
     """呼叫 Claude API，失敗自動重試"""
     client = anthropic.Anthropic(api_key=api_key)
@@ -238,23 +295,15 @@ def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
             print(f"  [Claude API] 第 {attempt} 次呼叫...")
             message = client.messages.create(
                 model="claude-sonnet-4-5",
-                max_tokens=4096,
+                max_tokens=8192,
                 messages=[{"role": "user", "content": prompt}]
             )
             raw = message.content[0].text.strip()
-
-            # 去掉可能的 markdown code block
-            if raw.startswith("```"):
-                raw = raw.split("```")[1]
-                if raw.startswith("json"):
-                    raw = raw[4:]
-            raw = raw.strip()
-
-            result = json.loads(raw)
+            result = _extract_json(raw)
             print(f"  [Claude API] 成功，選出 {len(result.get('top_stocks',[]))} 隻精選股")
             return result
 
-        except json.JSONDecodeError as e:
+        except (json.JSONDecodeError, ValueError) as e:
             print(f"  [Claude API] JSON 解析失敗（第{attempt}次）: {e}")
             if attempt == max_retries:
                 return _fallback_result()
@@ -285,42 +334,4 @@ def _fallback_result() -> dict:
         "fixed_stocks": {
             "2330": {"direction": NA, "buy_range": NA, "stop_loss": NA, "target": NA, "ai_insight": NA, "news_summary": []},
             "2454": {"direction": NA, "buy_range": NA, "stop_loss": NA, "target": NA, "ai_insight": NA, "news_summary": []},
-            "2327": {"direction": NA, "buy_range": NA, "stop_loss": NA, "target": NA, "ai_insight": NA, "news_summary": []},
-        },
-        "top_stocks": [],
-        "top_stocks_reason": NA,
-        "today_strongest_sector": NA,
-        "today_biggest_risk_stock": NA,
-        "sectors": [],
-        "earnings_calendar": [],
-        "earnings_ai": NA,
-        "review_market": [],
-        "review_stocks": [],
-        "review_ai": NA,
-        "reanalysis_count": 0
-    }
-
-
-def analyze(market: dict, futures: dict, stocks: dict,
-            candidates: list, news: dict, history_rows: list,
-            api_key: str = "") -> dict:
-    """主入口：組 prompt → 呼叫 Claude → 回傳分析結果"""
-    key = api_key or os.environ.get("CLAUDE_API_KEY", "")
-    if not key:
-        print("[analyze] 未設定 CLAUDE_API_KEY")
-        return _fallback_result()
-
-    print("[analyze] 組合分析 prompt...")
-    prompt = build_prompt(market, futures, stocks, candidates, news, history_rows)
-
-    print("[analyze] 呼叫 Claude API...")
-    result = call_claude(prompt, key)
-
-    return result
-
-
-if __name__ == "__main__":
-    # 測試用：印出 prompt 結構（不實際呼叫 API）
-    dummy = {}
-    prompt = build_prompt(dummy, dummy, dummy, [], {"yahoo_tw_news":[],"industry_news":[],"macro_events":[]}, [])
-    print(prompt[:500], "\n...(截斷)")
+            "2327": {"direction": NA, "buy_range": NA, "stop_loss": NA, 
