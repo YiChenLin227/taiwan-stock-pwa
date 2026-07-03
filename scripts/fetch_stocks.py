@@ -22,7 +22,7 @@ FIXED_STOCKS = {
 GLOBAL_TICKERS = {
     "tsm_adr":    {"ticker": "TSM",       "name": "TSM ADR",    "source": "https://finance.yahoo.com/quote/TSM/"},
     "nasdaq":     {"ticker": "^IXIC",     "name": "那斯達克",   "source": "https://finance.yahoo.com/quote/%5EIXIC/"},
-    "dow":        {"ticker": "^DJI",      "name": "道瓊",       "source": "https://finance.yahoo.com/quote/%5EDJI/"},
+    "dji":        {"ticker": "^DJI",      "name": "道瓊",       "source": "https://finance.yahoo.com/quote/%5EDJI/"},
     "sox":        {"ticker": "^SOX",      "name": "費城半導體", "source": "https://finance.yahoo.com/quote/%5ESOX/"},
     "vix":        {"ticker": "^VIX",      "name": "VIX",        "source": "https://finance.yahoo.com/quote/%5EVIX/"},
     "dxy":        {"ticker": "DX-Y.NYB",  "name": "美元指數",   "source": "https://finance.yahoo.com/quote/DX-Y.NYB/"},
@@ -31,7 +31,7 @@ GLOBAL_TICKERS = {
     "kospi":      {"ticker": "^KS11",     "name": "韓股KOSPI",  "source": "https://finance.yahoo.com/quote/%5EKS11/"},
     "hsi":        {"ticker": "^HSI",      "name": "恆生指數",   "source": "https://finance.yahoo.com/quote/%5EHSI/"},
     "gold":       {"ticker": "GC=F",      "name": "黃金",       "source": "https://finance.yahoo.com/quote/GC=F/"},
-    "oil":        {"ticker": "BZ=F",      "name": "布蘭特原油", "source": "https://finance.yahoo.com/quote/BZ=F/"},
+    "brent":        {"ticker": "BZ=F",      "name": "布蘭特原油", "source": "https://finance.yahoo.com/quote/BZ=F/"},
 }
 
 

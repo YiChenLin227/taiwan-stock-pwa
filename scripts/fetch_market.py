@@ -94,7 +94,7 @@ def fetch_volume(date):
 
 
 def fetch_institutional(date):
-    url = f"https://www.twse.com.tw/rwd/zh/fund/T86?response=json&date={date}&selectType=ALL"
+    url = f"https://www.twse.com.tw/rwd/zh/fund/T86?response=json&date={date}&selectType=ALLBUT0999"
     source = "https://www.twse.com.tw/zh/trading/foreign/twt38u.html"
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
@@ -103,19 +103,24 @@ def fetch_institutional(date):
             return {"foreign_net": NA, "trust_net": NA, "dealer_net": NA, "total_net": NA, "institutional_source": source}
 
         foreign_net = trust_net = dealer_net = 0
-        for row in data.get("data", []):
+        rows = data.get("data", [])
+        print(f"[fetch_institutional] T86 共 {len(rows)} 行")
+        for row in rows:
             name = str(row[0]).strip() if row else ""
             # col 6 = 買賣超金額(千元)；col 9 = 買賣超股數(不含自行買賣)(千股)
             try:
-                net = int(str(row[6]).replace(",", "").replace("+", "")) if len(row) > 6 else 0
+                net = int(str(row[6]).replace(",", "").replace("+", "").strip()) if len(row) > 6 else 0
             except:
                 net = 0
             # T86 row names：外資及陸資(不含外資自營商) / 投信 / 自營商(自行買賣)
             if "外資及陸資" in name and "不含外資自營商" in name:
+                print(f"[fetch_institutional] 外資: {row[6] if len(row)>6 else 'N/A'}")
                 foreign_net = net
             elif name == "投信":
+                print(f"[fetch_institutional] 投信: {row[6] if len(row)>6 else 'N/A'}")
                 trust_net = net
             elif "自營商" in name and "避險" not in name and "外資" not in name:
+                print(f"[fetch_institutional] 自營商: {row[6] if len(row)>6 else 'N/A'}")
                 dealer_net = net
 
         # 換算億元（千元 / 100,000 = 億元）
