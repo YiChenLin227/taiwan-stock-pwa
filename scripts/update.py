@@ -455,7 +455,8 @@ def _build_render_data(market, futures, stocks, news, ai):
         "stop_loss_tsmc": ai_fixed.get("2330",{}).get("stop_loss",""),
         "stop_loss_taiex": ai.get("key_support",""),
         "reanalysis_count": ai.get("reanalysis_count",0),
-        "update_time": "06:30",
+        "update_time": __import__('datetime').datetime.utcnow().strftime("%m/%d %H:%M") + " UTC",
+        "generated_at": __import__('datetime').datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
         # Sectors
         "sectors": sectors,
         # Review (yesterday's data from Sheets)

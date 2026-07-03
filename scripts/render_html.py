@@ -432,7 +432,8 @@ def render(data: dict, output_path: str = "./index.html"):
     today_strongest = g(d,"today_strongest_sector","AI 伺服器")
     today_biggest_risk = g(d,"today_biggest_risk_stock","請注意盤中變化")
     reanalysis_count = d.get("reanalysis_count",0)
-    update_time = g(d,"update_time","06:30")
+    update_time = g(d,"update_time","--:--")
+    generated_at = g(d,"generated_at","--")
     stop_loss_tsmc = g(d,"stop_loss_tsmc", s2330.get("stop_loss","—"))
     stop_loss_taiex = g(d,"stop_loss_taiex", support)
 
@@ -575,6 +576,7 @@ def render(data: dict, output_path: str = "./index.html"):
     <div>
       <div class="hdr-title">📊 台股盤前 {today_short}</div>
       <div class="hdr-sub">基準：{trading_date} 收盤 ‧ AI 自動彙整</div>
+      <div style="font-size:10px;color:var(--sub);margin-top:2px">🕐 更新：{generated_at}</div>
     </div>
     <div class="dir-badge">{dir_icon} {market_direction}</div>
   </div>
