@@ -1,0 +1,65 @@
+name: Manual Re-Analysis
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: '重新分析原因（可選，例如：手動更新了 Google Sheets 數據）'
+        required: false
+        default: '手動觸發 AI 重新分析'
+
+jobs:
+  reanalyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install \
+            anthropic \
+            yfinance \
+            pandas \
+            numpy \
+            requests \
+            feedparser \
+            gspread \
+            google-auth \
+            google-auth-oauthlib \
+            google-auth-httplib2
+
+      - name: Run re-analysis
+        env:
+          CLAUDE_API_KEY:      ${{ secrets.CLAUDE_API_KEY }}
+          FRED_API_KEY:        ${{ secrets.FRED_API_KEY }}
+          SHEET_ID:            ${{ secrets.SHEET_ID }}
+          GOOGLE_CREDENTIALS:  ${{ secrets.GOOGLE_CREDENTIALS }}
+          REANALYZE_REASON:    ${{ inputs.reason }}
+        run: |
+          cd scripts
+          python reanalyze.py
+
+      - name: Commit & push updated index.html
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "🔄 Re-analysis: ${{ inputs.reason || '手動觸發' }} ($(date -u +'%H:%M UTC'))"
+            git push
+          fi
