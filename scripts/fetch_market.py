@@ -39,10 +39,36 @@ def fetch_taiex(date):
                         "taiex_change_pct": row[3] if len(row) > 3 else NA,
                         "taiex_source": source
                     }
-        return {"taiex_close": NA, "taiex_change": NA, "taiex_change_pct": NA, "taiex_source": source}
+        print("[fetch_taiex] TWSE 無資料，改用 yfinance ^TWII")
+        return _fetch_taiex_yf(source)
     except Exception as e:
-        print(f"[fetch_taiex] 錯誤: {e}")
-        return {"taiex_close": NA, "taiex_change": NA, "taiex_change_pct": NA, "taiex_source": source}
+        print(f"[fetch_taiex] TWSE 錯誤: {e}，改用 yfinance ^TWII")
+        return _fetch_taiex_yf(source)
+
+
+def _fetch_taiex_yf(source_url):
+    """yfinance ^TWII 作為 TWSE 備援"""
+    NA = "⚠️ 無法取得資料"
+    try:
+        import yfinance as yf
+        hist = yf.Ticker("^TWII").history(period="10d")
+        if len(hist) < 2:
+            return {"taiex_close": NA, "taiex_change": NA, "taiex_change_pct": NA, "taiex_source": source_url}
+        close = round(float(hist["Close"].iloc[-1]), 0)
+        prev  = round(float(hist["Close"].iloc[-2]), 0)
+        change = round(close - prev, 0)
+        pct = round((change / prev) * 100, 2) if prev else 0
+        sign = "+" if change >= 0 else ""
+        return {
+            "taiex_close": str(int(close)),
+            "taiex_change": f"{sign}{int(change)}",
+            "taiex_change_pct": f"{sign}{pct}%",
+            "taiex_source": "https://finance.yahoo.com/quote/%5ETWII/"
+        }
+    except Exception as e:
+        print(f"[_fetch_taiex_yf] 錯誤: {e}")
+        NA = "⚠️ 無法取得資料"
+        return {"taiex_close": NA, "taiex_change": NA, "taiex_change_pct": NA, "taiex_source": source_url}
 
 
 def fetch_volume(date):
@@ -177,10 +203,27 @@ def fetch_fx():
                 parts = line.split(",")
                 if len(parts) > 2:
                     return {"twd_usd": parts[2].strip(), "fx_source": source}
-        return {"twd_usd": NA, "fx_source": source}
+        print("[fetch_fx] 台銀 CSV 無資料，改用 yfinance")
+        return _fetch_fx_yf()
     except Exception as e:
-        print(f"[fetch_fx] 錯誤: {e}")
-        return {"twd_usd": NA, "fx_source": source}
+        print(f"[fetch_fx] 台銀錯誤: {e}，改用 yfinance")
+        return _fetch_fx_yf()
+
+
+def _fetch_fx_yf():
+    """yfinance USDTWD=X 作為台銀備援"""
+    NA = "⚠️ 無法取得資料"
+    try:
+        import yfinance as yf
+        hist = yf.Ticker("USDTWD=X").history(period="5d")
+        if hist.empty:
+            return {"twd_usd": NA, "fx_source": "https://finance.yahoo.com/quote/USDTWD%3DX/"}
+        rate = round(float(hist["Close"].iloc[-1]), 3)
+        return {"twd_usd": str(rate), "fx_source": "https://finance.yahoo.com/quote/USDTWD%3DX/"}
+    except Exception as e:
+        print(f"[_fetch_fx_yf] 錯誤: {e}")
+        NA2 = "⚠️ 無法取得資料"
+        return {"twd_usd": NA2, "fx_source": "https://finance.yahoo.com/quote/USDTWD%3DX/"}
 
 
 def fetch_volume_top20(date):
@@ -197,7 +240,7 @@ def fetch_volume_top20(date):
 def fetch_all():
     date = get_latest_trading_date()
     print(f"[fetch_market] 交易日: {date}")
-    result = {"trade_date": date}
+    result = {"trade_date": date, "trading_date": f"{date[4:6]}/{date[6:8]}"}
     result.update(fetch_taiex(date))
     result.update(fetch_volume(date))
     result.update(fetch_institutional(date))

@@ -141,7 +141,11 @@ def _build_render_data(market, futures, stocks, news, ai):
     today_short = now_tw.strftime("%m/%d")
 
     # Determine trading date label
-    trading_date = market.get("trading_date", "前日")
+    raw_date = str(market.get("trade_date", ""))
+    if len(raw_date) == 8 and raw_date.isdigit():
+        trading_date = f"{raw_date[4:6]}/{raw_date[6:8]}"
+    else:
+        trading_date = market.get("trading_date", "前日")
 
     # ── Safe numeric helper ───────────────────────────────────────────────────
     def safe_float(val, default=0.0):
@@ -455,7 +459,7 @@ def _build_render_data(market, futures, stocks, news, ai):
         # Sectors
         "sectors": sectors,
         # Review (yesterday's data from Sheets)
-        "review_date": market.get("prev_trading_date","前日"),
+        "review_date": market.get("prev_trading_date", trading_date),
         "review_market": ai.get("review_market",[]),
         "review_stocks": ai.get("review_stocks",[]),
         "review_ai": ai.get("review_ai",""),

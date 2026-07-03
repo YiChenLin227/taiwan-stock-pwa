@@ -139,6 +139,8 @@ def fetch_global_index(key, ticker, name, source):
         if hist.empty:
             raise ValueError("無資料")
         close_series = hist["Close"]
+        if len(close_series) < 2:
+            raise ValueError("歷史資料不足 2 筆")
         last = round(float(close_series.iloc[-1]), 2)
         prev = round(float(close_series.iloc[-2]), 2)
         change = round(last - prev, 2)
