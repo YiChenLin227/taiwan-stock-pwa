@@ -1,7 +1,6 @@
 {
-  "status": "json_error",
+  "status": "ok",
   "attempt": 3,
-  "error": "JSON 解析失敗（第3次）: Cannot extract valid JSON from response",
-  "raw_preview": "```json\n{\n  \"market_direction\": \"中性偏空\",\n  \"biggest_risk\": \"夜盤台指期大跌867點、費半重挫5.44%、TSM ADR下跌2.27%，三重利空疊加恐使今日開盤跳空走低，考驗大盤支撐。\",\n  \"open_range_low\": \"46300\",\n  \"open_range_high\": \"46650\",\n  \"key_support\": \"46000\",\n  \"key_resistance\": \"47200\",\n\n  \"taiex_ai\": \"加權指數收46781、RSI63.16處強勢區、站穩MA20(45537)/MA60(4219",
-  "ts": "2026-07-03 10:01:39 UTC"
+  "top_stocks_count": 5,
+  "ts": "2026-07-03 10:12:02 UTC"
 }
