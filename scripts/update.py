@@ -145,11 +145,18 @@ def _build_render_data(market, futures, stocks, news, ai):
 
     # ── Safe numeric helper ───────────────────────────────────────────────────
     def safe_float(val, default=0.0):
-        """Convert to float safely; returns default for ⚠️ strings or None."""
+        """Convert to float safely; returns default for warning strings or None."""
         if val is None:
             return default
-        s = str(val).replace("%","").replace("+","").replace(",","").replace("億","").strip()
-        if not s or "⚠" in s or "無法" in s:
+        s = str(val).replace("%","").replace("+","").replace(",","").replace("\u5104","").strip()
+        if not s or "\u26a0" in s.encode('ascii','ignore').decode() or "\u7121\u6cd5" in s:
+            return default
+        # Check for Chinese warning text
+        try:
+            encoded = s.encode('utf-8')
+        except Exception:
+            return default
+        if b"\xe2\x9a\xa0" in encoded or b"\xe7\x84\xa1\xe6\xb3\x95" in encoded:
             return default
         try:
             return float(s)
@@ -464,4 +471,10 @@ def _default_sectors():
         {"num":"④","name":"先進封裝","reps":"日月光投控(3711)・京元電(2449)・矽格(6257)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"法說會"},
         {"num":"⑤","name":"被動元件","reps":"國巨(2327)・華新科(2492)・禾伸堂(3026)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"法說會"},
         {"num":"⑥","name":"電源 / 散熱","reps":"台達電(2308)・奇鋐(3017)・建準(2421)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"法說會"},
-        {"num":"⑦","name":"記憶體","reps":"南亞科(2408)・群聯(8299)・威剛(3260)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫�
+        {"num":"⑦","name":"記憶體","reps":"南亞科(2408)・群聯(8299)・威剛(3260)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"—"},
+        {"num":"⑧","name":"網通 / 光連接器","reps":"台光電(2383)・正崴(2392)・上詮(3363)","trend":"—","trend_css":"sub","trend_bg":"rgba(255,255,255,0.05)","desc":"AI 分析暫無資料","week_outlook":"—","week_css":"sub","week_bg":"rgba(255,255,255,0.04)","month_outlook":"—","month_css":"sub","month_bg":"rgba(255,255,255,0.04)","key_event":"—"},
+    ]
+
+
+if __name__ == "__main__":
+    main()

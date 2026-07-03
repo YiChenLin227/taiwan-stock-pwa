@@ -230,32 +230,27 @@ VIX恐慌指數：{stocks.get('vix_close',NA)}
 
 
 def _extract_json(raw: str) -> dict:
-    """嘗試從可能截斷的回應中提取有效 JSON"""
-    # 1. 去掉 markdown code block
+    """Try to extract valid JSON even from truncated Claude response."""
+    # Remove markdown code block
     if "```" in raw:
-        parts = raw.split("```")
-        for part in parts:
-            if part.startswith("json"):
-                raw = part[4:].strip()
-                break
-            elif part.strip().startswith("{"):
-                raw = part.strip()
+        for part in raw.split("```"):
+            s = part.strip()
+            if s.startswith("json"):
+                s = s[4:].strip()
+            if s.startswith("{"):
+                raw = s
                 break
     raw = raw.strip()
-
-    # 2. 找到第一個 { 開始
+    # Find first {
     start = raw.find("{")
     if start > 0:
         raw = raw[start:]
-
-    # 3. 直接解析
+    # Try direct parse
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
         pass
-
-    # 4. 截斷修復：找最後一個完整的 } 並補齊
-    # 計算括號深度，找最後一個平衡點
+    # Try finding last balanced } to recover truncated JSON
     depth = 0
     last_balanced = -1
     in_str = False
@@ -282,8 +277,7 @@ def _extract_json(raw: str) -> dict:
             return json.loads(raw[:last_balanced + 1])
         except json.JSONDecodeError:
             pass
-
-    raise ValueError("無法從回應提取有效 JSON")
+    raise ValueError("Cannot extract valid JSON from response")
 
 
 def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
@@ -334,4 +328,42 @@ def _fallback_result() -> dict:
         "fixed_stocks": {
             "2330": {"direction": NA, "buy_range": NA, "stop_loss": NA, "target": NA, "ai_insight": NA, "news_summary": []},
             "2454": {"direction": NA, "buy_range": NA, "stop_loss": NA, "target": NA, "ai_insight": NA, "news_summary": []},
-            "2327": {"direction": NA, "buy_range": NA, "stop_loss": NA, 
+            "2327": {"direction": NA, "buy_range": NA, "stop_loss": NA, "target": NA, "ai_insight": NA, "news_summary": []},
+        },
+        "top_stocks": [],
+        "top_stocks_reason": NA,
+        "today_strongest_sector": NA,
+        "today_biggest_risk_stock": NA,
+        "sectors": [],
+        "earnings_calendar": [],
+        "earnings_ai": NA,
+        "review_market": [],
+        "review_stocks": [],
+        "review_ai": NA,
+        "reanalysis_count": 0
+    }
+
+
+def analyze(market: dict, futures: dict, stocks: dict,
+            candidates: list, news: dict, history_rows: list,
+            api_key: str = "") -> dict:
+    """主入口：組 prompt → 呼叫 Claude → 回傳分析結果"""
+    key = api_key or os.environ.get("CLAUDE_API_KEY", "")
+    if not key:
+        print("[analyze] 未設定 CLAUDE_API_KEY")
+        return _fallback_result()
+
+    print("[analyze] 組合分析 prompt...")
+    prompt = build_prompt(market, futures, stocks, candidates, news, history_rows)
+
+    print("[analyze] 呼叫 Claude API...")
+    result = call_claude(prompt, key)
+
+    return result
+
+
+if __name__ == "__main__":
+    # 測試用：印出 prompt 結構（不實際呼叫 API）
+    dummy = {}
+    prompt = build_prompt(dummy, dummy, dummy, [], {"yahoo_tw_news":[],"industry_news":[],"macro_events":[]}, [])
+    print(prompt[:500], "\n...(截斷)")

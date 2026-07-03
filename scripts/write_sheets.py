@@ -92,13 +92,13 @@ def get_client(credentials_json: str):
     """建立 gspread 客戶端"""
     import tempfile
     raw = credentials_json.strip()
-    # Handle common encoding issues: remove BOM, outer quotes, etc.
-    if raw.startswith('﻿'):
+    # Handle BOM
+    if raw.startswith("\ufeff"):
         raw = raw[1:]
-    # If wrapped in extra quotes (e.g. secret stored with surrounding "")
+    # Handle outer quote wrapping (common GitHub Secret encoding issue)
     if raw.startswith('"') and raw.endswith('"'):
         try:
-            raw = json.loads(raw)  # unwrap the outer string layer
+            raw = json.loads(raw)   # unwrap outer string layer
         except Exception:
             raw = raw[1:-1].replace('\\"', '"')
     creds_dict = json.loads(raw)
@@ -341,4 +341,17 @@ def write(market: dict, futures: dict, stocks: dict,
 def get_history(credentials_json: str = "", sheet_id: str = "", n: int = 7) -> list:
     """供 reanalyze.py 讀取歷史資料"""
     creds = credentials_json or os.environ.get("GOOGLE_CREDENTIALS", "")
-    sid = s
+    sid = sheet_id or os.environ.get("SHEET_ID", "")
+    try:
+        client = get_client(creds)
+        sheet = client.open_by_key(sid).sheet1
+        return get_history_rows(sheet, n)
+    except Exception as e:
+        print(f"[write_sheets.get_history] 錯誤: {e}")
+        return []
+
+
+if __name__ == "__main__":
+    print(f"欄位總數：{len(HEADERS)}")
+    for i, h in enumerate(HEADERS):
+        print(f"  {i+1:3d}. {h}")
