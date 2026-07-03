@@ -305,7 +305,11 @@ def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
                 max_tokens=8192,
                 messages=[{"role": "user", "content": prompt}]
             )
-            raw = message.content[0].text.strip()
+            # content 可能包含 ThinkingBlock + TextBlock，找第一個有 .text 的 TextBlock
+            raw = next(
+                block.text for block in message.content
+                if hasattr(block, "text") and getattr(block, "type", "") == "text"
+            ).strip()
             result = _extract_json(raw)
             print(f"  [Claude API] 成功，選出 {len(result.get('top_stocks',[]))} 隻精選股")
             _write_debug({"status": "ok", "attempt": attempt, "top_stocks_count": len(result.get('top_stocks',[]))})
