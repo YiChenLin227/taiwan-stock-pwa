@@ -2,43 +2,27 @@ name: Daily Pre-Market Update
 
 on:
   schedule:
-    # 22:30 UTC = 06:30 Taiwan time (UTC+8)
-    # Runs Sun-Thu (= Mon-Fri Taiwan time)
+    # 22:30 UTC = 06:30 Taiwan time (UTC+8), Mon-Fri Taiwan = Sun-Thu UTC
     - cron: '30 22 * * 0,1,2,3,4'
-  workflow_dispatch:   # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # needed to push index.html
+      contents: write
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install \
-            anthropic \
-            yfinance \
-            pandas \
-            numpy \
-            requests \
-            feedparser \
-            gspread \
-            google-auth \
-            google-auth-oauthlib \
-            google-auth-httplib2
+        run: pip install -r scripts/requirements.txt
 
       - name: Run daily update
         env:
