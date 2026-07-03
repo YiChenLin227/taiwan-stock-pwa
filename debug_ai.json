@@ -1,7 +1,7 @@
 {
-  "status": "api_error",
+  "status": "json_error",
   "attempt": 3,
-  "error": "錯誤（第3次）: AttributeError: 'ThinkingBlock' object has no attribute 'text'",
-  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/taiwan-stock-pwa/taiwan-stock-pwa/scripts/analyze.py\", line 308, in call_claude\n    raw = message.content[0].text.strip()\n          ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/main.py\", line 1042, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'ThinkingBlock' object has no attribute 'text'\n",
-  "ts": "2026-07-03 09:47:58 UTC"
+  "error": "JSON 解析失敗（第3次）: Cannot extract valid JSON from response",
+  "raw_preview": "```json\n{\n  \"market_direction\": \"中性偏空\",\n  \"biggest_risk\": \"夜盤台指期大跌867點、費半重挫5.44%、TSM ADR下跌2.27%，三重利空疊加恐使今日開盤跳空走低，考驗大盤支撐。\",\n  \"open_range_low\": \"46300\",\n  \"open_range_high\": \"46650\",\n  \"key_support\": \"46000\",\n  \"key_resistance\": \"47200\",\n\n  \"taiex_ai\": \"加權指數收46781、RSI63.16處強勢區、站穩MA20(45537)/MA60(4219",
+  "ts": "2026-07-03 10:01:39 UTC"
 }
