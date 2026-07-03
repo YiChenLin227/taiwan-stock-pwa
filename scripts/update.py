@@ -72,7 +72,7 @@ def main():
     try:
         from fetch_news import fetch_all as fetch_news
         news_data = fetch_news(fred_api_key=fred_key)
-        log(f"  Yahoo: {len(news_data.get('yahoo_news',[]))} | DigiTimes: {len(news_data.get('digitimes_news',[]))} | FRED: {len(news_data.get('fred_events',[]))}")
+        log(f"  Yahoo: {len(news_data.get('yahoo_tw_news',[]))} | DigiTimes: {len(news_data.get('industry_news',[]))} | FRED: {len(news_data.get('macro_events',[]))}")
     except Exception as e:
         log(f"  ⚠️ News fetch error: {e}"); news_data = {}
 
@@ -263,14 +263,14 @@ def _build_render_data(market, futures, stocks, news, ai):
             return f"{arrow} {name}{'看多' if f>0 else '承壓'}"
         except: return "—"
 
-    nasdaq_ch = stocks.get("nasdaq_change","")
-    dji_ch    = stocks.get("dji_change","")
-    sox_ch    = stocks.get("sox_change","")
-    vix_val   = stocks.get("vix","")
-    gold_ch   = stocks.get("gold_change","")
-    brent_ch  = stocks.get("brent_change","")
-    nikkei_ch = stocks.get("nikkei_change","")
-    hsi_ch    = stocks.get("hsi_change","")
+    nasdaq_ch = stocks.get("nasdaq_change_pct","")
+    dji_ch    = stocks.get("dji_change_pct","")
+    sox_ch    = stocks.get("sox_change_pct","")
+    vix_val   = stocks.get("vix_close","")
+    gold_ch   = stocks.get("gold_change_pct","")
+    brent_ch  = stocks.get("brent_change_pct","")
+    nikkei_ch = stocks.get("nikkei_change_pct","")
+    hsi_ch    = stocks.get("hsi_change_pct","")
 
     # ── AI results → render fields ────────────────────────────────────────────
     market_direction = ai.get("market_direction","中性")
@@ -464,9 +464,9 @@ def _build_render_data(market, futures, stocks, news, ai):
         "review_stocks": ai.get("review_stocks",[]),
         "review_ai": ai.get("review_ai",""),
         # News
-        "yahoo_news": news.get("yahoo_news",[]),
-        "digitimes_news": news.get("digitimes_news",[]),
-        "fred_events": news.get("fred_events",[]),
+        "yahoo_news": news.get("yahoo_tw_news",[]),
+        "digitimes_news": news.get("industry_news",[]),
+        "fred_events": news.get("macro_events",[]),
         "earnings_calendar": ai.get("earnings_calendar",[]),
         "earnings_ai": ai.get("earnings_ai",""),
         # Charts

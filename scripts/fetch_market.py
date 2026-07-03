@@ -104,21 +104,23 @@ def fetch_institutional(date):
 
         foreign_net = trust_net = dealer_net = 0
         for row in data.get("data", []):
-            name = row[0] if row else ""
+            name = str(row[0]).strip() if row else ""
+            # col 6 = 買賣超金額(千元)；col 9 = 買賣超股數(不含自行買賣)(千股)
             try:
-                net = int(row[9].replace(",", "").replace("+", "")) if len(row) > 9 else 0
+                net = int(str(row[6]).replace(",", "").replace("+", "")) if len(row) > 6 else 0
             except:
                 net = 0
-            if "外資" in name and "陸資" not in name:
+            # T86 row names：外資及陸資(不含外資自營商) / 投信 / 自營商(自行買賣)
+            if "外資及陸資" in name and "不含外資自營商" in name:
                 foreign_net = net
-            elif "投信" in name:
+            elif name == "投信":
                 trust_net = net
-            elif "自營商" in name and "避險" not in name:
+            elif "自營商" in name and "避險" not in name and "外資" not in name:
                 dealer_net = net
 
-        # 換算億元（千股 → 股 → 估算）
-        def to_yi(shares):
-            return round(shares * 10 / 1e8, 2)
+        # 換算億元（千元 / 100,000 = 億元）
+        def to_yi(amount_thousand_ntd):
+            return round(amount_thousand_ntd / 100000, 2)
 
         return {
             "foreign_net_yi": str(to_yi(foreign_net)),
