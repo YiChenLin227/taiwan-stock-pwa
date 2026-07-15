@@ -171,14 +171,14 @@ def _build_render_data(market, futures, stocks, news, ai):
     def pct_css(val):
         try:
             f = float(str(val).replace("%","").replace("+","").replace(",",""))
-            return "dn" if f >= 0 else "up"
+            return "up" if f >= 0 else "dn"
         except: return "sub"
 
     def sign_css(val):
         """For institutional amounts: positive=dn(green), negative=up(red)"""
         try:
             f = float(str(val).replace("+","").replace(",","").replace("億",""))
-            return "dn" if f >= 0 else "up"
+            return "up" if f >= 0 else "dn"
         except: return "sub"
 
     def fmt_yi(val):
@@ -199,7 +199,7 @@ def _build_render_data(market, futures, stocks, news, ai):
     # TWD depreciates = bad for import, shown as "up" (red)
     try:
         fx_f = float(str(fx_change_pct).replace("%","").replace("+",""))
-        fx_css = "up" if fx_f < 0 else "dn"  # depreciation = negative change = red
+        fx_css = "up" if fx_f >= 0 else "dn"  # positive change = red, consistent with other indicators
         fx_desc = f"{'貶值' if fx_f < 0 else '升值'} {fx_change_pct}"
     except:
         fx_css = "sub"; fx_desc = fx_change_pct or "—"
@@ -211,7 +211,7 @@ def _build_render_data(market, futures, stocks, news, ai):
     # flip: negative ADR is bad, should show as up(red)
     try:
         adr_f = float(str(adr_pct).replace("%","").replace("+",""))
-        adr_css = "up" if adr_f < 0 else "dn"
+        adr_css = "dn" if adr_f < 0 else "up"
     except: pass
 
     # ── Institutional ────────────────────────────────────────────────────────
@@ -243,7 +243,7 @@ def _build_render_data(market, futures, stocks, news, ai):
     if pc_ratio:
         try:
             pc_f = float(pc_ratio)
-            pc_css = "dn" if pc_f < 0.8 else ("up" if pc_f > 1.2 else "gold")
+            pc_css = "acc" if pc_f < 0.8 else ("gold" if pc_f > 1.2 else "sub")
             pc_desc = f"市場偏多" if pc_f < 0.8 else ("市場偏空" if pc_f > 1.2 else "中性觀望")
         except: pc_css="gold"; pc_desc=pc_sentiment
     else:
@@ -253,7 +253,7 @@ def _build_render_data(market, futures, stocks, news, ai):
     def idx_css(val):
         try:
             f = float(str(val).replace("%","").replace("+",""))
-            return "dn" if f >= 0 else "up"
+            return "up" if f >= 0 else "dn"
         except: return "sub"
 
     def idx_desc(val, name=""):
