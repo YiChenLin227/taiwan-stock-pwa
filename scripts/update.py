@@ -79,10 +79,10 @@ def main():
     # ── Step 6: Read Sheets history + AI analysis ─────────────────────────────
     log("🤖 Step 6/7: Running AI analysis...")
     history_rows = []
-    if sheet_id and creds_path:
+    if sheet_id and gcp_creds:
         try:
             from write_sheets import get_history
-            history_rows = get_history(sheet_id, creds_path, n=7)
+            history_rows = get_history(gcp_creds, sheet_id, n=7)
             log(f"  History rows loaded: {len(history_rows)}")
         except Exception as e:
             log(f"  ⚠️ History read error: {e}")
@@ -109,7 +109,7 @@ def main():
     log("🎨 Step 7/7: Rendering HTML...")
 
     # Merge all data sources into render dict
-    render_data = _build_render_data(market_data, futures_data, stocks_data, news_data, ai_result)
+    render_data = _build_render_data(market_data, futures_data, stocks_data, news_data, ai_result, candidates_data)
 
     try:
         from render_html import render
@@ -121,10 +121,10 @@ def main():
         sys.exit(1)
 
     # ── Write to Sheets ──────────────────────────────────────────────────────
-    if sheet_id and creds_path:
+    if sheet_id and gcp_creds:
         try:
             from write_sheets import write
-            write(sheet_id, creds_path, market_data, futures_data, stocks_data, news_data, ai_result)
+            write(market_data, futures_data, stocks_data, ai_result, news_data, gcp_creds, sheet_id)
             log("  ✅ Google Sheets updated")
         except Exception as e:
             log(f"  ⚠️ Sheets write error: {e}")
@@ -132,8 +132,9 @@ def main():
     log("🏁 Done! index.html is ready for GitHub Pages deployment.")
 
 
-def _build_render_data(market, futures, stocks, news, ai):
+def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
     """Merge raw fetched data + AI results into the render_html data dict"""
+    candidates_data = candidates_data or []
     from datetime import datetime, timezone, timedelta
     TW = timezone(timedelta(hours=8))
     now_tw = datetime.now(TW)
@@ -152,8 +153,8 @@ def _build_render_data(market, futures, stocks, news, ai):
         """Convert to float safely; returns default for warning strings or None."""
         if val is None:
             return default
-        s = str(val).replace("%","").replace("+","").replace(",","").replace("\u5104","").strip()
-        if not s or "\u26a0" in s.encode('ascii','ignore').decode() or "\u7121\u6cd5" in s:
+        s = str(val).replace("%","").replace("+","").replace(",","").replace("億","").strip()
+        if not s or "⚠" in s.encode('ascii','ignore').decode() or "無法" in s:
             return default
         # Check for Chinese warning text
         try:
@@ -345,7 +346,7 @@ def _build_render_data(market, futures, stocks, news, ai):
             raw = stocks.get(f"stock_{code}", {})
         # Try candidates pool for additional data
         cand_data = {}
-        for c in candidates_data if 'candidates_data' in dir() else []:
+        for c in candidates_data:
             if c.get("code")==code: cand_data=c; break
         close = raw.get("close","") or cand_data.get("close","")
         change_pct = raw.get("change_pct","") or cand_data.get("change_pct","")
