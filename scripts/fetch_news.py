@@ -97,12 +97,36 @@ def fetch_fred_events(api_key: str, days_ahead=14) -> list:
         return [{"title": NA, "date": "", "source": source}]
 
 
+def _load_cowork_override():
+    """讀取 Cowork 排程寫入的新聞/總經資料（data/news_latest.json），12 小時內有效才採用。"""
+    try:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "news_latest.json")
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if data.get("status") != "ok":
+            return None
+        written_at = datetime.strptime(data["written_at"], "%Y-%m-%dT%H:%M:%SZ")
+        age_hours = (datetime.utcnow() - written_at).total_seconds() / 3600
+        if age_hours > 12:
+            return None
+        return data
+    except Exception:
+        return None
+
+
 def fetch_all(fred_api_key: str = "") -> dict:
     print("[fetch_news] 開始抓取新聞及行事曆...")
 
-    yahoo_news    = fetch_yahoo_tw_news(limit=5)
-    digitimes_news = fetch_digitimes_news(limit=3)
-    fred_events   = fetch_fred_events(fred_api_key or os.environ.get("FRED_API_KEY", ""))
+    override = _load_cowork_override()
+    if override:
+        print(f"[fetch_news] 使用 Cowork 提供的資料（written_at={override.get('written_at')}）")
+        yahoo_news     = override.get("yahoo_tw_news") or fetch_yahoo_tw_news(limit=5)
+        digitimes_news = override.get("industry_news") or fetch_digitimes_news(limit=3)
+        fred_events    = override.get("macro_events") or fetch_fred_events(fred_api_key or os.environ.get("FRED_API_KEY", ""))
+    else:
+        yahoo_news     = fetch_yahoo_tw_news(limit=5)
+        digitimes_news = fetch_digitimes_news(limit=3)
+        fred_events    = fetch_fred_events(fred_api_key or os.environ.get("FRED_API_KEY", ""))
 
     result = {
         "yahoo_tw_news": yahoo_news,
