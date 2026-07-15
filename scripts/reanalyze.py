@@ -16,6 +16,7 @@ import fetch_news
 import analyze
 import write_sheets
 import render_html
+from update import _build_render_data
 
 
 def main():
@@ -92,7 +93,8 @@ def main():
 
     # 重新渲染 HTML
     print("【5】重新渲染 index.html...")
-    render_html.render(market, futures, stocks, ai_result, news)
+    render_data = _build_render_data(market, futures, stocks, news, ai_result)
+    render_html.render(render_data, output_path="../index.html")
 
     print(f"\n✅ 重新分析完成（第 {ai_result['reanalysis_count']} 次）")
 
