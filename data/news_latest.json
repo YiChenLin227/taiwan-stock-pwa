@@ -1,61 +1,66 @@
 {
-  "written_at": "2026-07-15T03:44:43Z",
+  "written_at": "2026-07-15T10:23:47Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台股開盤漲112.74點，加權指數重返44850點",
-      "url": "https://money.udn.com/money/story/5607/9628364",
-      "date": "07-15 09:00",
-      "source": "經濟日報"
+      "title": "台股反彈收復45K！收盤大漲893點 聯電明出關飆漲停",
+      "url": "https://www.chinatimes.com/realtimenews/20260715002682-260410",
+      "date": "07-15 13:40",
+      "source": "中時新聞網"
     },
     {
-      "title": "台積電法說前回神！記憶體強彈助陣 台股開高一度勁揚550點挑戰5日線",
-      "url": "https://udn.com/news/story/7251/9628372",
-      "date": "07-15 09:20",
-      "source": "聯合新聞網"
+      "title": "台積電漲15元至2435 台股漲544點重回45K",
+      "url": "https://finance.ettoday.net/news/3201273",
+      "date": "07-15 10:30",
+      "source": "ETtoday財經雲"
     },
     {
-      "title": "美通膨降溫激勵美股收紅，亞洲股市15日全面狂飆，科技與AI類股領軍強彈",
-      "url": "https://n.yam.com/Article/20260715511201",
-      "date": "07-15 08:00",
-      "source": "蕃新聞"
-    },
-    {
-      "title": "半個月連爆三起！國巨再傳2,651萬元鉅額違約交割 累計金額破億元",
-      "url": "https://money.udn.com/money/story/5607/9627572",
-      "date": "07-14 18:00",
-      "source": "經濟日報"
-    },
-    {
-      "title": "券商晨訊台股投資建議摘要(1) 2026年7月14日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%88%B8%E5%95%86%E6%99%A8%E8%A8%8A%E5%8F%B0%E8%82%A1%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E6%91%98%E8%A6%81-1-2026%E5%B9%B47%E6%9C%8814%E6%97%A5-005640740.html",
-      "date": "07-14 00:56",
+      "title": "力積電7月DRAM投片價調漲45% 股價強攻漲停",
+      "url": "https://tw.stock.yahoo.com/tw-market/",
+      "date": "07-15 09:30",
       "source": "Yahoo奇摩股市"
+    },
+    {
+      "title": "台積電敲定7/16法說 法人看好重新點燃台股行情",
+      "url": "https://www.cna.com.tw/news/afe/202607010017.aspx",
+      "date": "07-14 18:00",
+      "source": "中央社 CNA"
+    },
+    {
+      "title": "台積電法說7/16登場 聚焦資本支出先進製程及美廠進度",
+      "url": "https://www.cna.com.tw/news/afe/202607120030.aspx",
+      "date": "07-12 09:00",
+      "source": "中央社 CNA"
     }
   ],
   "industry_news": [
     {
-      "title": "AI強拉貨引爆記憶體缺貨潮 3Q26恐飆漲50%",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000759588_KCA42N2E9XI5AB7IYRJ64",
-      "date": "07-14 07:00",
+      "title": "AI推升高階ABF載板需求 台系三大載板業者啟動新一輪台灣投資",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp",
+      "date": "07-15 08:00",
       "source": "DigiTimes"
     },
     {
-      "title": "通用伺服器需求優於預期 缺料衝擊拉貨估3Q26回歸正軌",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000758658_N3I5ZL5X6605B472IXE3Z",
-      "date": "07-14 07:00",
+      "title": "記憶體Q3合約價陸續談定 AI帶動企業級SSD需求暴增",
+      "url": "https://www.digitimes.com.tw/tech/",
+      "date": "07-14 09:00",
       "source": "DigiTimes"
     },
     {
-      "title": "AI供應鏈帶旺投資出口 台灣下半年經濟動能續強",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000759616_9LD53BCH2SBGZ358EG1PF",
-      "date": "07-14 07:00",
-      "source": "DigiTimes"
+      "title": "台積電法說會倒數 外資齊喊買、目標價最高衝上3800元",
+      "url": "https://technews.tw/2026/07/14/foreign-investors-see-tsmc-2026-q2-and-capex/",
+      "date": "07-14 07:30",
+      "source": "TechNews 科技新報"
     }
   ],
   "macro_events": [
     {
-      "title": "6月零售銷售 Retail Sales (Advance Monthly Sales)",
+      "title": "PPI 生產者物價指數",
+      "date": "2026-07-15",
+      "source": "https://www.bls.gov/schedule/news_release/current_year.asp"
+    },
+    {
+      "title": "6月零售銷售 Retail Sales",
       "date": "2026-07-16",
       "source": "https://www.census.gov/retail/release_schedule.html"
     },
@@ -70,19 +75,14 @@
       "source": "https://fred.stlouisfed.org/series/ICSA"
     },
     {
-      "title": "FOMC 利率決策會議 (第一天) FOMC Meeting Day 1",
+      "title": "FOMC 利率決策會議（第一天）",
       "date": "2026-07-28",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "title": "FOMC 利率決議公布 + 鮑爾記者會 FOMC Rate Decision & Press Conference",
+      "title": "FOMC 利率決議公布 + Fed主席記者會",
       "date": "2026-07-29",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
-    {
-      "title": "美國2026年第2季GDP初值 GDP Advance Estimate Q2 2026",
-      "date": "2026-07-30",
-      "source": "https://www.bea.gov/news/schedule"
     }
   ]
 }
