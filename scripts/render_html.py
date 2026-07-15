@@ -655,8 +655,8 @@ def render(data: dict, output_path: str = "./index.html"):
     </div>
     <div class="stat">
       <div class="k">台指期夜盤</div>
-      <div class="v">{night_fut}</div>
-      <div class="d sub">⚠️ 請以即時盤確認</div>
+      <div class="v {d.get("night_futures_css","sub")}">{night_fut}</div>
+      <div class="d {d.get("night_futures_css","sub")}">{d.get("night_futures_change","")}</div><div class="d sub">{d.get("night_futures_note","⚠️ 請以即時盤確認")}</div>
       <div class="d sub" style="margin-top:4px"><a href="https://www.taifex.com.tw/cht/5/afterHoursFutures" target="_blank" style="color:var(--acc);font-size:10px">📎 期交所查詢</a></div>
     </div>
     <div class="stat">
