@@ -1,6 +1,7 @@
 {
-  "status": "ok",
-  "attempt": 2,
-  "top_stocks_count": 5,
-  "ts": "2026-07-15 09:33:53 UTC"
+  "status": "json_error",
+  "attempt": 3,
+  "error": "JSON 解析失敗（第3次）: Cannot extract valid JSON from response",
+  "raw_preview": "```json\n{\n  \"market_direction\": \"中性偏多\",\n  \"biggest_risk\": \"夜盤台指期大跌507點顯示期貨市場與現貨脫節，法人態度分歧恐引發開盤跳空風險，記憶體族群過熱後的獲利了結賣壓亦需留意。\",\n  \"open_range_low\": \"45100\",\n  \"open_range_high\": \"45450\",\n  \"key_support\": \"44481\",\n  \"key_resistance\": \"46053\",\n  \"taiex_ai\": \"加權指數收在45632點，站上MA60（43164）但仍在MA20（46053）下方，RSI 40.",
+  "ts": "2026-07-15 10:20:43 UTC"
 }
