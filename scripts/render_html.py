@@ -441,7 +441,7 @@ def render(data: dict, output_path: str = "./index.html"):
     fred_rows = ""
     for ev in d.get("fred_events", []):
         ev_date = ev.get("date","—")
-        ev_name = ev.get("name","—")
+        ev_name = ev.get("title", ev.get("name","—"))
         ev_imp = ev.get("importance","medium")
         imp_color = "#ef4444" if ev_imp=="high" else ("#f5b942" if ev_imp=="medium" else "#9fb0c0")
         fred_rows += f'<tr><td><strong>{ev_date}</strong></td><td>{ev_name}</td><td style="color:{imp_color};font-weight:700">{"★★★" if ev_imp=="high" else "★★☆"}</td></tr>'
