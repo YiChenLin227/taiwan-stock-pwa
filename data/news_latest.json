@@ -1,88 +1,78 @@
 {
-  "written_at": "2026-07-15T10:23:47Z",
+  "written_at": "2026-07-15T21:35:28Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台股反彈收復45K！收盤大漲893點 聯電明出關飆漲停",
-      "url": "https://www.chinatimes.com/realtimenews/20260715002682-260410",
-      "date": "07-15 13:40",
-      "source": "中時新聞網"
+      "title": "台積電敲定7/16法說 法人看好重新點燃台股行情",
+      "url": "https://money.udn.com/money/story/11162/9599192",
+      "date": "07-16 06:00",
+      "source": "經濟日報"
     },
     {
-      "title": "台積電漲15元至2435 台股漲544點重回45K",
-      "url": "https://finance.ettoday.net/news/3201273",
-      "date": "07-15 10:30",
-      "source": "ETtoday財經雲"
-    },
-    {
-      "title": "力積電7月DRAM投片價調漲45% 股價強攻漲停",
-      "url": "https://tw.stock.yahoo.com/tw-market/",
-      "date": "07-15 09:30",
+      "title": "大摩推演三情境 看好台積電法說後股價上漲5%",
+      "url": "https://tw.stock.yahoo.com/tw-market",
+      "date": "07-16 07:00",
       "source": "Yahoo奇摩股市"
     },
     {
-      "title": "台積電敲定7/16法說 法人看好重新點燃台股行情",
-      "url": "https://www.cna.com.tw/news/afe/202607010017.aspx",
-      "date": "07-14 18:00",
-      "source": "中央社 CNA"
+      "title": "威世波今登錄興櫃 搶攻AI資料中心光引擎光源商機",
+      "url": "https://www.cnyes.com/twstock",
+      "date": "07-16 08:00",
+      "source": "鉅亨網"
     },
     {
-      "title": "台積電法說7/16登場 聚焦資本支出先進製程及美廠進度",
-      "url": "https://www.cna.com.tw/news/afe/202607120030.aspx",
-      "date": "07-12 09:00",
-      "source": "中央社 CNA"
+      "title": "台股續強 終場上漲893點收45631點 台積電漲20元作收",
+      "url": "https://m.cnyes.com/news/cat/tw_stock_news",
+      "date": "07-15 13:30",
+      "source": "鉅亨網"
+    },
+    {
+      "title": "2026下半年開局震盪 台美股投資人須留意8大總經事件",
+      "url": "https://www.sinotrade.com.tw/richclub/hotstock/2026-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E9%96%8B%E5%B1%80%E9%9C%87%E7%9B%AA-%E5%8F%B0%E7%BE%8E%E8%82%A1%E6%8A%95%E8%B3%87%E4%BA%BA-6-%E5%88%B0-7-%E6%9C%88%E5%BF%85%E7%9C%8B%E7%9A%84-8-%E5%A4%A7%E7%B8%BD%E7%B6%93%E4%BA%8B%E4%BB%B6-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a2a2c51ab26abbf4c8173d2",
+      "date": "07-16 06:30",
+      "source": "豐雲學堂"
     }
   ],
   "industry_news": [
     {
-      "title": "AI推升高階ABF載板需求 台系三大載板業者啟動新一輪台灣投資",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp",
-      "date": "07-15 08:00",
+      "title": "中國DRAM大廠長鑫科技7/16登科創板申購 募資約295億人民幣",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761426_84K3D52T3MOYYY5KWRXR7",
+      "date": "07-16 07:30",
       "source": "DigiTimes"
     },
     {
-      "title": "記憶體Q3合約價陸續談定 AI帶動企業級SSD需求暴增",
+      "title": "AI伺服器MLCC等零組件需求擴大 太陽誘電、京瓷接單稼動率齊揚",
       "url": "https://www.digitimes.com.tw/tech/",
-      "date": "07-14 09:00",
+      "date": "07-16 08:00",
       "source": "DigiTimes"
     },
     {
-      "title": "台積電法說會倒數 外資齊喊買、目標價最高衝上3800元",
-      "url": "https://technews.tw/2026/07/14/foreign-investors-see-tsmc-2026-q2-and-capex/",
-      "date": "07-14 07:30",
-      "source": "TechNews 科技新報"
+      "title": "Rambus推出DDR5 9600伺服器RDIMM晶片組 瞄準次世代資料中心平台",
+      "url": "https://www.digitimes.com.tw/tech/dt/most.asp?pack=74040&cnlid=1&cat=10&wpidx=6",
+      "date": "07-16 09:00",
+      "source": "DigiTimes"
     }
   ],
   "macro_events": [
     {
-      "title": "PPI 生產者物價指數",
-      "date": "2026-07-15",
-      "source": "https://www.bls.gov/schedule/news_release/current_year.asp"
-    },
-    {
-      "title": "6月零售銷售 Retail Sales",
-      "date": "2026-07-16",
-      "source": "https://www.census.gov/retail/release_schedule.html"
-    },
-    {
-      "title": "每週初次申請失業救濟金人數 Initial Jobless Claims",
-      "date": "2026-07-16",
-      "source": "https://fred.stlouisfed.org/series/ICSA"
-    },
-    {
-      "title": "每週初次申請失業救濟金人數 Initial Jobless Claims",
-      "date": "2026-07-23",
-      "source": "https://fred.stlouisfed.org/series/ICSA"
-    },
-    {
-      "title": "FOMC 利率決策會議（第一天）",
+      "title": "FOMC 聯邦公開市場委員會會議（第一日）",
       "date": "2026-07-28",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "title": "FOMC 利率決議公布 + Fed主席記者會",
+      "title": "FOMC 利率決議公布",
       "date": "2026-07-29",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "title": "美國GDP 第二季初值（Advance Estimate）",
+      "date": "2026-07-30",
+      "source": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "title": "PCE 個人消費支出物價指數",
+      "date": "2026-07-30",
+      "source": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
     }
   ]
 }
