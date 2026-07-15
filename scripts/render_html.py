@@ -1,3 +1,4 @@
+# test-marker
 #!/usr/bin/env python3
 """render_html.py — Render dynamic index.html from data dict"""
 
