@@ -1,76 +1,71 @@
 {
-  "written_at": "2026-07-15T21:35:28Z",
+  "written_at": "2026-07-16T09:04:37Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台積電敲定7/16法說 法人看好重新點燃台股行情",
-      "url": "https://money.udn.com/money/story/11162/9599192",
-      "date": "07-16 06:00",
-      "source": "經濟日報"
-    },
-    {
-      "title": "大摩推演三情境 看好台積電法說後股價上漲5%",
-      "url": "https://tw.stock.yahoo.com/tw-market",
-      "date": "07-16 07:00",
+      "title": "台積電法說會7/16登場 聚焦全年成長目標和資本支出",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%837-16%E7%99%BB%E5%A0%B4-%E8%81%9A%E7%84%A6%E5%85%A8%E5%B9%B4%E6%88%90%E9%95%B7%E7%9B%AE%E6%A8%99%E5%92%8C%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA-040859542.html",
+      "date": "07-16 04:08",
       "source": "Yahoo奇摩股市"
     },
     {
-      "title": "威世波今登錄興櫃 搶攻AI資料中心光引擎光源商機",
-      "url": "https://www.cnyes.com/twstock",
+      "title": "台股有驚無險！台積電、鴻海挑大梁 指數震盪885點收跌6點",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5506894",
+      "date": "07-16 13:30",
+      "source": "自由財經"
+    },
+    {
+      "title": "台積電法說會激勵股價收高30元 台股大盤拉長下影線跌6點、收45,624點",
+      "url": "https://udn.com/news/story/7251/9631696",
+      "date": "07-16 14:00",
+      "source": "聯合新聞網"
+    },
+    {
+      "title": "7月16日盤前／美 PPI 降溫超乎預期 惟美光、海力士下跌 指數高檔震盪",
+      "url": "https://money.udn.com/money/story/5607/9630808",
       "date": "07-16 08:00",
-      "source": "鉅亨網"
+      "source": "經濟日報"
     },
     {
-      "title": "台股續強 終場上漲893點收45631點 台積電漲20元作收",
-      "url": "https://m.cnyes.com/news/cat/tw_stock_news",
-      "date": "07-15 13:30",
+      "title": "營收速報－2026年7月16日台股大型公司6月營收一覽（新增10家）",
+      "url": "https://news.cnyes.com/news/id/6536300",
+      "date": "07-16 07:00",
       "source": "鉅亨網"
-    },
-    {
-      "title": "2026下半年開局震盪 台美股投資人須留意8大總經事件",
-      "url": "https://www.sinotrade.com.tw/richclub/hotstock/2026-%E4%B8%8B%E5%8D%8A%E5%B9%B4%E9%96%8B%E5%B1%80%E9%9C%87%E7%9B%AA-%E5%8F%B0%E7%BE%8E%E8%82%A1%E6%8A%95%E8%B3%87%E4%BA%BA-6-%E5%88%B0-7-%E6%9C%88%E5%BF%85%E7%9C%8B%E7%9A%84-8-%E5%A4%A7%E7%B8%BD%E7%B6%93%E4%BA%8B%E4%BB%B6-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a2a2c51ab26abbf4c8173d2",
-      "date": "07-16 06:30",
-      "source": "豐雲學堂"
     }
   ],
   "industry_news": [
     {
-      "title": "中國DRAM大廠長鑫科技7/16登科創板申購 募資約295億人民幣",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761426_84K3D52T3MOYYY5KWRXR7",
-      "date": "07-16 07:30",
-      "source": "DigiTimes"
+      "title": "台灣偵辦疑涉AI伺服器非法出口案 出口管制與供應鏈管理受關注",
+      "url": "https://news.pchome.com.tw/science/sunmedia/20260702/index-78297614097842329005.html",
+      "date": "07-02 09:00",
+      "source": "PChome新聞"
     },
     {
-      "title": "AI伺服器MLCC等零組件需求擴大 太陽誘電、京瓷接單稼動率齊揚",
-      "url": "https://www.digitimes.com.tw/tech/",
-      "date": "07-16 08:00",
-      "source": "DigiTimes"
+      "title": "2026全球AI伺服器市場展望與供應鏈關鍵趨勢",
+      "url": "https://www.trendforce.com.tw/research/download/RP260130XE",
+      "date": "07-15 10:00",
+      "source": "TrendForce"
     },
     {
-      "title": "Rambus推出DDR5 9600伺服器RDIMM晶片組 瞄準次世代資料中心平台",
-      "url": "https://www.digitimes.com.tw/tech/dt/most.asp?pack=74040&cnlid=1&cat=10&wpidx=6",
-      "date": "07-16 09:00",
-      "source": "DigiTimes"
+      "title": "CoWoS產能擴增，台積電2026年底月產能預估突破7.5萬片、年增逾100%",
+      "url": "https://www.esunsec.com.tw/article/post/478",
+      "date": "07-14 09:00",
+      "source": "元大投顧"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC 聯邦公開市場委員會會議（第一日）",
-      "date": "2026-07-28",
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
-    {
-      "title": "FOMC 利率決議公布",
+      "title": "FOMC 聯準會利率決議聲明暨記者會",
       "date": "2026-07-29",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "title": "美國GDP 第二季初值（Advance Estimate）",
+      "title": "GDP 國內生產毛額（第二季初值）",
       "date": "2026-07-30",
       "source": "https://www.bea.gov/news/schedule"
     },
     {
-      "title": "PCE 個人消費支出物價指數",
+      "title": "PCE 個人消費支出物價指數（含核心PCE）",
       "date": "2026-07-30",
       "source": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
     }
