@@ -238,6 +238,25 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
     for i, s in enumerate(foreign_top30[:3]):
         top3.append({"rank": medals[i], "name": f"{s.get('name','')} {s.get('code','')}", "css": "up"})
 
+    # 個股外資買超排名對照表（來自 market.foreign_top30，供固定股/精選股頁面查詢個股外資狀態）
+    foreign_rank_map = {}
+    for idx, s in enumerate(foreign_top30):
+        _code = str(s.get("code", "")).strip()
+        if _code:
+            foreign_rank_map[_code] = (idx + 1, s.get("net_shares", 0))
+
+    def get_foreign_info(code):
+        """依股票代號查詢外資買超排名；查不到代表當日未進外資買超前30名（非資料抓取失敗）"""
+        info = foreign_rank_map.get(str(code))
+        if info:
+            rank, net_shares = info
+            try:
+                lots = f"{int(net_shares) // 1000:,}張"
+            except (TypeError, ValueError):
+                lots = str(net_shares)
+            return f"買超第{rank}名", f"外資買超 {lots}", "up"
+        return "未進前30", "非外資買超前30名個股", "dn"
+
     # ── PC Ratio ─────────────────────────────────────────────────────────────
     pc_ratio = futures.get("pc_ratio")
     pc_sentiment = futures.get("pc_sentiment","中性")
@@ -288,6 +307,7 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
         except: rsi_css = "gold"
         rsi_desc = "短線超買" if str(rsi_css)=="up" else ("超賣反彈" if str(rsi_css)=="dn" else "正常區間")
         news_list = raw_stock.get("news", [])
+        f_rank, f_desc, f_css = get_foreign_info(code)
         return {
             "name": raw_stock.get("name",""),
             "desc": raw_stock.get("desc",""),
@@ -298,9 +318,9 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
             "adr_css": adr_css if code=="2330" else "sub",
             "trend_text": ai_stock.get("direction","偏多"),
             "trend_css": "dn" if "多" in ai_stock.get("direction","") else ("up" if "空" in ai_stock.get("direction","") else "gold"),
-            "foreign_rank": raw_stock.get("foreign_rank","—"),
-            "foreign_css": "dn" if "買" in str(raw_stock.get("foreign_rank","")) else "up",
-            "foreign_desc": raw_stock.get("foreign_desc",""),
+            "foreign_rank": f_rank,
+            "foreign_css": f_css,
+            "foreign_desc": f_desc,
             "rsi": rsi, "rsi_css": rsi_css, "rsi_desc": rsi_desc,
             "direction": ai_stock.get("direction","觀望"),
             "direction_css": "dn" if "多" in ai_stock.get("direction","") else ("up" if "空" in ai_stock.get("direction","") else "gold"),
@@ -353,6 +373,9 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
         rsi = raw.get("rsi","") or cand_data.get("rsi","")
         try: rsi_f=float(str(rsi)); rsi_css="up" if rsi_f>70 else ("dn" if rsi_f<30 else "gold")
         except: rsi_css="gold"
+        f_rank, f_desc, f_css = get_foreign_info(code)
+        if f_rank == "未進前30" and cand_data.get("selection_reason"):
+            f_desc = cand_data.get("selection_reason", f_desc)
         top_stocks.append({
             "code": code, "name": s.get("name",""),
             "desc": s.get("theme",""),
@@ -360,9 +383,9 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
             "change_css": pct_css(change_pct),
             "direction": s.get("direction","偏多"),
             "direction_css": "dn" if "多" in s.get("direction","") else "up",
-            "foreign_rank": cand_data.get("foreign_rank","—"),
-            "foreign_css": "dn",
-            "foreign_desc": cand_data.get("selection_reason",""),
+            "foreign_rank": f_rank,
+            "foreign_css": f_css,
+            "foreign_desc": f_desc,
             "rsi": rsi, "rsi_css": rsi_css,
             "rsi_desc": "超買" if rsi_css=="up" else ("超賣" if rsi_css=="dn" else "正常"),
             "theme": s.get("theme",""), "theme_desc": s.get("ai_insight","")[:20] if s.get("ai_insight") else "",
