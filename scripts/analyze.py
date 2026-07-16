@@ -107,6 +107,8 @@ VIX恐慌指數：{stocks.get('vix_close',NA)}
 
 === 請以以下 JSON 格式回覆，不要有任何額外文字 ===
 
+（配色規則：所有 *_css 欄位只能是 "up"（紅色＝強勢／看多）、"dn"（綠色＝偏弱／看空）、"gold"（中性偏多偏空皆可）、"sub"（無明顯方向）四選一，這是台股慣例（紅漲綠跌），不可用國際慣例（紅跌綠漲）。對應的 *_bg 必須同色系：up 配 rgba(239,68,68,X)，dn 配 rgba(16,185,129,X)，gold 配 rgba(245,185,66,X)，sub 配 rgba(255,255,255,X)。）
+
 {{
   "market_direction": "中性偏多 / 中性偏空 / 強勢多頭 / 強勢空頭 / 盤整 中選一",
   "biggest_risk": "今日最大風險（1~2句）",
@@ -192,20 +194,20 @@ VIX恐慌指數：{stocks.get('vix_close',NA)}
       "desc": "當日趨勢動態預估（50~80字）",
       "week_outlook": "一週展望（5字內）",
       "week_css": "gold",
-      "week_bg": "rgba(239,68,68,0.08)",
+      "week_bg": "rgba(245,185,66,0.08)",
       "month_outlook": "一個月展望（5字內）",
-      "month_css": "dn",
-      "month_bg": "rgba(16,185,129,0.08)",
+      "month_css": "up",
+      "month_bg": "rgba(239,68,68,0.08)",
       "key_event": "關鍵事件（10字內）",
       "highlight": false
     }},
-    {{ "num": "②", "name": "IC 設計", "reps": "聯發科(2454)・瑞昱(2379)・聯詠(3034)", "trend": "", "trend_css": "dn", "trend_bg": "rgba(16,185,129,0.12)", "desc": "", "week_outlook": "", "week_css": "dn", "week_bg": "rgba(16,185,129,0.08)", "month_outlook": "", "month_css": "dn", "month_bg": "rgba(16,185,129,0.08)", "key_event": "", "highlight": false }},
-    {{ "num": "③", "name": "AI 伺服器 / ODM", "reps": "廣達(2382)・緯創(3231)・鴻海(2317)", "trend": "", "trend_css": "dn", "trend_bg": "rgba(16,185,129,0.15)", "desc": "", "week_outlook": "", "week_css": "dn", "week_bg": "rgba(16,185,129,0.12)", "month_outlook": "", "month_css": "dn", "month_bg": "rgba(16,185,129,0.12)", "key_event": "", "highlight": false }},
-    {{ "num": "④", "name": "先進封裝", "reps": "日月光投控(3711)・京元電(2449)・矽格(6257)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "gold", "week_bg": "rgba(245,185,66,0.08)", "month_outlook": "", "month_css": "dn", "month_bg": "rgba(16,185,129,0.08)", "key_event": "", "highlight": false }},
-    {{ "num": "⑤", "name": "被動元件", "reps": "國巨(2327)・華新科(2492)・禾伸堂(3026)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "dn", "week_bg": "rgba(16,185,129,0.08)", "month_outlook": "", "month_css": "dn", "month_bg": "rgba(16,185,129,0.08)", "key_event": "", "highlight": false }},
-    {{ "num": "⑥", "name": "電源 / 散熱", "reps": "台達電(2308)・奇鋐(3017)・建準(2421)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "gold", "week_bg": "rgba(245,185,66,0.08)", "month_outlook": "", "month_css": "dn", "month_bg": "rgba(16,185,129,0.08)", "key_event": "", "highlight": false }},
+    {{ "num": "②", "name": "IC 設計", "reps": "聯發科(2454)・瑞昱(2379)・聯詠(3034)", "trend": "", "trend_css": "up", "trend_bg": "rgba(239,68,68,0.12)", "desc": "", "week_outlook": "", "week_css": "up", "week_bg": "rgba(239,68,68,0.08)", "month_outlook": "", "month_css": "up", "month_bg": "rgba(239,68,68,0.08)", "key_event": "", "highlight": false }},
+    {{ "num": "③", "name": "AI 伺服器 / ODM", "reps": "廣達(2382)・緯創(3231)・鴻海(2317)", "trend": "", "trend_css": "up", "trend_bg": "rgba(239,68,68,0.15)", "desc": "", "week_outlook": "", "week_css": "up", "week_bg": "rgba(239,68,68,0.12)", "month_outlook": "", "month_css": "up", "month_bg": "rgba(239,68,68,0.12)", "key_event": "", "highlight": false }},
+    {{ "num": "④", "name": "先進封裝", "reps": "日月光投控(3711)・京元電(2449)・矽格(6257)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "gold", "week_bg": "rgba(245,185,66,0.08)", "month_outlook": "", "month_css": "up", "month_bg": "rgba(239,68,68,0.08)", "key_event": "", "highlight": false }},
+    {{ "num": "⑤", "name": "被動元件", "reps": "國巨(2327)・華新科(2492)・禾伸堂(3026)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "up", "week_bg": "rgba(239,68,68,0.08)", "month_outlook": "", "month_css": "up", "month_bg": "rgba(239,68,68,0.08)", "key_event": "", "highlight": false }},
+    {{ "num": "⑥", "name": "電源 / 散熱", "reps": "台達電(2308)・奇鋐(3017)・建準(2421)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "gold", "week_bg": "rgba(245,185,66,0.08)", "month_outlook": "", "month_css": "up", "month_bg": "rgba(239,68,68,0.08)", "key_event": "", "highlight": false }},
     {{ "num": "⑦", "name": "記憶體", "reps": "南亞科(2408)・群聯(8299)・威剛(3260)", "trend": "", "trend_css": "sub", "trend_bg": "rgba(255,255,255,0.05)", "desc": "", "week_outlook": "", "week_css": "sub", "week_bg": "rgba(255,255,255,0.04)", "month_outlook": "", "month_css": "gold", "month_bg": "rgba(245,185,66,0.06)", "key_event": "", "highlight": false }},
-    {{ "num": "⑧", "name": "網通 / 光連接器", "reps": "台光電(2383)・正崴(2392)・上詮(3363)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "dn", "week_bg": "rgba(16,185,129,0.08)", "month_outlook": "", "month_css": "dn", "month_bg": "rgba(16,185,129,0.08)", "key_event": "", "highlight": false }}
+    {{ "num": "⑧", "name": "網通 / 光連接器", "reps": "台光電(2383)・正崴(2392)・上詮(3363)", "trend": "", "trend_css": "gold", "trend_bg": "rgba(245,185,66,0.12)", "desc": "", "week_outlook": "", "week_css": "up", "week_bg": "rgba(239,68,68,0.08)", "month_outlook": "", "month_css": "up", "month_bg": "rgba(239,68,68,0.08)", "key_event": "", "highlight": false }}
   ],
 
   "earnings_calendar": [
