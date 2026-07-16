@@ -1,11 +1,17 @@
 {
-  "written_at": "2026-07-16T09:46:48Z",
+  "written_at": "2026-07-16T21:38:05Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台積電法說會激勵股價收高30元 台股大盤拉長下影線跌6點、收45,624點",
-      "url": "https://udn.com/news/story/7251/9631696",
-      "date": "07-16 14:00",
+      "title": "快訊／台股收盤上漲68.2點 台積電跌15元至2385",
+      "url": "https://finance.ettoday.net/news/3185126",
+      "date": "07-17 13:35",
+      "source": "ETtoday財經雲"
+    },
+    {
+      "title": "台股開低走高 收盤上漲68點、台積電收跌15元",
+      "url": "https://udn.com/news/story/7251/9572020",
+      "date": "07-17 13:40",
       "source": "聯合新聞網"
     },
     {
@@ -15,25 +21,25 @@
       "source": "聯合新聞網"
     },
     {
+      "title": "台積電法說會激勵股價收高30元 台股大盤拉長下影線跌6點、收45,624點",
+      "url": "https://udn.com/news/story/7251/9631696",
+      "date": "07-16 14:00",
+      "source": "聯合新聞網"
+    },
+    {
       "title": "美股3大指數上揚費半下挫 台股聚焦台積電法說會",
       "url": "https://www.cna.com.tw/news/afe/202607160026.aspx",
       "date": "07-16 07:00",
       "source": "中央社"
-    },
-    {
-      "title": "台積電法說會7/16登場 聚焦全年成長目標和資本支出",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%837-16%E7%99%BB%E5%A0%B4-%E8%81%9A%E7%84%A6%E5%85%A8%E5%B9%B4%E6%88%90%E9%95%B7%E7%9B%AE%E6%A8%99%E5%92%8C%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA-040859542.html",
-      "date": "07-16 04:08",
-      "source": "Yahoo奇摩股市"
-    },
-    {
-      "title": "台積電7月16日後股價要噴了？外媒：新一波行情將由「這利多」點燃",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5500512",
-      "date": "07-15 09:00",
-      "source": "自由財經"
     }
   ],
   "industry_news": [
+    {
+      "title": "Weekly news roundup: TSMC widens AI chip lead as HBM and CoWoS bottlenecks reshape supply chains",
+      "url": "https://www.digitimes.com/news/a20260713VL204/tsmc-cowos-capacity-hbm-weekly-news-roundup.html",
+      "date": "07-13 09:00",
+      "source": "DIGITIMES"
+    },
     {
       "title": "《新聞聚焦》中國AI需求不減 價差催生伺服器走私熱潮",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761426_84K3D52T3MOYYY5KWRXR7",
@@ -45,12 +51,6 @@
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761660_HA858Y557E5X7DLWTBV7N",
       "date": "07-16 08:30",
       "source": "DigiTimes"
-    },
-    {
-      "title": "AI server supply chain expansion accelerates across Southeast Asia",
-      "url": "https://www.digitimes.com/news/a20260622PD205/ai-server-supply-chain-expansion-asia-capacity.html",
-      "date": "06-22 09:00",
-      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
@@ -60,14 +60,19 @@
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "title": "GDP 國內生產毛額（第二季初值）",
+      "title": "GDP 國內生產毛額（第二季預估值，Advance Estimate）",
       "date": "2026-07-30",
       "source": "https://www.bea.gov/news/schedule"
     },
     {
-      "title": "PCE 個人消費支出物價指數（含核心PCE）",
+      "title": "PCE 個人消費支出物價指數（Personal Income and Outlays，含核心PCE）",
       "date": "2026-07-30",
       "source": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    },
+    {
+      "title": "Employment Cost Index 就業成本指數（第二季）",
+      "date": "2026-07-31",
+      "source": "https://www.bls.gov/schedule/news_release/eci.htm"
     }
   ]
 }
