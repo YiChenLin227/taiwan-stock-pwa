@@ -7,7 +7,7 @@ write_sheets.py
 import gspread
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from google.oauth2.service_account import Credentials
 
 NA = "⚠️ 無法取得資料"
@@ -170,7 +170,8 @@ def build_row(market: dict, futures: dict, stocks: dict,
 
     def g(d, k): return str(d.get(k, NA))
 
-    today = datetime.now().strftime("%Y/%m/%d")
+    TW = timezone(timedelta(hours=8))
+    today = datetime.now(TW).strftime("%Y/%m/%d")
 
     # 趨勢計算
     foreign_streak = calc_streak(history_rows, "外資買賣超億")
@@ -329,8 +330,25 @@ def write(market: dict, futures: dict, stocks: dict,
         history_rows = get_history_rows(sheet, n=25)
 
         row = build_row(market, futures, stocks, ai, news, history_rows)
-        sheet.append_row(row, value_input_option="USER_ENTERED")
-        print(f"[write_sheets] 完成，共 {len(row)} 欄寫入 Sheets")
+        today_str = row[0]  # 日期 欄位（已改用台灣時區計算，避免 UTC 造成的日期偏移）
+
+        # 避免同一天重複執行（手動重跑 / 排程重試）造成同日多筆重複列：
+        # 若「日期」欄已存在今天的資料列，改為覆蓋該列，而非永遠 append 新列
+        all_values = sheet.get_all_values()
+        existing_row_num = None
+        for i, r in enumerate(all_values[1:], start=2):  # 從第2列開始（第1列是 header）
+            if r and len(r) > 0 and r[0] == today_str:
+                existing_row_num = i
+                break
+
+        if existing_row_num:
+            end_col = gspread.utils.rowcol_to_a1(1, len(row)).rstrip("1")
+            sheet.update(f"A{existing_row_num}:{end_col}{existing_row_num}", [row], value_input_option="USER_ENTERED")
+            print(f"[write_sheets] 完成，{today_str} 已有資料列（第 {existing_row_num} 列），已覆蓋更新，共 {len(row)} 欄")
+        else:
+            sheet.append_row(row, value_input_option="USER_ENTERED")
+            print(f"[write_sheets] 完成，新增 {today_str} 資料列，共 {len(row)} 欄寫入 Sheets")
+
         return history_rows
 
     except Exception as e:
