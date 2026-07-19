@@ -1,78 +1,78 @@
 {
-  "written_at": "2026-07-17T01:55:18Z",
+  "written_at": "2026-07-19T21:40:55Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台積電法說會7月17日召開 匯率與關稅等議題將受關注",
-      "url": "https://stock.ltn.com.tw/article/g7ayujv4npxd",
-      "date": "07-17 08:00",
-      "source": "自由財經"
+      "title": "台股週重挫2683點！市值狂縮8.6兆元 它逆勢狂飆30%居冠",
+      "url": "https://tw.stock.yahoo.com/%E5%8F%B0%E8%82%A1%E9%80%B1%E9%87%8D%E6%8C%AB2683%E9%BB%9E-%E5%B8%82%E5%80%BC%E7%8B%82%E7%B8%AE8-6%E5%85%86%E5%85%83-%E5%AE%83%E9%80%86%E5%8B%A2%E7%8B%82%E9%A3%8630-%E5%B1%85%E5%86%A0-202700056.html",
+      "date": "07-20 04:38",
+      "source": "三立新聞網(setn.com)"
     },
     {
-      "title": "台股開低走高 收盤上漲68點、台積電收跌15元",
-      "url": "https://udn.com/news/story/7251/9572020",
-      "date": "07-17 13:40",
-      "source": "聯合新聞網"
+      "title": "台指期彈近千點 台股拚守4萬2",
+      "url": "https://tw.stock.yahoo.com/%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%BD%88%E8%BF%91%E5%8D%83%E9%BB%9E-%E5%8F%B0%E8%82%A1%E6%8B%9A%E5%AE%884%E8%90%AC2-201000531.html",
+      "date": "07-20 04:38",
+      "source": "中時新聞網"
     },
     {
-      "title": "快訊／台股收盤上漲68.2點 台積電跌15元至2385",
-      "url": "https://finance.ettoday.net/news/3185126",
-      "date": "07-17 13:35",
-      "source": "ETtoday財經雲"
+      "title": "無懼暴跌 台積、聯發科股東增逾2萬",
+      "url": "https://tw.stock.yahoo.com/%E7%84%A1%E6%87%BC%E6%9A%B4%E8%B7%8C-%E5%8F%B0%E7%A9%8D-%E8%81%AF%E7%99%BC%E7%A7%91%E8%82%A1%E6%9D%B1%E5%A2%9E%E9%80%BE2%E8%90%AC-201000171.html",
+      "date": "07-20 04:38",
+      "source": "中時新聞網"
     },
     {
-      "title": "三大法人轉賣超431億元！台積電神救援 台股跌點從660點收斂至6點",
-      "url": "https://udn.com/news/story/7251/9631949",
-      "date": "07-16 15:00",
-      "source": "聯合新聞網"
+      "title": "0050遇強敵！它成存股黑馬 定期定額季成長165%",
+      "url": "https://tw.stock.yahoo.com/0050%E9%81%87%E5%BC%B7%E6%95%B5-%E5%AE%83%E6%88%90%E5%AD%98%E8%82%A1%E9%BB%91%E9%A6%AC-%E5%AE%9A%E6%9C%9F%E5%AE%9A%E9%A1%8D%E5%AD%A3%E6%88%90%E9%95%B7165-183500922.html",
+      "date": "07-20 02:38",
+      "source": "三立新聞網(setn.com)"
     },
     {
-      "title": "美股3大指數上揚費半下挫 台股聚焦台積電法說會",
-      "url": "https://www.cna.com.tw/news/afe/202607160026.aspx",
-      "date": "07-16 07:00",
-      "source": "中央社"
+      "title": "含息報酬率破50%！0056配息創新高 7月狂吸金101億稱霸",
+      "url": "https://tw.stock.yahoo.com/%E5%90%AB%E6%81%AF%E5%A0%B1%E9%85%AC%E7%8E%87%E7%A0%B450-0056%E9%85%8D%E6%81%AF%E5%89%B5%E6%96%B0%E9%AB%98-7%E6%9C%88%E7%8B%82%E5%90%B8%E9%87%91101%E5%84%84%E7%A8%B1%E9%9C%B8-153100535.html",
+      "date": "07-19 23:38",
+      "source": "三立新聞網(setn.com)"
     }
   ],
   "industry_news": [
     {
-      "title": "Weekly news roundup: TSMC widens AI chip lead as HBM and CoWoS bottlenecks reshape supply chains",
-      "url": "https://www.digitimes.com/news/a20260713VL204/tsmc-cowos-capacity-hbm-weekly-news-roundup.html",
-      "date": "07-13 09:00",
+      "title": "（獨家）直擊新加坡VSMC 12吋廠 矽中介層、電源晶片扣住AI命脈",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=762221&wpidx=4",
+      "date": "07-20 09:00",
       "source": "DIGITIMES"
     },
     {
-      "title": "《新聞聚焦》中國AI需求不減 價差催生伺服器走私熱潮",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761426_84K3D52T3MOYYY5KWRXR7",
-      "date": "07-16 07:30",
-      "source": "DigiTimes"
+      "title": "伺服器3Q26長短料加劇 記憶體與CPU成重災區",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761973_VOZ8D3808NKAYV2ZVQ2WT&packageid=78280&CnlID=1&cat=10&wpidx=6",
+      "date": "07-20 08:30",
+      "source": "DIGITIMES"
     },
     {
-      "title": "AI引爆儲存需求 HDD供應鏈獲利躍升",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000761660_HA858Y557E5X7DLWTBV7N",
-      "date": "07-16 08:30",
-      "source": "DigiTimes"
+      "title": "利基型剛需拉動SLC NAND漲近10倍 台系記憶體攻續漲商機",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000762253_C081BIFH69XSN5216LF9M&wpidx=3",
+      "date": "07-20 08:00",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC 聯準會利率決議聲明暨記者會",
+      "title": "FOMC 利率決議公布（聯邦公開市場委員會會議，7/28-29召開）",
       "date": "2026-07-29",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "title": "GDP 國內生產毛額（第二季預估值，Advance Estimate）",
+      "title": "GDP 國內生產毛額（第二季初值，Advance Estimate）",
       "date": "2026-07-30",
       "source": "https://www.bea.gov/news/schedule"
     },
     {
       "title": "PCE 個人消費支出物價指數（Personal Income and Outlays，含核心PCE）",
       "date": "2026-07-30",
-      "source": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+      "source": "https://www.bea.gov/news/schedule"
     },
     {
       "title": "Employment Cost Index 就業成本指數（第二季）",
       "date": "2026-07-31",
-      "source": "https://www.bls.gov/schedule/news_release/eci.htm"
+      "source": "https://www.bls.gov/schedule/2026/home.htm"
     }
   ]
 }
