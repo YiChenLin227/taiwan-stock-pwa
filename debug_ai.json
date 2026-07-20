@@ -1,6 +1,7 @@
 {
-  "status": "ok",
-  "attempt": 2,
-  "top_stocks_count": 5,
-  "ts": "2026-07-19 23:32:11 UTC"
+  "status": "json_error",
+  "attempt": 3,
+  "error": "JSON 解析失敗（第3次）: Cannot extract valid JSON from response",
+  "raw_preview": "```json\n{\n  \"market_direction\": \"強勢空頭\",\n  \"biggest_risk\": \"全球股災式重挫（日韓港同步崩跌），台指期夜盤再跌976點，若外資恐慌性提款未止，恐引發二次探底。\",\n  \"open_range_low\": \"41800\",\n  \"open_range_high\": \"42500\",\n  \"key_support\": \"37200\",\n  \"key_resistance\": \"43615\",\n\n  \"taiex_ai\": \"大盤單日重挫6.47%創近期最大跌點，收盤跌破MA20與MA60，RSI39.69顯示弱勢未止跌。夜盤期指再挫976點，",
+  "ts": "2026-07-20 23:35:47 UTC"
 }
