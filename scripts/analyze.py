@@ -304,7 +304,7 @@ def call_claude(prompt: str, api_key: str, max_retries: int = 3) -> dict:
             print(f"  [Claude API] 第 {attempt} 次呼叫...")
             message = client.messages.create(
                 model="claude-sonnet-5",
-                max_tokens=8192,
+                max_tokens=20000,
                 thinking={"type": "disabled"},  # 停用 extended thinking，避免佔用 token 預算
                 messages=[{"role": "user", "content": prompt}]
             )
