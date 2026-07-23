@@ -1,55 +1,55 @@
 {
-  "written_at": "2026-07-22T21:38:19Z",
+  "written_at": "2026-07-23T21:39:00Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "外資終結13連賣、回補173億元 台股連兩日大漲仍未站穩4萬5",
-      "url": "https://newtalk.tw/news/view/2026-07-22/1048766",
-      "date": "07-22",
+      "title": "台積電ADR跌0.8% 較台北交易溢價縮為13.8%",
+      "url": "https://udn.com/news/story/6811/9645356",
+      "date": "07-23",
+      "source": "聯合新聞網"
+    },
+    {
+      "title": "台股開盤》大盤高檔震盪漲百點 反攻能否延續？兩大關卡一次看",
+      "url": "https://newtalk.tw/news/view/2026-07-23/1048857",
+      "date": "07-23",
       "source": "Newtalk新聞"
     },
     {
-      "title": "多頭追價審慎！台積電量縮震盪收黑 聯發科＋國巨成交值近千億成焦點",
-      "url": "https://udn.com/news/story/7251/9644437",
-      "date": "07-22",
-      "source": "聯合新聞網"
+      "title": "昇陽半導體等2檔遭列處置股！23檔注意股出爐 信昌電8度上榜",
+      "url": "https://newtalk.tw/news/view/2026-07-23/1048843",
+      "date": "07-23",
+      "source": "Newtalk新聞"
     },
     {
-      "title": "不敢追價！台股收盤漲592點 台積電開高走低小跌10元",
-      "url": "https://www.chinatimes.com/realtimenews/20260722002712-260410",
-      "date": "07-22",
-      "source": "中時新聞網"
+      "title": "成交值Top 10僅3檔收紅！緯創爆量躍雙榜 資金轉向個股突圍",
+      "url": "https://money.udn.com/money/story/5607/9646788",
+      "date": "07-23",
+      "source": "經濟日報"
     },
     {
-      "title": "華新科6月獲利年增112%、被關禁閉照飆漲停 國巨超車禾伸堂再登王座",
-      "url": "https://udn.com/news/story/7252/9643711",
-      "date": "07-22",
-      "source": "聯合新聞網"
-    },
-    {
-      "title": "國巨、聯電手上有牌怎麼打？專家曝「800元先下車」二哥絕佳買點再進場",
-      "url": "https://www.chinatimes.com/realtimenews/20260722004205-260410",
-      "date": "07-22",
-      "source": "中時新聞網"
+      "title": "《台北股市》盤中焦點股：鴻海、聯亞、凌華、南亞科、嘉基、台塑化",
+      "url": "https://wantrich.chinatimes.com/news/20260723900180-420101",
+      "date": "07-23",
+      "source": "旺得富理財網"
     }
   ],
   "industry_news": [
     {
-      "title": "台灣能源韌性再受考驗 綠電量價壓力傳導半導體供應鏈",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762535_6DW4DK8N4HIPEX49J2XNF",
-      "date": "07-22",
+      "title": "《新聞聚焦》AI伺服器改寫成長曲線 華碩月營收首破千億",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=762842",
+      "date": "07-23",
       "source": "DIGITIMES"
     },
     {
-      "title": "評析：黃仁勳著眼日系巨頭工業數據 Cosmos主導實體AI世界入口",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762585_3VU60HGY77FECT6JG3UVG",
-      "date": "07-22",
+      "title": "《科技聽IC》AI把料都搶走，供應鏈攜手缺料到世界盡頭",
+      "url": "https://gb-www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762780_GRO60EXH9UFLKLLBNA368",
+      "date": "07-23",
       "source": "DIGITIMES"
     },
     {
-      "title": "東協AIDC電力需求多大？電源供應鏈：6~7GW相對合理",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762321_RCX2234A3WXUW80X634VL",
-      "date": "07-22",
+      "title": "AI模型調度夯 OpenRouter傳洽售大型科技公司",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762388_1WX4JA6C7QMSX59ACT201",
+      "date": "07-23",
       "source": "DIGITIMES"
     }
   ],
