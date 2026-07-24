@@ -109,7 +109,7 @@ def main():
     log("🎨 Step 7/7: Rendering HTML...")
 
     # Merge all data sources into render dict
-    render_data = _build_render_data(market_data, futures_data, stocks_data, news_data, ai_result, candidates_data)
+    render_data = _build_render_data(market_data, futures_data, stocks_data, news_data, ai_result, candidates_data, history_rows)
 
     try:
         from render_html import render
@@ -132,9 +132,10 @@ def main():
     log("🏁 Done! index.html is ready for GitHub Pages deployment.")
 
 
-def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
+def _build_render_data(market, futures, stocks, news, ai, candidates_data=None, history_rows=None):
     """Merge raw fetched data + AI results into the render_html data dict"""
     candidates_data = candidates_data or []
+    history_rows = history_rows or []
     from datetime import datetime, timezone, timedelta
     TW = timezone(timedelta(hours=8))
     now_tw = datetime.now(TW)
@@ -317,13 +318,13 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
             "adr_change_pct": adr_pct if code=="2330" else "",
             "adr_css": adr_css if code=="2330" else "sub",
             "trend_text": ai_stock.get("direction","偏多"),
-            "trend_css": "dn" if "多" in ai_stock.get("direction","") else ("up" if "空" in ai_stock.get("direction","") else "gold"),
+            "trend_css": "up" if "多" in ai_stock.get("direction","") else ("dn" if "空" in ai_stock.get("direction","") else "gold"),
             "foreign_rank": f_rank,
             "foreign_css": f_css,
             "foreign_desc": f_desc,
             "rsi": rsi, "rsi_css": rsi_css, "rsi_desc": rsi_desc,
             "direction": ai_stock.get("direction","觀望"),
-            "direction_css": "dn" if "多" in ai_stock.get("direction","") else ("up" if "空" in ai_stock.get("direction","") else "gold"),
+            "direction_css": "up" if "多" in ai_stock.get("direction","") else ("dn" if "空" in ai_stock.get("direction","") else "gold"),
             "buy_range": ai_stock.get("buy_range","—"),
             "stop_loss": ai_stock.get("stop_loss","—"),
             "target": ai_stock.get("target","—"),
@@ -382,7 +383,7 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
             "close": close, "change_pct": change_pct,
             "change_css": pct_css(change_pct),
             "direction": s.get("direction","偏多"),
-            "direction_css": "dn" if "多" in s.get("direction","") else "up",
+            "direction_css": "up" if "多" in s.get("direction","") else "dn",
             "foreign_rank": f_rank,
             "foreign_css": f_css,
             "foreign_desc": f_desc,
@@ -399,9 +400,30 @@ def _build_render_data(market, futures, stocks, news, ai, candidates_data=None):
         })
 
     # ── Chart data from history ───────────────────────────────────────────────
-    # Last 16 trading days (approximate, from Sheets history or fallback)
-    chart_labels = market.get("chart_labels", [trading_date])
-    chart_data   = market.get("chart_data", [taiex_close] if taiex_close else [])
+    # 從 Google Sheets 歷史紀錄（「日期」「加權指數收盤」欄位）組出近期走勢圖，並補上今日即時收盤
+    chart_labels, chart_data = [], []
+    for row in history_rows:
+        d_label = str(row.get("日期", "")).strip()
+        close_val = row.get("加權指數收盤", "")
+        try:
+            close_f = float(str(close_val).replace(",", ""))
+        except (TypeError, ValueError):
+            continue
+        if len(d_label) == 10 and "/" in d_label:
+            d_label = d_label[5:]  # "2026/07/16" → "07/16"
+        chart_labels.append(d_label)
+        chart_data.append(close_f)
+    # 補上今日（尚未寫入 Sheets 的即時收盤）
+    try:
+        today_close_f = float(str(taiex_close).replace(",", ""))
+        if today_close_f and (not chart_labels or chart_labels[-1] != trading_date):
+            chart_labels.append(trading_date)
+            chart_data.append(today_close_f)
+    except (TypeError, ValueError):
+        pass
+    if not chart_labels:
+        chart_labels = [trading_date]
+        chart_data = [taiex_close] if taiex_close else []
 
     # ── Sectors from AI ───────────────────────────────────────────────────────
     sectors = ai.get("sectors", [])
