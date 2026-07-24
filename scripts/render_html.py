@@ -983,10 +983,10 @@ def render(data: dict, output_path: str = "./index.html"):
   <div class="card" style="padding:8px 10px;margin-bottom:6px">
     <div style="font-size:11px;color:var(--sub);line-height:1.6">
       趨勢判斷：
-      <span class="dn" style="background:rgba(16,185,129,0.15);padding:1px 6px;border-radius:4px;font-size:11px">強勢</span>
+      <span class="up" style="background:rgba(239,68,68,0.12);padding:1px 6px;border-radius:4px;font-size:11px">強勢</span>
       <span class="gold" style="background:rgba(245,185,66,0.12);padding:1px 6px;border-radius:4px;font-size:11px;margin-left:4px">偏多</span>
       <span style="color:var(--sub);background:rgba(255,255,255,0.05);padding:1px 6px;border-radius:4px;font-size:11px;margin-left:4px">中性</span>
-      <span class="up" style="background:rgba(239,68,68,0.1);padding:1px 6px;border-radius:4px;font-size:11px;margin-left:4px">偏空</span>
+      <span class="dn" style="background:rgba(16,185,129,0.1);padding:1px 6px;border-radius:4px;font-size:11px;margin-left:4px">偏空</span>
     </div>
   </div>
 
@@ -994,7 +994,7 @@ def render(data: dict, output_path: str = "./index.html"):
 
   <div class="ai">
     <div class="ai-tag">✦ 產業 AI 總結</div>
-    今日最強產業：<strong class="dn">{today_strongest}</strong><br>
+    今日最強產業：<strong class="up">{today_strongest}</strong><br>
     {sector_trend_ai}
   </div>
 
