@@ -953,7 +953,7 @@ def render(data: dict, output_path: str = "./index.html"):
     </div>
     <div style="margin-top:8px;padding:6px 8px;background:rgba(239,68,68,0.07);border-radius:6px;border-left:3px solid #ef4444">
       <div style="font-size:11px;color:#ef4444;font-weight:700">🔔 今日最強產業：{today_strongest} ‧ 最大風險標的：{today_biggest_risk}</div>
-      <div style="font-size:12px;color:var(--text);margin-top:3px">⚠️ 本報告每日 {update_time}（台灣時間）自動更新。所有數字標示來源，「⚠️」欄位請自行以官方來源覆核後再操作。</div>
+      <div style="font-size:12px;color:var(--text);margin-top:3px">⚠️ 本報告每日 {update_time} 自動更新。所有數字標示來源，「⚠️」欄位請自行以官方來源覆核後再操作。</div>
     </div>
   </div>
 
@@ -970,7 +970,7 @@ def render(data: dict, output_path: str = "./index.html"):
 
   <div class="sec-hdr">免責聲明</div>
   <div class="card" style="font-size:12px;color:var(--sub)">
-    本報告為 AI 自動彙整（更新時間：{update_time} 台灣時間），僅供參考，<strong>非投資建議</strong>。
+    本報告為 AI 自動彙整（更新時間：{update_time}），僅供參考，<strong>非投資建議</strong>。
     所有數字均標示來源，「⚠️ 待即時查證」欄位請自行以官方來源覆核後再進行操作決策。投資有風險，請審慎評估。
   </div>
 
