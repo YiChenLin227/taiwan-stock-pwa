@@ -237,7 +237,7 @@ def build_row(market: dict, futures: dict, stocks: dict,
         g(ai, "open_range_high"),
         # 美股
         g(stocks, "nasdaq_close"), g(stocks, "nasdaq_change_pct"),
-        g(stocks, "dow_close"), g(stocks, "dow_change_pct"),
+        g(stocks, "dji_close"), g(stocks, "dji_change_pct"),
         g(stocks, "sox_close"), g(stocks, "sox_change_pct"),
         g(stocks, "tsm_adr_close"), g(stocks, "tsm_adr_change_pct"),
         # 全球
@@ -248,7 +248,7 @@ def build_row(market: dict, futures: dict, stocks: dict,
         g(stocks, "kospi_close"), g(stocks, "kospi_change_pct"),
         g(stocks, "hsi_close"), g(stocks, "hsi_change_pct"),
         g(stocks, "gold_close"), g(stocks, "gold_change_pct"),
-        g(stocks, "oil_close"), g(stocks, "oil_change_pct"),
+        g(stocks, "brent_close"), g(stocks, "brent_change_pct"),
         # 台幣
         g(market, "twd_usd"),
         # 三大法人
