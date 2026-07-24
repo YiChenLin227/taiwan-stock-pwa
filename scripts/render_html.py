@@ -189,8 +189,8 @@ def stock_card_fixed(s, code, title_note=""):
         <div class="op-dir">📌 操作建議：<span class="{css_dir}">{v(s.get("direction"),"觀望")}</span></div>
         <div class="op-grid">
           <div class="op-item"><div class="lbl">建議買入</div><div class="val acc">{v(s.get("buy_range"),"⚠️ 待查")}</div></div>
-          <div class="op-item"><div class="lbl">停損線</div><div class="val up">{v(s.get("stop_loss"),"⚠️ 待查")}</div></div>
-          <div class="op-item"><div class="lbl">中線目標</div><div class="val dn">{v(s.get("target"),"⚠️ 待查")}</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val gold">{v(s.get("stop_loss"),"⚠️ 待查")}</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val acc">{v(s.get("target"),"⚠️ 待查")}</div></div>
           <div class="op-item"><div class="lbl">{s.get("op4_label","技術面")}</div><div class="val gold">{v(s.get("op4_value"),"—")}</div></div>
         </div>
       </div>
@@ -237,15 +237,15 @@ def stock_card_dynamic(s):
           <div class="d sub" style="margin-top:4px"><a href="https://tw.tradingview.com/chart/?symbol=TWSE%3A{code}" target="_blank" style="color:var(--acc);font-size:10px">📎 TradingView</a></div>
         </div>
         <div class="stat">
-          <div class="k">核心題材</div><div class="v dn">{v(s.get("theme"),"AI 概念")}</div><div class="d sub">{v(s.get("theme_desc"),"")}</div>
+          <div class="k">核心題材</div><div class="v gold">{v(s.get("theme"),"AI 概念")}</div><div class="d sub">{v(s.get("theme_desc"),"")}</div>
         </div>
       </div>
       <div class="opbox">
         <div class="op-dir">📌 操作建議：<span class="{css_dir}">{v(s.get("direction"),"偏多")}</span></div>
         <div class="op-grid">
           <div class="op-item"><div class="lbl">建議買入</div><div class="val acc">{v(s.get("buy_range"),"⚠️ 待查")}</div></div>
-          <div class="op-item"><div class="lbl">停損線</div><div class="val up">{v(s.get("stop_loss"),"⚠️ 待查")}</div></div>
-          <div class="op-item"><div class="lbl">中線目標</div><div class="val dn">{v(s.get("target"),"⚠️ 待查")}</div></div>
+          <div class="op-item"><div class="lbl">停損線</div><div class="val gold">{v(s.get("stop_loss"),"⚠️ 待查")}</div></div>
+          <div class="op-item"><div class="lbl">中線目標</div><div class="val acc">{v(s.get("target"),"⚠️ 待查")}</div></div>
           <div class="op-item"><div class="lbl">AI 選股理由</div><div class="val gold" style="font-size:11px">{v(s.get("selection_reason","")[:20],"強勢")}</div></div>
         </div>
       </div>
@@ -269,8 +269,8 @@ def render(data: dict, output_path: str = "./index.html"):
     
     # determine badge style
     dir_map = {
-        "強勢做多": ("dn","💹"), "偏多": ("dn","📈"), "中性偏多": ("gold","📊"),
-        "中性": ("sub","⚖️"), "中性偏空": ("gold","⚠️"), "偏空": ("up","⚠️"), "強勢做空": ("up","🔻")
+        "強勢做多": ("up","💹"), "偏多": ("up","📈"), "中性偏多": ("gold","📊"),
+        "中性": ("sub","⚖️"), "中性偏空": ("gold","⚠️"), "偏空": ("dn","⚠️"), "強勢做空": ("dn","🔻")
     }
     dir_css, dir_icon = dir_map.get(market_direction, ("gold","⚠️"))
 
@@ -291,6 +291,7 @@ def render(data: dict, output_path: str = "./index.html"):
     adr_pct = g(d,"tsm_adr_change_pct","—")
     adr_css = d.get("tsm_adr_css","sub")
     night_fut = g(d,"night_futures_last","⚠️ 待即時更新")
+    night_note = d.get("night_futures_note") or ("" if (night_fut not in (None,"","⚠️ 待即時更新") and "⚠️" not in str(night_fut)) else "⚠️ 請以即時盤確認")
     support = g(d,"key_support","—")
     resist = g(d,"key_resistance","—")
     taiex_ai = g(d,"taiex_ai","AI 解讀暫無資料")
@@ -361,7 +362,7 @@ def render(data: dict, output_path: str = "./index.html"):
     if pc_ratio not in (None,"","NA","N/A"):
         pc_val = f"{pc_ratio}"
         pc_desc = g(d,"pc_desc", f"市場情緒：{pc_sentiment}")
-        pc_css_val = "dn" if pc_sentiment in ("偏多","強勢多") else ("up" if pc_sentiment in ("偏空","強勢空") else "gold")
+        pc_css_val = "up" if pc_sentiment in ("偏多","強勢多") else ("dn" if pc_sentiment in ("偏空","強勢空") else "gold")
     else:
         pc_val = "⚠️ 待即時查證"
         pc_desc = "即時查詢"
@@ -396,7 +397,7 @@ def render(data: dict, output_path: str = "./index.html"):
     s2454 = d.get("stock_2454", {})
     s2454.setdefault("name","聯發科"); s2454.setdefault("trading_date", trading_date)
     s2454.setdefault("desc","IC 設計龍頭 ‧ AI 晶片 / AI PC 概念")
-    s2454.setdefault("trend_text","↑ 強勢"); s2454.setdefault("trend_css","dn")
+    s2454.setdefault("trend_text","↑ 強勢"); s2454.setdefault("trend_css","up")
     s2454.setdefault("extra_label","關注催化劑"); s2454.setdefault("extra_css","gold")
     s2454.setdefault("extra_value","AI PC 旺季"); s2454.setdefault("extra_desc","H2 出貨放量")
     s2454.setdefault("op4_label","H2 旺季"); s2454.setdefault("op4_value","AI 晶片出貨")
@@ -404,8 +405,8 @@ def render(data: dict, output_path: str = "./index.html"):
     s2327 = d.get("stock_2327", {})
     s2327.setdefault("name","國巨"); s2327.setdefault("trading_date", trading_date)
     s2327.setdefault("desc","被動元件龍頭")
-    s2327.setdefault("trend_text","偏多"); s2327.setdefault("trend_css","dn")
-    s2327.setdefault("extra_label","受益題材"); s2327.setdefault("extra_css","dn")
+    s2327.setdefault("trend_text","偏多"); s2327.setdefault("trend_css","up")
+    s2327.setdefault("extra_label","受益題材"); s2327.setdefault("extra_css","gold")
     s2327.setdefault("extra_value","AI 伺服器"); s2327.setdefault("extra_desc","MLCC/電阻需求↑")
     s2327.setdefault("op4_label","外資連動"); s2327.setdefault("op4_value","ADR 風險留意")
 
@@ -656,7 +657,7 @@ def render(data: dict, output_path: str = "./index.html"):
     <div class="stat">
       <div class="k">台指期夜盤</div>
       <div class="v {d.get("night_futures_css","sub")}">{night_fut}</div>
-      <div class="d {d.get("night_futures_css","sub")}">{d.get("night_futures_change","")}</div><div class="d sub">{d.get("night_futures_note","⚠️ 請以即時盤確認")}</div>
+      <div class="d {d.get("night_futures_css","sub")}">{d.get("night_futures_change","")}</div><div class="d sub">{night_note}</div>
       <div class="d sub" style="margin-top:4px"><a href="https://www.taifex.com.tw/cht/5/afterHoursFutures" target="_blank" style="color:var(--acc);font-size:10px">📎 期交所查詢</a></div>
     </div>
     <div class="stat">
