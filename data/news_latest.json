@@ -1,54 +1,54 @@
 {
-  "written_at": "2026-07-23T21:39:00Z",
+  "written_at": "2026-07-26T21:39:38Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台積電ADR跌0.8% 較台北交易溢價縮為13.8%",
-      "url": "https://udn.com/news/story/6811/9645356",
-      "date": "07-23",
-      "source": "聯合新聞網"
-    },
-    {
-      "title": "台股開盤》大盤高檔震盪漲百點 反攻能否延續？兩大關卡一次看",
-      "url": "https://newtalk.tw/news/view/2026-07-23/1048857",
-      "date": "07-23",
+      "title": "台積電、聯發科、台達電不能買？分析師：不是看壞，而是太貴！",
+      "url": "https://newtalk.tw/news/view/2026-07-26/1049414",
+      "date": "07-26",
       "source": "Newtalk新聞"
     },
     {
-      "title": "昇陽半導體等2檔遭列處置股！23檔注意股出爐 信昌電8度上榜",
-      "url": "https://newtalk.tw/news/view/2026-07-23/1048843",
-      "date": "07-23",
+      "title": "AI晶片供給嚴重告急 黃仁勳還想要更多？美韓狂砸9,500億美元簽約",
+      "url": "https://newtalk.tw/news/view/2026-07-26/1049460",
+      "date": "07-26",
       "source": "Newtalk新聞"
     },
     {
-      "title": "成交值Top 10僅3檔收紅！緯創爆量躍雙榜 資金轉向個股突圍",
-      "url": "https://money.udn.com/money/story/5607/9646788",
-      "date": "07-23",
-      "source": "經濟日報"
+      "title": "美積電太燒錢! 投資美廠財務負擔沉重 日媒曝：台積電明年將全面漲價",
+      "url": "https://newtalk.tw/news/view/2026-07-24/1049235",
+      "date": "07-24",
+      "source": "Newtalk新聞"
     },
     {
-      "title": "《台北股市》盤中焦點股：鴻海、聯亞、凌華、南亞科、嘉基、台塑化",
-      "url": "https://wantrich.chinatimes.com/news/20260723900180-420101",
-      "date": "07-23",
+      "title": "GPU再強也怕塞車！輝達Spectrum-6成AI工廠新王牌",
+      "url": "https://newtalk.tw/news/view/2026-07-24/1049177",
+      "date": "07-24",
+      "source": "Newtalk新聞"
+    },
+    {
+      "title": "國家隊逆勢買台積卻大砍聯電！南亞科、緯創…20大進出清單1次看",
+      "url": "https://wantrich.chinatimes.com/news/20260724900387-420101",
+      "date": "07-24",
       "source": "旺得富理財網"
     }
   ],
   "industry_news": [
     {
-      "title": "《新聞聚焦》AI伺服器改寫成長曲線 華碩月營收首破千億",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=762842",
+      "title": "AI熱潮蔓延伺服器CPU 英特爾、超微傳與中國客戶談長約",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762792_NP98WUDU8LIAF43BXNE4Z",
       "date": "07-23",
       "source": "DIGITIMES"
     },
     {
-      "title": "《科技聽IC》AI把料都搶走，供應鏈攜手缺料到世界盡頭",
-      "url": "https://gb-www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762780_GRO60EXH9UFLKLLBNA368",
+      "title": "晶圓廠潮湧89座再加50座 全球產業協作分散供應鏈風險",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762656_3RP53KLQ6IW37N513YAT4",
       "date": "07-23",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI模型調度夯 OpenRouter傳洽售大型科技公司",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762388_1WX4JA6C7QMSX59ACT201",
+      "title": "AI半導體擴產潮升溫 德國隱形供應鏈加速卡位南韓",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762639_OJ37G0E42MXIGVLHZQ7C9",
       "date": "07-23",
       "source": "DIGITIMES"
     }
@@ -60,12 +60,7 @@
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "title": "ADP 民間就業人數變化（Nonfarm Payrolls 前哨指標）",
-      "date": "2026-07-30",
-      "source": "https://adpemploymentreport.com/"
-    },
-    {
-      "title": "GDP 國內生產毛額（第二季，Q2 2026 修正值）",
+      "title": "GDP 國內生產毛額（第二季2026年 預估值）",
       "date": "2026-07-30",
       "source": "https://www.bea.gov/news/schedule"
     },
@@ -75,8 +70,18 @@
       "source": "https://www.bea.gov/news/schedule"
     },
     {
-      "title": "Nonfarm Payrolls 非農就業報告（含失業率，7月數據，S&P/ISM製造業PMI同日公布）",
-      "date": "2026-08-01",
+      "title": "ISM 製造業PMI（7月數據，當月第一個工作日公布）",
+      "date": "2026-08-03",
+      "source": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/"
+    },
+    {
+      "title": "ADP 全國就業報告（Nonfarm Payrolls 前哨指標，7月數據）",
+      "date": "2026-08-05",
+      "source": "https://adpemploymentreport.com/"
+    },
+    {
+      "title": "Nonfarm Payrolls 非農就業報告（含失業率，7月數據）",
+      "date": "2026-08-07",
       "source": "https://www.bls.gov/schedule/2026/home.htm"
     }
   ]
