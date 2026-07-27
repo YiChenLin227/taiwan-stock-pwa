@@ -16,24 +16,23 @@ NA = "⚠️ 無法取得資料"
 FIXED_STOCKS = {
     "2330": {"ticker": "2330.TW", "name": "台積電", "source": "https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2330"},
     "2454": {"ticker": "2454.TW", "name": "聯發科", "source": "https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2454"},
-    "2327": {"ticker": "2327.TW", "name": "國巨",   "source": "https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2327"},
+    "2327": {"ticker": "2327.TW", "name": "國巨", "source": "https://goodinfo.tw/tw/StockInfo.asp?STOCK_ID=2327"},
 }
 
 GLOBAL_TICKERS = {
-    "tsm_adr":    {"ticker": "TSM",       "name": "TSM ADR",    "source": "https://finance.yahoo.com/quote/TSM/"},
-    "nasdaq":     {"ticker": "^IXIC",     "name": "那斯達克",   "source": "https://finance.yahoo.com/quote/%5EIXIC/"},
-    "dji":        {"ticker": "^DJI",      "name": "道瓊",       "source": "https://finance.yahoo.com/quote/%5EDJI/"},
-    "sox":        {"ticker": "^SOX",      "name": "費城半導體", "source": "https://finance.yahoo.com/quote/%5ESOX/"},
-    "vix":        {"ticker": "^VIX",      "name": "VIX",        "source": "https://finance.yahoo.com/quote/%5EVIX/"},
-    "dxy":        {"ticker": "DX-Y.NYB",  "name": "美元指數",   "source": "https://finance.yahoo.com/quote/DX-Y.NYB/"},
-    "tnx":        {"ticker": "^TNX",      "name": "10年美債殖利率","source": "https://finance.yahoo.com/quote/%5ETNX/"},
-    "nikkei":     {"ticker": "^N225",     "name": "日經225",    "source": "https://finance.yahoo.com/quote/%5EN225/"},
-    "kospi":      {"ticker": "^KS11",     "name": "韓股KOSPI",  "source": "https://finance.yahoo.com/quote/%5EKS11/"},
-    "hsi":        {"ticker": "^HSI",      "name": "恆生指數",   "source": "https://finance.yahoo.com/quote/%5EHSI/"},
-    "gold":       {"ticker": "GC=F",      "name": "黃金",       "source": "https://finance.yahoo.com/quote/GC=F/"},
-    "brent":        {"ticker": "BZ=F",      "name": "布蘭特原油", "source": "https://finance.yahoo.com/quote/BZ=F/"},
+    "tsm_adr": {"ticker": "TSM", "name": "TSM ADR", "source": "https://finance.yahoo.com/quote/TSM/"},
+    "nasdaq": {"ticker": "^IXIC", "name": "那斯達克", "source": "https://finance.yahoo.com/quote/%5EIXIC/"},
+    "dji": {"ticker": "^DJI", "name": "道瓊", "source": "https://finance.yahoo.com/quote/%5EDJI/"},
+    "sox": {"ticker": "^SOX", "name": "費城半導體", "source": "https://finance.yahoo.com/quote/%5ESOX/"},
+    "vix": {"ticker": "^VIX", "name": "VIX", "source": "https://finance.yahoo.com/quote/%5EVIX/"},
+    "dxy": {"ticker": "DX-Y.NYB", "name": "美元指數", "source": "https://finance.yahoo.com/quote/DX-Y.NYB/"},
+    "tnx": {"ticker": "^TNX", "name": "10年美債殖利率","source": "https://finance.yahoo.com/quote/%5ETNX/"},
+    "nikkei": {"ticker": "^N225", "name": "日經225", "source": "https://finance.yahoo.com/quote/%5EN225/"},
+    "kospi": {"ticker": "^KS11", "name": "韓股KOSPI", "source": "https://finance.yahoo.com/quote/%5EKS11/"},
+    "hsi": {"ticker": "^HSI", "name": "恆生指數", "source": "https://finance.yahoo.com/quote/%5EHSI/"},
+    "gold": {"ticker": "GC=F", "name": "黃金", "source": "https://finance.yahoo.com/quote/GC=F/"},
+    "brent": {"ticker": "BZ=F", "name": "布蘭特原油", "source": "https://finance.yahoo.com/quote/BZ=F/"},
 }
-
 
 def calc_rsi(series, period=14):
     delta = series.diff()
@@ -42,10 +41,8 @@ def calc_rsi(series, period=14):
     rs = gain / loss
     return round((100 - 100 / (1 + rs)).iloc[-1], 2)
 
-
 def calc_ma(series, period):
     return round(series.rolling(period).mean().iloc[-1], 2)
-
 
 def calc_bollinger(series, period=20):
     ma = series.rolling(period).mean()
@@ -54,7 +51,6 @@ def calc_bollinger(series, period=20):
     lower = round((ma - 2 * std).iloc[-1], 2)
     return upper, lower
 
-
 def calc_macd(series):
     ema12 = series.ewm(span=12, adjust=False).mean()
     ema26 = series.ewm(span=26, adjust=False).mean()
@@ -62,7 +58,6 @@ def calc_macd(series):
     macd_line = dif.ewm(span=9, adjust=False).mean()
     histogram = dif - macd_line
     return round(dif.iloc[-1], 2), round(macd_line.iloc[-1], 2), round(histogram.iloc[-1], 2)
-
 
 def fetch_stock_data(code, ticker, name, source):
     """抓單一個股資料 + 技術指標"""
@@ -130,17 +125,21 @@ def fetch_stock_data(code, ticker, name, source):
         result[f"{code}_source"] = source
         return result
 
-
 def fetch_global_index(key, ticker, name, source):
-    """全球指數（只抓收盤+漲跌，不計算技術指標）"""
+    """全球指數（只抓收盤+漲跌，不計算技術指標）
+
+    修正紀錄（2026-07-27）：yfinance 偶爾會在序列尾端回傳 NaN 佔位列
+    （例如美股尚未開盤、資料尚未寫入等情況），導致漲跌幅算出 nan%。
+    這裡先用 dropna() 濾掉無效值，再取最後兩筆有效收盤價。
+    """
     try:
         t = yf.Ticker(ticker)
-        hist = t.history(period="5d")
+        hist = t.history(period="10d")
         if hist.empty:
             raise ValueError("無資料")
-        close_series = hist["Close"]
+        close_series = hist["Close"].dropna()
         if len(close_series) < 2:
-            raise ValueError("歷史資料不足 2 筆")
+            raise ValueError(f"有效收盤價不足 2 筆（dropna 後剩 {len(close_series)} 筆）")
         last = round(float(close_series.iloc[-1]), 2)
         prev = round(float(close_series.iloc[-2]), 2)
         change = round(last - prev, 2)
@@ -153,7 +152,6 @@ def fetch_global_index(key, ticker, name, source):
     except Exception as e:
         print(f"[fetch_global_index] {key} 錯誤: {e}")
         return {f"{key}_close": NA, f"{key}_change_pct": NA, f"{key}_source": source}
-
 
 def fetch_taiex_technicals():
     """大盤加權指數技術指標（用 ^TWII）"""
@@ -176,7 +174,6 @@ def fetch_taiex_technicals():
         print(f"[fetch_taiex_technicals] 錯誤: {e}")
         return {k: NA for k in ["taiex_ma20","taiex_ma60","taiex_boll_upper","taiex_boll_lower","taiex_rsi","taiex_tech_source"]}
 
-
 def fetch_all():
     print("[fetch_stocks] 開始抓取個股及全球指數...")
     result = {}
@@ -195,9 +192,8 @@ def fetch_all():
     print("  → 大盤技術指標 (^TWII)")
     result.update(fetch_taiex_technicals())
 
-    print(f"[fetch_stocks] 完成，台積電: {result.get('2330_close')}  TSM ADR: {result.get('tsm_adr_close')}")
+    print(f"[fetch_stocks] 完成，台積電: {result.get('2330_close')} TSM ADR: {result.get('tsm_adr_close')}")
     return result
-
 
 if __name__ == "__main__":
     print(json.dumps(fetch_all(), ensure_ascii=False, indent=2, default=str))

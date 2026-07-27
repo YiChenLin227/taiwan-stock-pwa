@@ -13,9 +13,25 @@ NA = "⚠️ 無法取得資料"
 # 固定3股不列入動態候選
 FIXED_CODES = {"2330", "2454", "2327"}
 
+# 修正紀錄（2026-07-27）：foreign_top30、volume_top20 兩個資料來源都來自
+# TWSE 的 rwd API，若當次被 TWSE 擋掉（見 fetch_market.py 的說明），候選池
+# 會變成 0 檔，導致 AI 在完全沒有真實市場資料的情況下自行「發明」選股，
+# 使得收盤價、RSI 全部顯示「待查」。這裡加一份保底候選清單，當合併後的
+# 候選池是空的才會用到，確保 AI 至少有一批「有實際抓到資料」的股票可選。
+# 名單為常見 AI 供應鏈概念股，之後若 TWSE 端點修好，會優先使用真實的
+# 外資買超/成交量排行，這份清單只在資料來源失效時當備援。
+FALLBACK_SEED_STOCKS = [
+    {"code": "2382", "name": "廣達", "reason": "備援清單（AI伺服器ODM）"},
+    {"code": "3231", "name": "緯創", "reason": "備援清單（AI伺服器ODM）"},
+    {"code": "2317", "name": "鴻海", "reason": "備援清單（AI伺服器代工）"},
+    {"code": "3711", "name": "日月光投控", "reason": "備援清單（先進封裝）"},
+    {"code": "3017", "name": "奇鋐", "reason": "備援清單（AI伺服器散熱）"},
+    {"code": "3661", "name": "世芯-KY", "reason": "備援清單（ASIC/AI晶片設計）"},
+    {"code": "2308", "name": "台達電", "reason": "備援清單（電源/散熱）"},
+]
 
 def build_candidate_pool(foreign_top30: list, volume_top20: list) -> list:
-    """合併外資買超前30 + 成交量前20，去重後排除固定3股"""
+    """合併外資買超前30 + 成交量前20，去重後排除固定3股；若合併結果為空，改用保底清單"""
     seen = set()
     pool = []
 
@@ -31,8 +47,11 @@ def build_candidate_pool(foreign_top30: list, volume_top20: list) -> list:
             seen.add(code)
             pool.append({"code": code, "name": item.get("name", ""), "reason": "成交量前20"})
 
-    return pool[:50]  # 最多50隻
+    if not pool:
+        print("[fetch_candidates] 外資買超/成交量前20 皆無資料，改用保底候選清單")
+        pool = [dict(item) for item in FALLBACK_SEED_STOCKS if item["code"] not in FIXED_CODES]
 
+    return pool[:50]  # 最多50隻
 
 def fetch_candidate_basic(code: str, name: str) -> dict:
     """抓單一候選股的基本資料（快速，不算複雜技術指標）"""
@@ -104,7 +123,6 @@ def fetch_candidate_basic(code: str, name: str) -> dict:
             "error": str(e)
         }
 
-
 def fetch_all(foreign_top30: list, volume_top20: list) -> list:
     """
     外部呼叫入口
@@ -123,9 +141,8 @@ def fetch_all(foreign_top30: list, volume_top20: list) -> list:
     print(f"[fetch_candidates] 完成")
     return results
 
-
 if __name__ == "__main__":
     # 測試用假資料
     test_foreign = [{"code": "2382", "name": "廣達", "net_shares": 5000000}]
-    test_volume  = [{"code": "3711", "name": "日月光"}]
+    test_volume = [{"code": "3711", "name": "日月光"}]
     print(json.dumps(fetch_all(test_foreign, test_volume), ensure_ascii=False, indent=2, default=str))
