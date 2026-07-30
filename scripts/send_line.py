@@ -17,6 +17,8 @@ def build_message(render_data: dict) -> str:
     direction    = render_data.get("market_direction", "")
     taiex_close  = render_data.get("taiex_close", "")
     taiex_change_pct = render_data.get("taiex_change_pct", "")
+    biggest_risk = render_data.get("biggest_risk", "")
+    ai_highlight = render_data.get("ai_best_strategy", "")
 
     lines = [f"📊 台股盤前 {trading_date}"]
     if direction:
@@ -24,6 +26,10 @@ def build_message(render_data: dict) -> str:
     if taiex_close:
         chg = f"（{taiex_change_pct}）" if taiex_change_pct else ""
         lines.append(f"加權指數：{taiex_close} {chg}".rstrip())
+    if biggest_risk:
+        lines.append(f"⚠️ 今日最大風險：{biggest_risk}")
+    if ai_highlight:
+        lines.append(f"💡 AI重點：{ai_highlight}")
     lines.append(f"👉 完整分析：{PAGE_URL}")
     return "\n".join(lines)
 
