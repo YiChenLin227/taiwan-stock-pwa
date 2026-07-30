@@ -30,7 +30,7 @@ def main():
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
     # ── Step 1: Fetch market data ─────────────────────────────────────────────
-    log("📊 Step 1/7: Fetching market data...")
+    log("📊 Step 1/8: Fetching market data...")
     try:
         from fetch_market import fetch_all as fetch_market
         market_data = fetch_market()
@@ -39,7 +39,7 @@ def main():
         log(f"  ⚠️ Market fetch error: {e}"); market_data = {}
 
     # ── Step 2: Fetch futures data ────────────────────────────────────────────
-    log("📈 Step 2/7: Fetching futures data...")
+    log("📈 Step 2/8: Fetching futures data...")
     try:
         from fetch_futures import fetch_all as fetch_futures
         futures_data = fetch_futures()
@@ -48,7 +48,7 @@ def main():
         log(f"  ⚠️ Futures fetch error: {e}"); futures_data = {}
 
     # ── Step 3: Fetch stock data (fixed 3) ───────────────────────────────────
-    log("📋 Step 3/7: Fetching stock data (fixed stocks + global indices)...")
+    log("📋 Step 3/8: Fetching stock data (fixed stocks + global indices)...")
     try:
         from fetch_stocks import fetch_all as fetch_stocks
         stocks_data = fetch_stocks()
@@ -57,7 +57,7 @@ def main():
         log(f"  ⚠️ Stocks fetch error: {e}"); stocks_data = {}
 
     # ── Step 4: Fetch candidate pool + select dynamic stocks ─────────────────
-    log("🔍 Step 4/7: Fetching candidate stocks...")
+    log("🔍 Step 4/8: Fetching candidate stocks...")
     try:
         from fetch_candidates import fetch_all as fetch_candidates
         foreign_top30 = market_data.get("foreign_top30", [])
@@ -68,7 +68,7 @@ def main():
         log(f"  ⚠️ Candidates fetch error: {e}"); candidates_data = []
 
     # ── Step 5: Fetch news ───────────────────────────────────────────────────
-    log("📰 Step 5/7: Fetching news & economic calendar...")
+    log("📰 Step 5/8: Fetching news & economic calendar...")
     try:
         from fetch_news import fetch_all as fetch_news
         news_data = fetch_news(fred_api_key=fred_key)
@@ -77,7 +77,7 @@ def main():
         log(f"  ⚠️ News fetch error: {e}"); news_data = {}
 
     # ── Step 6: Read Sheets history + AI analysis ─────────────────────────────
-    log("🤖 Step 6/7: Running AI analysis...")
+    log("🤖 Step 6/8: Running AI analysis...")
     history_rows = []
     if sheet_id and gcp_creds:
         try:
@@ -106,7 +106,7 @@ def main():
         ai_result = _fallback_result()
 
     # ── Step 7: Build render data dict ───────────────────────────────────────
-    log("🎨 Step 7/7: Rendering HTML...")
+    log("🎨 Step 7/8: Rendering HTML...")
 
     # Merge all data sources into render dict
     render_data = _build_render_data(market_data, futures_data, stocks_data, news_data, ai_result, candidates_data, history_rows)
@@ -128,6 +128,19 @@ def main():
             log("  ✅ Google Sheets updated")
         except Exception as e:
             log(f"  ⚠️ Sheets write error: {e}")
+
+    # ── Push LINE broadcast ──────────────────────────────────────────────────
+    log("📱 Step 8/8: Sending LINE broadcast...")
+    line_token = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN", "")
+    if line_token:
+        try:
+            from send_line import send_daily_broadcast
+            send_daily_broadcast(render_data, line_token)
+            log("  ✅ LINE broadcast sent")
+        except Exception as e:
+            log(f"  ⚠️ LINE push error: {e}")
+    else:
+        log("  ⏭️ LINE_CHANNEL_ACCESS_TOKEN not set, skip push")
 
     log("🏁 Done! index.html is ready for GitHub Pages deployment.")
 
