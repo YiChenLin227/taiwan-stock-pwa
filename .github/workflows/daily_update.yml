@@ -62,7 +62,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to index.html"
           else
-            git commit -m "ð¤ Daily update $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git commit -m "🤖 Daily update $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
 
