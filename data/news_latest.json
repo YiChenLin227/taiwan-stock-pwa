@@ -1,36 +1,36 @@
 {
-  "written_at": "2026-07-29T21:40:23Z",
+  "written_at": "2026-07-30T21:38:14Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "史上第七大跌點！台股收盤重挫1564點險守40K 台積電下殺80元",
-      "url": "https://www.chinatimes.com/realtimenews/20260729002551-260410",
-      "date": "07-29",
-      "source": "中時新聞網"
-    },
-    {
-      "title": "散戶瘋搶！台積電自歷史高點回檔335元 股東首度衝破300萬人",
-      "url": "https://udn.com/news/story/7251/9658625",
-      "date": "07-29",
+      "title": "台股4萬點關卡得而復失、收盤下跌105點 台積電逆勢收2,205元",
+      "url": "https://udn.com/news/story/7251/9660516",
+      "date": "07-30",
       "source": "聯合新聞網"
     },
     {
-      "title": "台股盤中210檔跌停失守4萬點 台積電一度貢獻800跌點 先拚守穩半年線",
-      "url": "https://news.cnyes.com/news/id/6550335",
-      "date": "07-29",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "台股早盤一度大跌逾千點 法人：台股能否止跌回升要看這關鍵",
-      "url": "https://udn.com/news/story/7251/9657409",
-      "date": "07-29",
+      "title": "三大法人賣超508億元！台股劇震1,750點失守4萬關 投信連27買力挺",
+      "url": "https://udn.com/news/story/7251/9660768",
+      "date": "07-30",
       "source": "聯合新聞網"
     },
     {
-      "title": "台股急跌還會再震嗎？未來兩週關鍵事件一次看：台積電除息、美國 CPI、Fed 決策成觀察重點",
-      "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E8%82%A1%E6%80%A5%E8%B7%8C%E9%82%84%E6%9C%83%E5%86%8D%E9%9C%87%E5%97%8E-%E6%9C%AA%E4%BE%86%E5%85%A9%E9%80%B1%E9%97%9C%E9%8D%B5%E4%BA%8B%E4%BB%B6%E4%B8%80%E6%AC%A1%E7%9C%8B-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%99%A4%E6%81%AF-%E7%BE%8E%E5%9C%8B-CPI-Fed-%E6%B1%BA%E7%AD%96%E6%88%90%E8%A7%80%E5%AF%9F%E9%87%8D%E9%BB%9E-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a26074c6c6d82bf0a9806eb",
+      "title": "台積電失守800元創11個月低點 盤中零股交易達107.2億元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%A4%B1%E5%AE%88800%E5%85%83%E5%89%B511%E5%80%8B%E6%9C%88%E4%BD%8E%E9%BB%9E-%E7%9B%A4%E4%B8%AD%E9%9B%B6%E8%82%A1%E4%BA%A4%E6%98%93%E9%81%94107-2%E5%84%84%E5%85%83-100947749.html",
       "date": "07-29",
-      "source": "豐雲學堂(Sinotrade)"
+      "source": "Yahoo奇摩股市"
+    },
+    {
+      "title": "聯發科31日法說登場 AI ASIC、2奈米旗艦晶片成焦點",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%9131%E6%97%A5%E6%B3%95%E8%AA%AA%E7%99%BB%E5%A0%B4-ai-asic-2%E5%A5%88%E7%B1%B3%E6%97%97%E8%89%A6%E6%99%B6%E7%89%87%E6%88%90%E7%84%A6%E9%BB%9E-022547300.html",
+      "date": "07-30",
+      "source": "Yahoo奇摩股市"
+    },
+    {
+      "title": "5檔慘跌「明起抓去關」！92檔注意股名單一次看",
+      "url": "https://news.tvbs.com.tw/money/3272444",
+      "date": "07-30",
+      "source": "TVBS新聞網"
     }
   ],
   "industry_news": [
@@ -41,29 +41,19 @@
       "source": "DIGITIMES"
     },
     {
-      "title": "三星與博通簽2,000億美元合作大單 2奈米代工挑戰台積電",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000763039_BE616TU62FL90YL6ARCDU",
-      "date": "07-28",
-      "source": "DIGITIMES"
+      "title": "《科技》AI基建下一個缺貨主角浮現 伺服器CPU恐供不應求到2027年",
+      "url": "https://www.chinatimes.com/realtimenews/20260730001554-260410",
+      "date": "07-30",
+      "source": "時報資訊"
     },
     {
-      "title": "《新聞聚焦》記憶體還是賣方市場 2H26合約價續飆至少6成",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762718_AQE6VJ5O2L6ANY7IAQL7N",
-      "date": "07-22",
+      "title": "DIGITIMES 2026 AI伺服器論壇：晶片、電源、散熱、機櫃系統級創新登場",
+      "url": "https://www.digitimes.com.tw/seminar/DForum_20260731/",
+      "date": "07-31",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
-    {
-      "title": "GDP 國內生產毛額（2026年第二季 預估值）",
-      "date": "2026-07-30",
-      "source": "https://www.bea.gov/news/schedule"
-    },
-    {
-      "title": "PCE 個人消費支出物價指數（Personal Income and Outlays，含核心PCE，6月數據）",
-      "date": "2026-07-30",
-      "source": "https://www.bea.gov/news/schedule"
-    },
     {
       "title": "ISM 製造業PMI（7月數據，當月第一個工作日公布）",
       "date": "2026-08-03",
