@@ -13,7 +13,7 @@ PAGE_URL = "https://yichenlin227.github.io/taiwan-stock-pwa/"
 
 def build_message(render_data: dict) -> str:
     """從渲染資料組出簡短文字推播內容"""
-    trading_date = render_data.get("trading_date", "")
+    trading_date = render_data.get("today_short", "") or render_data.get("trading_date", "")
     direction    = render_data.get("market_direction", "")
     taiex_close  = render_data.get("taiex_close", "")
     taiex_change_pct = render_data.get("taiex_change_pct", "")
