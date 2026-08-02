@@ -1,68 +1,78 @@
 {
-  "written_at": "2026-07-30T21:38:14Z",
+  "written_at": "2026-08-02T21:36:37Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
+      "title": "台股暴漲3186點！台積電亮燈漲停收2425元 4萬3關卡強勢收復",
+      "url": "https://news.nextapple.com/finance/20260731/13CEE8C93B7BC352B6203ED5C17AFA59",
+      "date": "07-31",
+      "source": "壹蘋新聞網"
+    },
+    {
       "title": "台股4萬點關卡得而復失、收盤下跌105點 台積電逆勢收2,205元",
       "url": "https://udn.com/news/story/7251/9660516",
-      "date": "07-30",
-      "source": "聯合新聞網"
-    },
-    {
-      "title": "三大法人賣超508億元！台股劇震1,750點失守4萬關 投信連27買力挺",
-      "url": "https://udn.com/news/story/7251/9660768",
-      "date": "07-30",
-      "source": "聯合新聞網"
-    },
-    {
-      "title": "台積電失守800元創11個月低點 盤中零股交易達107.2億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%A4%B1%E5%AE%88800%E5%85%83%E5%89%B511%E5%80%8B%E6%9C%88%E4%BD%8E%E9%BB%9E-%E7%9B%A4%E4%B8%AD%E9%9B%B6%E8%82%A1%E4%BA%A4%E6%98%93%E9%81%94107-2%E5%84%84%E5%85%83-100947749.html",
       "date": "07-29",
-      "source": "Yahoo奇摩股市"
+      "source": "聯合新聞網"
     },
     {
-      "title": "聯發科31日法說登場 AI ASIC、2奈米旗艦晶片成焦點",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%9131%E6%97%A5%E6%B3%95%E8%AA%AA%E7%99%BB%E5%A0%B4-ai-asic-2%E5%A5%88%E7%B1%B3%E6%97%97%E8%89%A6%E6%99%B6%E7%89%87%E6%88%90%E7%84%A6%E9%BB%9E-022547300.html",
+      "title": "半導體權值股全噴出 日月光投控市值飆3兆元、聯電衝2兆元",
+      "url": "https://news.cnyes.com/news/id/6507106",
+      "date": "07-29",
+      "source": "鉅亨網"
+    },
+    {
+      "title": "台股開低翻紅！台積電下殺15元、日月光噴3% 英業達大漲9%暫居成交王",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%96%8B%E4%BD%8E%E7%BF%BB%E7%B4%85-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E4%B8%8B%E6%AE%BA15%E5%85%83-%E6%97%A5%E6%9C%88%E5%85%89%E5%99%B43-%E8%8B%B1%E6%A5%AD%E9%81%94%E5%A4%A7%E6%BC%B29-%E6%9A%AB%E5%B1%85%E6%88%90%E4%BA%A4%E7%8E%8B-011700725.html",
       "date": "07-30",
       "source": "Yahoo奇摩股市"
     },
     {
-      "title": "5檔慘跌「明起抓去關」！92檔注意股名單一次看",
-      "url": "https://news.tvbs.com.tw/money/3272444",
-      "date": "07-30",
-      "source": "TVBS新聞網"
+      "title": "《台北股市》盤中焦點股：聯電、日月光、華邦電、緯創、華新、友達",
+      "url": "https://wantrich.chinatimes.com/news/20260731900142-420101",
+      "date": "07-31",
+      "source": "旺得富理財網"
     }
   ],
   "industry_news": [
     {
-      "title": "AI搶佔記憶體資源 PC、電視需求受壓抑",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763224_1PR1CE5Y3FH81A3QAMJCL",
-      "date": "07-29",
+      "title": "PC漲價壓抑需求 微軟估1QFY27 OEM業務營收跌逾20%",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763483_NXU57K6H7K0KC04R2RFXR",
+      "date": "08-01",
       "source": "DIGITIMES"
     },
     {
-      "title": "《科技》AI基建下一個缺貨主角浮現 伺服器CPU恐供不應求到2027年",
-      "url": "https://www.chinatimes.com/realtimenews/20260730001554-260410",
-      "date": "07-30",
-      "source": "時報資訊"
+      "title": "AI伺服器帶旺被動元件缺貨 終端客戶積極洽談MLCC長約",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763486_T9B5UGFW792CZM7A0A6FA",
+      "date": "08-01",
+      "source": "DIGITIMES"
     },
     {
-      "title": "DIGITIMES 2026 AI伺服器論壇：晶片、電源、散熱、機櫃系統級創新登場",
-      "url": "https://www.digitimes.com.tw/seminar/DForum_20260731/",
-      "date": "07-31",
+      "title": "百億投資AI新創、千億投資AI算力 國家級投資陸續上路",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763515_XMT4IPLA20NQDL4IJ0VLX",
+      "date": "08-02",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "ISM 製造業PMI（7月數據，當月第一個工作日公布）",
+      "title": "ISM 製造業PMI（7月數據）",
       "date": "2026-08-03",
       "source": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/"
+    },
+    {
+      "title": "JOLTS 職缺與勞動力流動調查（6月數據）",
+      "date": "2026-08-05",
+      "source": "https://www.bls.gov/jlt/"
     },
     {
       "title": "ADP 全國就業報告（Nonfarm Payrolls 前哨指標，7月數據）",
       "date": "2026-08-05",
       "source": "https://adpemploymentreport.com/"
+    },
+    {
+      "title": "ISM 非製造業/服務業PMI（7月數據）",
+      "date": "2026-08-06",
+      "source": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/"
     },
     {
       "title": "Nonfarm Payrolls 非農就業報告（含失業率，7月數據）",
@@ -72,6 +82,11 @@
     {
       "title": "CPI 消費者物價指數（7月數據）",
       "date": "2026-08-12",
+      "source": "https://www.bls.gov/schedule/2026/home.htm"
+    },
+    {
+      "title": "PPI 生產者物價指數（7月數據）",
+      "date": "2026-08-13",
       "source": "https://www.bls.gov/schedule/2026/home.htm"
     }
   ]
