@@ -1,36 +1,36 @@
 {
-  "written_at": "2026-08-02T21:36:37Z",
+  "written_at": "2026-08-03T21:38:36Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台股暴漲3186點！台積電亮燈漲停收2425元 4萬3關卡強勢收復",
-      "url": "https://news.nextapple.com/finance/20260731/13CEE8C93B7BC352B6203ED5C17AFA59",
-      "date": "07-31",
-      "source": "壹蘋新聞網"
+      "title": "台股收漲266點「站穩43K」 台積電跌55元至2370元",
+      "url": "https://news.ttv.com.tw/news/11508030001200W",
+      "date": "08-03",
+      "source": "台視新聞網"
     },
     {
-      "title": "台股4萬點關卡得而復失、收盤下跌105點 台積電逆勢收2,205元",
-      "url": "https://udn.com/news/story/7251/9660516",
-      "date": "07-29",
+      "title": "聯發科、日月光亮燈撐盤！台積電跌逾2% 台股開低震盪翻紅",
+      "url": "https://udn.com/news/story/7251/9666862",
+      "date": "08-03",
       "source": "聯合新聞網"
     },
     {
-      "title": "半導體權值股全噴出 日月光投控市值飆3兆元、聯電衝2兆元",
-      "url": "https://news.cnyes.com/news/id/6507106",
-      "date": "07-29",
+      "title": "台積電休兵 聯發科頂上 台股漲266點 這檔亮紅燈 逾3.7萬張買單高掛",
+      "url": "https://www.ctee.com.tw/news/20260803701068-430201",
+      "date": "08-03",
+      "source": "工商時報"
+    },
+    {
+      "title": "〈美股盤後〉費半重挫超4% 台積電ADR跌逾2% SK海力士ADR慘崩超13%",
+      "url": "https://news.cnyes.com/news/id/6537396",
+      "date": "08-03",
       "source": "鉅亨網"
     },
     {
-      "title": "台股開低翻紅！台積電下殺15元、日月光噴3% 英業達大漲9%暫居成交王",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%96%8B%E4%BD%8E%E7%BF%BB%E7%B4%85-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E4%B8%8B%E6%AE%BA15%E5%85%83-%E6%97%A5%E6%9C%88%E5%85%89%E5%99%B43-%E8%8B%B1%E6%A5%AD%E9%81%94%E5%A4%A7%E6%BC%B29-%E6%9A%AB%E5%B1%85%E6%88%90%E4%BA%A4%E7%8E%8B-011700725.html",
-      "date": "07-30",
-      "source": "Yahoo奇摩股市"
-    },
-    {
-      "title": "《台北股市》盤中焦點股：聯電、日月光、華邦電、緯創、華新、友達",
-      "url": "https://wantrich.chinatimes.com/news/20260731900142-420101",
-      "date": "07-31",
-      "source": "旺得富理財網"
+      "title": "早盤快訊》台股衝上4萬3！聯發科、華邦電、南亞科齊攻漲停，台積電跌近2%失守2400元",
+      "url": "https://www.storm.mg/article/11153475",
+      "date": "08-03",
+      "source": "風傳媒"
     }
   ],
   "industry_news": [
@@ -54,11 +54,6 @@
     }
   ],
   "macro_events": [
-    {
-      "title": "ISM 製造業PMI（7月數據）",
-      "date": "2026-08-03",
-      "source": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/"
-    },
     {
       "title": "JOLTS 職缺與勞動力流動調查（6月數據）",
       "date": "2026-08-05",
@@ -88,6 +83,11 @@
       "title": "PPI 生產者物價指數（7月數據）",
       "date": "2026-08-13",
       "source": "https://www.bls.gov/schedule/2026/home.htm"
+    },
+    {
+      "title": "零售銷售 Retail Sales（7月數據）",
+      "date": "2026-08-14",
+      "source": "https://www.census.gov/retail/marts/www/marts_current.pdf"
     }
   ]
 }
