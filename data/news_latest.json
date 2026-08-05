@@ -1,69 +1,59 @@
 {
-  "written_at": "2026-08-03T21:38:36Z",
+  "written_at": "2026-08-05T21:38:17Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台股收漲266點「站穩43K」 台積電跌55元至2370元",
-      "url": "https://news.ttv.com.tw/news/11508030001200W",
-      "date": "08-03",
+      "title": "台股重返4萬4大關！收盤狂飆1250點 台積電收2405元",
+      "url": "https://news.ttv.com.tw/news/11508050000700W",
+      "date": "08-05",
       "source": "台視新聞網"
     },
     {
-      "title": "聯發科、日月光亮燈撐盤！台積電跌逾2% 台股開低震盪翻紅",
-      "url": "https://udn.com/news/story/7251/9666862",
-      "date": "08-03",
-      "source": "聯合新聞網"
+      "title": "盤後快訊》台股重返44600點！台積電收2405元、聯發科漲135元，逾百檔逼近漲停",
+      "url": "https://www.storm.mg/article/11154224",
+      "date": "08-05",
+      "source": "風傳媒"
     },
     {
-      "title": "台積電休兵 聯發科頂上 台股漲266點 這檔亮紅燈 逾3.7萬張買單高掛",
-      "url": "https://www.ctee.com.tw/news/20260803701068-430201",
-      "date": "08-03",
-      "source": "工商時報"
-    },
-    {
-      "title": "〈美股盤後〉費半重挫超4% 台積電ADR跌逾2% SK海力士ADR慘崩超13%",
-      "url": "https://news.cnyes.com/news/id/6537396",
-      "date": "08-03",
+      "title": "〈台股盤後〉台積電收2405元 大漲1250點一舉收復月、季線及4萬4大關",
+      "url": "https://news.cnyes.com/news/id/6560270",
+      "date": "08-05",
       "source": "鉅亨網"
     },
     {
-      "title": "早盤快訊》台股衝上4萬3！聯發科、華邦電、南亞科齊攻漲停，台積電跌近2%失守2400元",
-      "url": "https://www.storm.mg/article/11153475",
-      "date": "08-03",
-      "source": "風傳媒"
+      "title": "外資狂掃903億！台股飆1,250點收復44,600點 AI、CPO、記憶體股齊噴",
+      "url": "https://newtalk.tw/news/view/2026-08-05/1051529",
+      "date": "08-05",
+      "source": "Newtalk新聞"
+    },
+    {
+      "title": "科技股業績亮眼推升台股收漲1,250點重返季線 台積電收高85元",
+      "url": "https://udn.com/news/story/7251/9672204",
+      "date": "08-05",
+      "source": "聯合新聞網"
     }
   ],
   "industry_news": [
     {
-      "title": "PC漲價壓抑需求 微軟估1QFY27 OEM業務營收跌逾20%",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763483_NXU57K6H7K0KC04R2RFXR",
-      "date": "08-01",
+      "title": "AI伺服器打破ODM「完全競爭」 緯創新客戶下半年加入",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763946_42I8O7KV53RRTX5KR2REB",
+      "date": "08-05",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI伺服器帶旺被動元件缺貨 終端客戶積極洽談MLCC長約",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763486_T9B5UGFW792CZM7A0A6FA",
-      "date": "08-01",
-      "source": "DIGITIMES"
+      "title": "南亞科擴大投資！資本支出增34%至697億 5A新廠四年投資3466億",
+      "url": "https://udn.com/news/story/7240/9672625",
+      "date": "08-05",
+      "source": "聯合新聞網"
     },
     {
-      "title": "百億投資AI新創、千億投資AI算力 國家級投資陸續上路",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763515_XMT4IPLA20NQDL4IJ0VLX",
-      "date": "08-02",
-      "source": "DIGITIMES"
+      "title": "AI伺服器板層數衝78層！PCB供應鏈下半年再起飛 欣興、南電全面吃補",
+      "url": "https://tw.stock.yahoo.com/news/ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%9D%BF%E5%B1%A4%E6%95%B8%E8%A1%9D78%E5%B1%A4-pcb%E4%BE%9B%E6%87%89%E9%8F%88%E4%B8%8B%E5%8D%8A%E5%B9%B4%E5%86%8D%E8%B5%B7%E9%A3%9B-%E6%AC%A3%E8%88%88-%E5%8D%97%E9%9B%BB%E5%85%A8%E9%9D%A2%E5%90%83%E8%A3%9C-232000919.html",
+      "date": "08-04",
+      "source": "Yahoo股市"
     }
   ],
   "macro_events": [
-    {
-      "title": "JOLTS 職缺與勞動力流動調查（6月數據）",
-      "date": "2026-08-05",
-      "source": "https://www.bls.gov/jlt/"
-    },
-    {
-      "title": "ADP 全國就業報告（Nonfarm Payrolls 前哨指標，7月數據）",
-      "date": "2026-08-05",
-      "source": "https://adpemploymentreport.com/"
-    },
     {
       "title": "ISM 非製造業/服務業PMI（7月數據）",
       "date": "2026-08-06",
@@ -88,6 +78,11 @@
       "title": "零售銷售 Retail Sales（7月數據）",
       "date": "2026-08-14",
       "source": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+    },
+    {
+      "title": "FOMC會議紀要 Fed Meeting Minutes（7月29日會議）",
+      "date": "2026-08-19",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     }
   ]
 }
