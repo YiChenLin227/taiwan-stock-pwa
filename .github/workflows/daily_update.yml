@@ -2,8 +2,8 @@ name: Daily Pre-Market Update
 
 on:
   schedule:
-    # 22:30 UTC = 06:30 Taiwan time (UTC+8), Mon-Fri Taiwan = Sun-Thu UTC
-    - cron: '30 22 * * 0,1,2,3,4'
+    # 22:00 UTC = 06:00 Taiwan time (UTC+8), Mon-Fri Taiwan = Sun-Thu UTC
+    - cron: '0 22 * * 0,1,2,3,4'
   workflow_dispatch:
 
 permissions:
