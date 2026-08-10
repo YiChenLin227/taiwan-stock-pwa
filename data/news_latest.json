@@ -1,55 +1,55 @@
 {
-  "written_at": "2026-08-09T21:41:00Z",
+  "written_at": "2026-08-10T21:39:05Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "內外利多齊聚 台股吹反攻號角 大盤波段上攻47.5K",
-      "url": "https://udn.com/news/story/7251/9680848",
+      "title": "台股收漲702點 台積電漲10元至2380",
+      "url": "https://finance.ettoday.net/news/3216588",
       "date": "08-10",
-      "source": "經濟日報"
+      "source": "ETtoday"
     },
     {
-      "title": "台股狂漲45% 金控投資收益第二季暴增9343億元",
-      "url": "https://udn.com/news/story/7251/9680924",
+      "title": "早盤狂歡秒變臉！台積電、鴻海逆風護盤堅守4萬2 聯發科、台達電連袂走跌",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%A9%E7%9B%A4%E7%8B%82%E6%AD%A1%E7%A7%92%E8%AE%8A%E8%87%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E9%B4%BB%E6%B5%B7%E9%80%86%E9%A2%A8%E8%AD%B7%E7%9B%A4%E5%A0%85%E5%AE%884%E8%90%AC2-%E8%81%AF%E7%99%BC%E7%A7%91-%E5%8F%B0%E9%81%94%E9%9B%BB%E9%80%A3%E8%A2%82%E8%B5%B0%E8%B7%8C-060500268.html",
       "date": "08-10",
-      "source": "聯合新聞網"
+      "source": "Yahoo股市"
     },
     {
-      "title": "台股高檔震盪 高價股掀目標價上修潮",
-      "url": "https://udn.com/news/story/7251/9680852",
+      "title": "尾盤爆大單原因曝光！台積電、聯發科被神祕資金硬拉「明天將迎歷史級軋空行情？」外資拋售慘業名單竟然有它們",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%95%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89-%E6%98%8E%E5%A4%A9%E5%B0%87%E8%BF%8E%E6%AD%B7%E5%8F%B2%E7%B4%9A%E8%BB%8B%E7%A9%BA%E8%A1%8C%E6%83%85-%E5%A4%96%E8%B3%87%E6%8B%8B%E5%94%AE%E6%85%98%E6%A5%AD%E5%90%8D%E5%96%AE%E7%AB%9F%E7%84%B6%E6%9C%89%E5%AE%83%E5%80%91-061822845.html",
       "date": "08-10",
-      "source": "經濟日報"
+      "source": "Yahoo股市"
     },
     {
-      "title": "上周台股漲2.5% 周線翻紅 法人：目前為觀望氣氛極濃的量縮洗盤結構",
-      "url": "https://udn.com/news/story/7251/9680138",
-      "date": "08-09",
-      "source": "聯合新聞網"
+      "title": "DRAM短缺、傳台積電10億美元蘋果處理器待封裝",
+      "url": "https://tw.stock.yahoo.com/news/dram%E7%9F%AD%E7%BC%BA-%E5%82%B3%E5%8F%B0%E7%A9%8D%E9%9B%BB10%E5%84%84%E7%BE%8E%E5%85%83%E8%98%8B%E6%9E%9C%E8%99%95%E7%90%86%E5%99%A8%E5%BE%85%E5%B0%81%E8%A3%9D-031800408.html",
+      "date": "08-10",
+      "source": "Yahoo股市"
     },
     {
-      "title": "台指期夜盤突破45000點 本周聚焦鴻海法說會大立光除息",
-      "url": "https://udn.com/news/story/7251/9679905",
-      "date": "08-09",
-      "source": "聯合新聞網"
+      "title": "台積電Sony擬合資生產影像晶片 專家：深化研發合作",
+      "url": "https://www.cna.com.tw/news/afe/202608100236.aspx",
+      "date": "08-10",
+      "source": "中央社"
     }
   ],
   "industry_news": [
     {
-      "title": "台積電擴大CoW委外日月光等OSAT 韓國設備商一同受惠",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764095_W5XLY3D4LVUT1Y4LZGX3F",
-      "date": "08-06",
+      "title": "美擬禁中國光模組成雙面刃 美企迎轉單也恐拖慢AI建置",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764399_4M7273ASLWUPMB81SJ9HY",
+      "date": "08-10",
       "source": "DIGITIMES"
     },
     {
-      "title": "一周盤前股市解析／ABF、成熟製程 聚光",
-      "url": "https://udn.com/news/story/7251/9680617",
+      "title": "致新坦言PMIC客戶需求大於供給 「搶晶圓」成首要之務",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764410_JN8348EJ2NHFG9LRJGDCA",
       "date": "08-10",
-      "source": "經濟日報"
+      "source": "DIGITIMES"
     },
     {
-      "title": "AI伺服器帶旺被動元件缺貨 終端客戶積極洽談MLCC長約",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763486_T9B5UGFW792CZM7A0A6FA",
-      "date": "08-05",
+      "title": "DRAM現貨價重啟漲勢 蘋果有意採購中系記憶體恐引發連鎖效應",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000760785_ZZ78TDY77BIS5H6BL8X47",
+      "date": "08-08",
       "source": "DIGITIMES"
     }
   ],
