@@ -1,64 +1,59 @@
 {
-  "written_at": "2026-08-16T21:37:36Z",
+  "written_at": "2026-08-19T21:38:54Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台積電跌30元至2410 台股跌268點至45111",
-      "url": "https://finance.ettoday.net/news/3200584",
-      "date": "08-14",
+      "title": "快訊／台股收盤大跌589點 台積電跌30元至2350",
+      "url": "https://finance.ettoday.net/news/3221922",
+      "date": "08-19",
       "source": "ETtoday"
     },
     {
-      "title": "台股收漲503點站上46K 台積電漲20元至2435",
-      "url": "https://finance.ettoday.net/news/3218615",
-      "date": "08-13",
-      "source": "ETtoday"
+      "title": "費半重挫！台股一度大跌近千點跌破季線 法人：壓低結算",
+      "url": "https://money.udn.com/money/story/5607/9701048",
+      "date": "08-19",
+      "source": "經濟日報"
     },
     {
-      "title": "台股法說會行情開跑，96家上市公司8月11日起密集召開法說會",
-      "url": "https://udn.com/news/story/7251/9683170",
-      "date": "08-12",
-      "source": "聯合新聞網"
+      "title": "台積電8月19日五件財經大事搶先看",
+      "url": "https://www.cmoney.tw/forum/article/182490095",
+      "date": "08-19",
+      "source": "股市爆料同學會"
     },
     {
-      "title": "券商晨訊台股投資建議摘要 (1) 2026年 8月 12日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%88%B8%E5%95%86%E6%99%A8%E8%A8%8A%E5%8F%B0%E8%82%A1%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E6%91%98%E8%A6%81-1-2026%E5%B9%B4-8%E6%9C%88-12%E6%97%A5-004533421.html",
-      "date": "08-12",
+      "title": "尾盤爆大單原因曝光！台積電、聯發科被神祕資金硬拉 外資拋售名單曝光",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E7%88%86%E5%A4%A7%E5%96%AE%E5%8E%9F%E5%9B%A0%E6%9B%9D%E5%85%89-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E7%99%BC%E7%A7%91%E8%A2%AB%E7%A5%9E%E7%A5%95%E8%B3%87%E9%87%91%E7%A1%AC%E6%8B%89-%E6%98%8E%E5%A4%A9%E5%B0%87%E8%BF%8E%E6%AD%B7%E5%8F%B2%E7%B4%9A%E8%BB%8B%E7%A9%BA%E8%A1%8C%E6%83%85-%E5%A4%96%E8%B3%87%E6%8B%8B%E5%94%AE%E6%85%98%E6%A5%AD%E5%90%8D%E5%96%AE%E7%AB%9F%E7%84%B6%E6%9C%89%E5%AE%83%E5%80%91-061822845.html",
+      "date": "08-18",
       "source": "Yahoo股市"
     },
     {
-      "title": "鴻海法說會登場 聚焦下半年ICT旺季、AI伺服器業務展望、CSP資本支出",
-      "url": "https://www.businesstoday.com.tw/article/category/183015/post/202608110022/",
-      "date": "08-11",
-      "source": "今周刊"
+      "title": "外資翻空賣191億！台股收盤逆勢漲266點 聯發科領軍、記憶體PCB全面開花",
+      "url": "https://www.wearn.com/bbs/t1233294.html",
+      "date": "08-17",
+      "source": "台股老高"
     }
   ],
   "industry_news": [
     {
-      "title": "南亞科逼近前高、群聯沒動靜？記憶體營收創新高還能買嗎？",
-      "url": "https://news.cnyes.com/news/id/6578080",
-      "date": "08-16",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "台廠掌記憶體定價權 報價擬漲4成",
-      "url": "https://www.chinatimes.com/newspapers/20260810000476-260110",
-      "date": "08-10",
-      "source": "中國時報"
+      "title": "DRAM現貨價全面回升 3Q26合約價談判拉鋸仍難擋漲勢",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763512_NWE4N7H5228XFS1QL14FM",
+      "date": "08-15",
+      "source": "DIGITIMES"
     },
     {
       "title": "AI伺服器缺料擴及PCB、電源 和碩提前備料至1H27",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764989_7W4817WG984UPK8A5ND8G",
       "date": "08-12",
       "source": "DIGITIMES"
+    },
+    {
+      "title": "昇陽半啟動Fab3B興建計畫 估2028年投產",
+      "url": "https://tw.stock.yahoo.com/news/%E6%98%87%E9%99%BD%E5%8D%8A%E5%95%9F%E5%8B%95fab3b%E8%88%88%E5%BB%BA%E8%A8%88%E7%95%AB-%E4%BC%B02028%E5%B9%B4%E6%8A%95%E7%94%A2-102956103.html",
+      "date": "08-18",
+      "source": "Yahoo股市"
     }
   ],
   "macro_events": [
-    {
-      "title": "FOMC會議紀要 Fed Meeting Minutes（7月28-29日會議）",
-      "date": "2026-08-19",
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
     {
       "title": "GDP第二次估計值 Q2 2026 GDP Second Estimate",
       "date": "2026-08-26",
@@ -75,9 +70,14 @@
       "source": "https://www.census.gov/manufacturing/m3/adv/current/index.html"
     },
     {
-      "title": "Jackson Hole 全球央行經濟政策研討會（8/27-29），市場關注Fed主席談話",
+      "title": "Jackson Hole 全球央行經濟政策研討會，新任Fed主席Warsh首次主旨演說（8/27-29）",
       "date": "2026-08-27",
       "source": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/"
+    },
+    {
+      "title": "非農就業報告 Nonfarm Payrolls（8月數據）",
+      "date": "2026-09-04",
+      "source": "https://www.bls.gov/news.release/empsit.htm"
     }
   ]
 }
