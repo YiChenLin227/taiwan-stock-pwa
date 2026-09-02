@@ -1,55 +1,55 @@
 {
-  "written_at": "2026-08-31T21:37:41Z",
+  "written_at": "2026-09-02T21:38:35Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台股收盤》記憶體、被動元件挑大梁 指數震盪逾千點創新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5526549",
-      "date": "08-31 13:30",
-      "source": "自由財經"
+      "title": "台股多空拉扯下跌600點 法人：AI強勁需求是底氣",
+      "url": "https://news.cnyes.com/news/id/6594975",
+      "date": "09-02 14:00",
+      "source": "鉅亨網"
     },
     {
-      "title": "台股盤中》CPO、記憶體與被動元件強攻",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-cpo-%E8%A8%98%E6%86%B6%E9%AB%94%E8%88%87%E8%A2%AB%E5%8B%95%E5%85%83%E4%BB%B6%E5%BC%B7%E6%94%BB-030403169.html",
-      "date": "08-31 11:00",
-      "source": "Yahoo股市"
+      "title": "〈台股盤前要聞〉9月開局捍衛4萬6、輝達砸35億美元",
+      "url": "https://news.cnyes.com/news/id/6589725",
+      "date": "09-01 08:00",
+      "source": "鉅亨網"
     },
     {
-      "title": "輝達供不應求引爆AI擴產浪潮，法人重壓散熱與記憶體",
-      "url": "https://technews.tw/2026/08/28/nvidia-ai-boom-sparks-thermal-memory-demand-institutional-investors-drive-taiwan-stocks",
-      "date": "08-28 09:00",
-      "source": "TechNews科技新報"
-    },
-    {
-      "title": "記憶體雙雄破兆美元，台積深化結盟與聯電擬漲價",
-      "url": "https://cmnews.com.tw/article/forumnews-4305c606-5a2a-11f1-a604-df1491dc8aef",
-      "date": "08-31 08:00",
-      "source": "匯流新聞網"
-    },
-    {
-      "title": "台股收漲663點收復45K 台積電漲15元至2415",
-      "url": "https://finance.ettoday.net/news/3226079",
-      "date": "08-26 14:00",
+      "title": "快訊／台積電下挫5元至2370 台股跌70點狹幅震盪",
+      "url": "https://finance.ettoday.net/news/3223042",
+      "date": "09-02 09:30",
       "source": "ETtoday財經雲"
+    },
+    {
+      "title": "【台股09/03日盤前分析】",
+      "url": "https://n.yam.com/Article/20260903423286",
+      "date": "09-03 08:00",
+      "source": "yam蕃薯藤"
+    },
+    {
+      "title": "三大法人賣超台股267.55億元",
+      "url": "https://news.pchome.com.tw/finance/cna/20260831/index-17881602765669518003.html",
+      "date": "08-31 18:00",
+      "source": "中央社/PChome"
     }
   ],
   "industry_news": [
     {
-      "title": "南俊Vera Rubin滑軌8月出貨 9月量產ASIC產品",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766632_BQ57C2WF28D8013MRUOJP",
-      "date": "08-29 07:00",
+      "title": "3D IC封裝一年一代 台積電何軍：軟體、載板缺口比想像大",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767040_F4O1NHQX3V0K8R1B8UAUK",
+      "date": "09-01 07:00",
       "source": "DigiTimes"
     },
     {
-      "title": "《新聞聚焦》伺服器缺料問題加劇 業者憂缺口擴大",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764297_HRK3MPKZ83BVLT8SRBRSG",
-      "date": "08-19 07:00",
+      "title": "AI封裝需求爆發卻卡設備交期 日月光洪松井揭兩大挑戰",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767019_GI11XIUV05WVCBL3OCDPG",
+      "date": "09-01 07:00",
       "source": "DigiTimes"
     },
     {
-      "title": "AI伺服器帶旺被動元件缺貨 終端客戶積極洽談MLCC長約",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763486_T9B5UGFW792CZM7A0A6FA",
-      "date": "08-15 07:00",
+      "title": "高通傳9月調漲手機晶片 中國手機恐陷SoC、記憶體荒",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763064_94I1XOA25BI0GJ5TFG4KW",
+      "date": "09-01 07:00",
       "source": "DigiTimes"
     }
   ],
