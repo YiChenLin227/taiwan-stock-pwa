@@ -1,64 +1,59 @@
 {
-  "written_at": "2026-09-03T21:35:54Z",
+  "written_at": "2026-09-07T21:41:24Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "台股失守4.6萬點！外資大賣481億、期貨反減空了結",
-      "url": "https://newtalk.tw/news/view/2026-09-03/1057665",
-      "date": "09-03 18:00",
-      "source": "新頭殼 Newtalk"
-    },
-    {
-      "title": "〈台股盤後〉尾盤急挫收跌307點失守4萬6關卡",
-      "url": "https://news.cnyes.com/news/id/6596276",
-      "date": "09-03 14:00",
+      "title": "外資史上第四大買超883億元 大舉加碼友達、台積電 減碼鎖定電子五哥",
+      "url": "https://news.cnyes.com/news/id/6599413",
+      "date": "09-07 16:00",
       "source": "鉅亨網"
     },
     {
-      "title": "4萬6失守 外資續賣481億元砍殺記憶體族群 逆勢加碼面板雙雄及航運",
-      "url": "https://news.cnyes.com/news/id/6596622",
-      "date": "09-03 16:30",
-      "source": "鉅亨網"
+      "title": "台積電攜手聯發科拉高台股！收盤上漲775點 大立光苦吞跌停",
+      "url": "https://udn.com/news/story/7251/9739232",
+      "date": "09-07 14:30",
+      "source": "聯合新聞網"
     },
     {
-      "title": "外資大賣481億元！進出前10大一次看 南亞科重砍3.7萬張",
-      "url": "https://finance.ettoday.net/news/3231171",
-      "date": "09-03 17:00",
-      "source": "ETtoday財經雲"
+      "title": "貢獻台股逾200點！聯發科觸漲停4855元 輝達重金押AI ASIC再攻機櫃級",
+      "url": "https://udn.com/news/story/7251/9738859",
+      "date": "09-07 10:30",
+      "source": "聯合新聞網"
     },
     {
-      "title": "〈台股風向球〉9月開局4萬6多空拔河 外資回流動能牽動盤勢",
-      "url": "https://news.cnyes.com/news/id/6591702",
-      "date": "09-01 08:00",
-      "source": "鉅亨網"
+      "title": "外資降評大立光慘跌停！專家揭CPO美夢破滅關鍵",
+      "url": "https://www.chinatimes.com/realtimenews/20260907002879-260410",
+      "date": "09-07 13:00",
+      "source": "中時新聞網"
+    },
+    {
+      "title": "鴻海拚2030再生能源使用占比75% 2040全球廠區全綠電",
+      "url": "https://udn.com/news/story/7240/9738952",
+      "date": "09-07 09:00",
+      "source": "聯合新聞網"
     }
   ],
   "industry_news": [
     {
-      "title": "AI伺服器需求爆發 中國MLCC上游供應鏈掀擴產潮",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000765091_FPH1U8L68U9WFS2JQ05FI",
-      "date": "09-02 09:00",
+      "title": "搭上AI電源管理與非紅供應鏈 越峰看好SiC材料迎3年成長期",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766655_W797NJIW4DKZ2E679U8FQ",
+      "date": "09-05 09:00",
       "source": "DIGITIMES"
     },
     {
-      "title": "台積電先進封裝擴產：CoWoS月產能拚2026年推升至11.5~13萬片",
-      "url": "https://smart.businessweekly.com.tw/Reading/IndepArticle.aspx?id=6021406",
-      "date": "09-01 10:00",
-      "source": "商業周刊"
+      "title": "《科技聽IC》AI把料都搶走，供應鏈攜手缺料到世界盡頭",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762780_GRO60EXH9UFLKLLBNA368",
+      "date": "09-04 09:00",
+      "source": "DIGITIMES"
     },
     {
-      "title": "輝達35億美元投資聯發科ECB 深化AI基礎設施與邊緣運算合作",
-      "url": "https://technews.tw/2026/09/01/nvidia-deepens-cooperation-with-mediatek-for-3-5-billion",
-      "date": "09-01 12:00",
-      "source": "TechNews科技新報"
+      "title": "2026年半導體市場規模將突破至1.6兆美元 AI推動記憶體需求為成長主因",
+      "url": "https://www.digitimes.com.tw/research/report/?v=20260901-261",
+      "date": "09-01 09:00",
+      "source": "DIGITIMES Research"
     }
   ],
   "macro_events": [
-    {
-      "title": "非農就業報告 Nonfarm Payrolls（8月數據）",
-      "date": "2026-09-04",
-      "source": "https://www.bls.gov/schedule/2026/home.htm"
-    },
     {
       "title": "生產者物價指數 PPI（8月數據）",
       "date": "2026-09-10",
