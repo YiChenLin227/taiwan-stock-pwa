@@ -1,56 +1,56 @@
 {
-  "written_at": "2026-09-07T21:41:24Z",
+  "written_at": "2026-09-08T21:38:57Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "外資史上第四大買超883億元 大舉加碼友達、台積電 減碼鎖定電子五哥",
-      "url": "https://news.cnyes.com/news/id/6599413",
-      "date": "09-07 16:00",
+      "title": "〈台股盤後〉台積電獨撐大局 權值股熄火 跌220點守住4萬7",
+      "url": "https://news.cnyes.com/news/id/6600365",
+      "date": "09-08 13:51",
       "source": "鉅亨網"
     },
     {
-      "title": "台積電攜手聯發科拉高台股！收盤上漲775點 大立光苦吞跌停",
-      "url": "https://udn.com/news/story/7251/9739232",
-      "date": "09-07 14:30",
+      "title": "台積電收高10元、擋不住台股收盤下跌220點 穎崴漲停站穩第三高價股",
+      "url": "https://udn.com/news/story/7251/9741419",
+      "date": "09-08 13:54",
       "source": "聯合新聞網"
     },
     {
-      "title": "貢獻台股逾200點！聯發科觸漲停4855元 輝達重金押AI ASIC再攻機櫃級",
-      "url": "https://udn.com/news/story/7251/9738859",
-      "date": "09-07 10:30",
+      "title": "大立光因外資報告降評喊賣被錯殺？分析師曝絕佳買點位置",
+      "url": "https://udn.com/news/story/7251/9741199",
+      "date": "09-08 12:18",
       "source": "聯合新聞網"
     },
     {
-      "title": "外資降評大立光慘跌停！專家揭CPO美夢破滅關鍵",
-      "url": "https://www.chinatimes.com/realtimenews/20260907002879-260410",
-      "date": "09-07 13:00",
-      "source": "中時新聞網"
+      "title": "AI沒泡沫！外資喊話 聯電鎖漲停、台積電喊漲準備飛",
+      "url": "https://udn.com/news/story/7252/9739735",
+      "date": "09-07 17:19",
+      "source": "聯合新聞網"
     },
     {
-      "title": "鴻海拚2030再生能源使用占比75% 2040全球廠區全綠電",
-      "url": "https://udn.com/news/story/7240/9738952",
-      "date": "09-07 09:00",
+      "title": "欣興、金像電8月營收創高 AI助攻業績續升",
+      "url": "https://udn.com/news/story/7252/9742288",
+      "date": "09-09 00:50",
       "source": "聯合新聞網"
     }
   ],
   "industry_news": [
     {
-      "title": "搭上AI電源管理與非紅供應鏈 越峰看好SiC材料迎3年成長期",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766655_W797NJIW4DKZ2E679U8FQ",
-      "date": "09-05 09:00",
+      "title": "AI伺服器ODM長短料失衡 部分料件缺口達15~20%",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767795_P9C8RN40881THA6L28WKV",
+      "date": "09-09 02:11",
       "source": "DIGITIMES"
     },
     {
-      "title": "《科技聽IC》AI把料都搶走，供應鏈攜手缺料到世界盡頭",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762780_GRO60EXH9UFLKLLBNA368",
-      "date": "09-04 09:00",
+      "title": "長鑫：2H26續衝刺伺服器業務 DRAM供給仍吃緊",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767726_RST6OWUG3IEJZG58DVZJ4",
+      "date": "09-08 10:14",
       "source": "DIGITIMES"
     },
     {
-      "title": "2026年半導體市場規模將突破至1.6兆美元 AI推動記憶體需求為成長主因",
-      "url": "https://www.digitimes.com.tw/research/report/?v=20260901-261",
-      "date": "09-01 09:00",
-      "source": "DIGITIMES Research"
+      "title": "DDR5 DRAM價格連7個月創高 LPDDR 3Q26恐暴漲最高4成",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767236_JW63RHRM2DU75L7218OXD",
+      "date": "09-03 10:01",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
