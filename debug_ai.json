@@ -1,6 +1,7 @@
 {
-  "status": "ok",
-  "attempt": 2,
-  "top_stocks_count": 5,
-  "ts": "2026-09-10 23:38:50 UTC"
+  "status": "json_error",
+  "attempt": 3,
+  "error": "JSON 解析失敗（第3次）: Cannot extract valid JSON from response",
+  "raw_preview": "```json\n{\n  \"market_direction\": \"中性偏空\",\n  \"biggest_risk\": \"外資大舉賣超近893億元且期貨淨多單歸零，加上FOMC會議前市場觀望，恐引發技術性破底修正。\",\n  \"open_range_low\": \"45900\",\n  \"open_range_high\": \"46150\",\n  \"key_support\": \"46000\",\n  \"key_resistance\": \"46200\",\n\n  \"taiex_ai\": \"加權指數重挫755點跌破月線支撐區，收在46185點，雖仍高於MA20（46025）及MA60（45221），但單日跌幅1.",
+  "ts": "2026-09-13 23:54:13 UTC"
 }
