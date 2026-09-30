@@ -1,5 +1,5 @@
 {
-  "written_at": "2026-09-30T03:05:36Z",
+  "written_at": "2026-09-30T21:38:38Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
@@ -54,16 +54,6 @@
     }
   ],
   "macro_events": [
-    {
-      "title": "GDP 國內生產毛額（Q2 三次估計）",
-      "date": "2026-09-30",
-      "source": "https://www.bea.gov/news/schedule"
-    },
-    {
-      "title": "PCE 物價指數（個人消費支出，8月數據）",
-      "date": "2026-09-30",
-      "source": "https://www.bea.gov/news/schedule"
-    },
     {
       "title": "非農就業報告（9月數據，Nonfarm Payrolls）",
       "date": "2026-10-02",
