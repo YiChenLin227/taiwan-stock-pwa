@@ -1,71 +1,66 @@
 {
-  "written_at": "2026-09-14T21:39:26Z",
+  "written_at": "2026-09-30T02:06:06Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "〈台股盤前要聞〉AI煞車論嚇到費半指數 台積電ADR同摔、信驊向日月光鎖2年產能",
-      "url": "https://news.cnyes.com/news/id/6602473",
-      "date": "09-15",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "快訊／台積電下挫5元至2370 台股跌70點狹幅震盪",
-      "url": "https://finance.ettoday.net/news/3223042",
-      "date": "09-15",
-      "source": "ETtoday財經雲"
-    },
-    {
-      "title": "【台股盤前】台股尾盤急殺220點！權王台積電逆勢撐盤 記憶體與營收創高股獲買盤卡位",
-      "url": "https://m.cnyes.com/news/id/6601312",
-      "date": "09-14",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "台股9月行情多頭掌旗三大利多助攻抗Fed「放鷹」",
-      "url": "https://money.udn.com/money/story/5607/9723529",
-      "date": "09-14",
+      "title": "9月30日盤前／油市回落、費半上漲 台股景氣燈號連9紅 喜迎10月行情",
+      "url": "https://money.udn.com/money/story/5607/9784792",
+      "date": "09-30 08:31",
       "source": "經濟日報"
     },
     {
-      "title": "輝達AI伺服器喊漲15%！台廠供應鏈吃補 6檔成焦點",
-      "url": "https://finance.ettoday.net/news/3224185",
-      "date": "09-15",
-      "source": "ETtoday財經雲"
+      "title": "台股開盤漲135.53點 加權指數47,767.49點",
+      "url": "https://money.udn.com/money/story/5607/9784857",
+      "date": "09-30 09:12",
+      "source": "經濟日報"
+    },
+    {
+      "title": "超微砸82億美元收購World Labs 攜手李飛飛布局實體AI",
+      "url": "https://money.udn.com/money/story/5607/9784652",
+      "date": "09-30 04:24",
+      "source": "經濟日報"
+    },
+    {
+      "title": "壽險8月獲利617億元 全年上看5千億",
+      "url": "https://money.udn.com/money/story/5607/9784652",
+      "date": "09-30 04:24",
+      "source": "經濟日報"
+    },
+    {
+      "title": "台塑集團投資逾百億 供應晶片廠電子級化學品",
+      "url": "https://money.udn.com/money/story/5607/9784652",
+      "date": "09-30 04:24",
+      "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "意法半導體看旺AI需求 翻倍調高2026年資料中心營收目標",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757469_ZNQ3KCAW73ZT468NB7BD5&cf=A21",
-      "date": "09-14",
+      "title": "GlobalFoundries醞釀大擴產 搶先台積電氮化鎵技術授權進攻AI",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769645",
+      "date": "09-29",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI算力主導市值逼近30兆美元 2027資通訊供應鏈卡位伺服器最關鍵",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767926_IA5LC3QC187DT47Y4ODQ7",
-      "date": "09-15",
+      "title": "VSMC新加坡首座12吋廠產能預訂一空 方略：Fab 2評估啟動",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769798",
+      "date": "09-29",
       "source": "DIGITIMES"
     },
     {
-      "title": "台積電先進封裝全面晉級 不只封測廠受惠 設備、載板廠共迎升級商機",
-      "url": "https://www.ctee.com.tw/news/20260812700094-439901",
-      "date": "08-12",
-      "source": "工商時報"
+      "title": "AI算力推升PCB身價 兩岸板廠搶赴港IPO吸金",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769529",
+      "date": "09-29",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC利率決策聲明",
-      "date": "2026-09-16",
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "title": "GDP 國內生產毛額（Q2 三次估計）",
+      "date": "2026-09-30",
+      "source": "https://www.bea.gov/news/schedule"
     },
     {
-      "title": "FOMC記者會與經濟展望摘要(SEP、點陣圖)",
-      "date": "2026-09-16",
-      "source": "https://www.federalreserve.gov/newsevents/2026-september.htm"
-    },
-    {
-      "title": "PCE物價指數（個人消費支出，8月數據）",
+      "title": "PCE 物價指數（個人消費支出，8月數據）",
       "date": "2026-09-30",
       "source": "https://www.bea.gov/news/schedule"
     },
@@ -75,7 +70,12 @@
       "source": "https://www.bls.gov/schedule/news_release/empsit.htm"
     },
     {
-      "title": "CPI消費者物價指數（9月數據）",
+      "title": "FOMC 9月利率會議紀錄",
+      "date": "2026-10-07",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "title": "CPI 消費者物價指數（9月數據）",
       "date": "2026-10-14",
       "source": "https://www.bls.gov/schedule/news_release/cpi.htm"
     }
