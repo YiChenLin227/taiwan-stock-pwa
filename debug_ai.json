@@ -1,7 +1,6 @@
 {
-  "status": "json_error",
-  "attempt": 3,
-  "error": "JSON 解析失敗（第3次）: Cannot extract valid JSON from response",
-  "raw_preview": "```json\n{\n  \"market_direction\": \"中性偏多\",\n  \"biggest_risk\": \"外資單日大砍逾625億且期貨淨多單掛零，籌碼轉弱恐拖累反彈力道；黃金重挫、美債殖利率飆5.26%亦增添波動風險。\",\n  \"open_range_low\": \"47850\",\n  \"open_range_high\": \"48050\",\n  \"key_support\": \"47700\",\n  \"key_resistance\": \"48000\",\n\n  \"taiex_ai\": \"加權指數收48025，小跌0.27%，仍站穩月線46756與季線45322之上，RSI 63.34偏多但",
-  "ts": "2026-09-30 01:00:45 UTC"
+  "status": "ok",
+  "attempt": 1,
+  "top_stocks_count": 5,
+  "ts": "2026-10-01 00:58:01 UTC"
 }
