@@ -1,73 +1,68 @@
 {
-  "written_at": "2026-09-30T21:38:38Z",
+  "written_at": "2026-10-07T21:39:18Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "9月30日盤前／油市回落、費半上漲 台股景氣燈號連9紅 喜迎10月行情",
-      "url": "https://money.udn.com/money/story/5607/9784792",
-      "date": "09-30 08:31",
-      "source": "經濟日報"
+      "title": "台股連假前5萬點無望？美股四大指數全倒　台積電ADR挫1.4％、台指期夜盤殺回49K",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%80%A3%E5%81%87%E5%89%8D5%E8%90%AC%E9%BB%9E%E7%84%A1%E6%9C%9B-%E7%BE%8E%E8%82%A1%E5%9B%9B%E5%A4%A7%E6%8C%87%E6%95%B8%E5%85%A8%E5%80%92-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E6%8C%AB1-4-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E6%AE%BA%E5%9B%9E49k-143500170.html",
+      "date": "10-07",
+      "source": "Yahoo奇摩股市"
     },
     {
-      "title": "台股開盤漲135.53點 加權指數47,767.49點",
-      "url": "https://money.udn.com/money/story/5607/9784857",
-      "date": "09-30 09:12",
-      "source": "經濟日報"
+      "title": "Fed會議紀錄：升息還沒完！多數官員估年底前再一次 10月不一定出手",
+      "url": "https://tw.stock.yahoo.com/news/fed%E6%9C%83%E8%AD%B0%E7%B4%80%E9%8C%84-%E5%8D%87%E6%81%AF%E9%82%84%E6%B2%92%E5%AE%8C-%E5%A4%9A%E6%95%B8%E5%AE%98%E5%93%A1%E4%BC%B0%E5%B9%B4%E5%BA%95%E5%89%8D%E5%86%8D-%E6%AC%A1-10%E6%9C%88%E4%B8%8D-182039692.html",
+      "date": "10-07",
+      "source": "Yahoo奇摩股市"
     },
     {
-      "title": "超微砸82億美元收購World Labs 攜手李飛飛布局實體AI",
-      "url": "https://money.udn.com/money/story/5607/9784652",
-      "date": "09-30 04:24",
-      "source": "經濟日報"
+      "title": "廣達9月營收衰退2成...網憂明日股價「比照川湖一根伺候」 分析師這樣看",
+      "url": "https://tw.stock.yahoo.com/news/%E5%BB%A3%E9%81%949%E6%9C%88%E7%87%9F%E6%94%B6%E8%A1%B0%E9%80%802%E6%88%90%E7%B6%B2%E6%86%82%E6%98%8E%E6%97%A5%E8%82%A1%E5%83%B9%E3%80%8C%E6%AF%94%E7%85%A7%E5%B7%9D%E6%B9%96%E4%B8%80%E6%A0%B9%E4%BC%BA%E5%80%99%E3%80%8D-%E5%88%86%E6%9E%90%E5%B8%AB%E9%80%99%E6%A8%A3%E7%9C%8B-094938954.html",
+      "date": "10-07",
+      "source": "Yahoo奇摩股市"
     },
     {
-      "title": "壽險8月獲利617億元 全年上看5千億",
-      "url": "https://money.udn.com/money/story/5607/9784652",
-      "date": "09-30 04:24",
-      "source": "經濟日報"
+      "title": "旺宏前3季營收破538億元 史上最高",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E5%AE%8F%E5%89%8D3%E5%AD%A3%E7%87%9F%E6%94%B6%E7%A0%B4538%E5%84%84%E5%85%83-%E5%8F%B2%E4%B8%8A%E6%9C%80%E9%AB%98-100530269.html",
+      "date": "10-07",
+      "source": "Yahoo奇摩股市"
     },
     {
-      "title": "台塑集團投資逾百億 供應晶片廠電子級化學品",
-      "url": "https://money.udn.com/money/story/5607/9784652",
-      "date": "09-30 04:24",
-      "source": "經濟日報"
+      "title": "行政院追加1457億國防預算　進補5台廠",
+      "url": "https://tw.stock.yahoo.com/news/%E8%A1%8C%E6%94%BF%E9%99%A2%E8%BF%BD%E5%8A%A01457%E5%84%84%E5%9C%8B%E9%98%B2%E9%A0%90%E7%AE%97-%E9%80%B2%E8%A3%9C5%E5%8F%B0%E5%BB%A0-190500828.html",
+      "date": "10-06",
+      "source": "Yahoo奇摩股市"
     }
   ],
   "industry_news": [
     {
-      "title": "台積2027年1月Wafer Out「確定漲價」3～6% 訂單直達2030",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769567",
-      "date": "09-29",
+      "title": "Marvell拋「七大類」AI週邊晶片成長性　瑞昱、群聯、信驊各有切入點",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&Cat=40&id=0000770790_JG66MMYHLCMNQYL4GNE8V",
+      "date": "10-07",
       "source": "DIGITIMES"
     },
     {
-      "title": "VSMC新加坡首座12吋廠產能預訂一空 方略：Fab 2評估啟動",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769798",
-      "date": "09-29",
+      "title": "AI需求外溢！漢磊SiC「V型反彈」、GaN與TVS全滿載",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&Cat=40&id=0000770767_MV66K3E07792SN6S5WM4L",
+      "date": "10-07",
       "source": "DIGITIMES"
     },
     {
-      "title": "GlobalFoundries醞釀大擴產 搶先台積電氮化鎵技術授權進攻AI",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=769645",
-      "date": "09-29",
+      "title": "AI代理引爆CPU新需求　超微成最大受惠贏家？",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000770759_VSY69I9P6NMCGP8X7PKMM",
+      "date": "10-07",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "非農就業報告（9月數據，Nonfarm Payrolls）",
-      "date": "2026-10-02",
-      "source": "https://www.bls.gov/schedule/news_release/empsit.htm"
-    },
-    {
-      "title": "FOMC 9月利率會議紀錄",
+      "title": "FOMC 9月會議紀錄公布",
       "date": "2026-10-07",
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
       "title": "CPI 消費者物價指數（9月數據）",
       "date": "2026-10-14",
-      "source": "https://www.bls.gov/schedule/news_release/cpi.htm"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     }
   ]
 }
