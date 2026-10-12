@@ -34,6 +34,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
+      - name: Prepare news via Anthropic web search
+        continue-on-error: true
+        timeout-minutes: 8
+        env:
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+        run: |
+          cd scripts
+          python prepare_news.py
+
       - name: Run daily update
         env:
           CLAUDE_API_KEY:      ${{ secrets.CLAUDE_API_KEY }}
@@ -59,6 +68,7 @@ jobs:
           fi
           git add index.html
           git add debug_ai.json 2>/dev/null || true
+          git add data/news_latest.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No changes to index.html"
           else
