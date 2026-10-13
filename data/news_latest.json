@@ -1,63 +1,74 @@
 {
-  "written_at": "2026-10-12T21:39:54Z",
+  "written_at": "2026-10-13T02:46:57Z",
   "status": "ok",
+  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股跌11.48點收49301.96點 台積電跌10元",
-      "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E8%B7%8C1148%E9%BB%9E%E6%94%B64930196%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%B7%8C10%E5%85%83-060511907.html",
+      "title": "台股重挫！早盤暴跌逾900點 台積電慘摔40元 南亞科跌4％",
+      "url": "https://www.chinatimes.com/realtimenews/20261013001248-260410",
+      "date": "10-13",
+      "source": "中時"
+    },
+    {
+      "title": "台股一度急殺900點！台積電2,500元警報響 台塑、金控股相對抗跌",
+      "url": "https://money.udn.com/money/story/5607/9810820",
+      "date": "10-13",
+      "source": "經濟日報"
+    },
+    {
+      "title": "費半重挫拖累台股早盤跌逾930點 台積電法說倒數、聚焦2027年展望",
+      "url": "https://money.udn.com/money/story/5607/9810903",
+      "date": "10-13",
+      "source": "經濟日報"
+    },
+    {
+      "title": "10月13日盤前／台積電法說將釋出樂觀展望 預期本周先蹲後跳",
+      "url": "https://money.udn.com/money/story/5607/9810725",
+      "date": "10-13",
+      "source": "經濟日報"
+    },
+    {
+      "title": "台積電跌10元至2540 台股收跌11點",
+      "url": "https://finance.ettoday.net/news/3253201",
       "date": "10-12",
-      "source": "Yahoo奇摩股市"
-    },
-    {
-      "title": "快訊／台達電緊急發重訊！證實旗下3公司捲美337調查 股價挨刀一度重挫逾5%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%BF%AB%E8%A8%8A-%E5%8F%B0%E9%81%94%E9%9B%BB%E7%B7%8A%E6%80%A5%E7%99%BC%E9%87%8D%E8%A8%8A-%E8%AD%89%E5%AF%A6%E6%97%97%E4%B8%8B3%E5%85%AC%E5%8F%B8%E6%8D%B2%E7%BE%8E337%E8%AA%BF%E6%9F%A5-%E8%82%A1%E5%83%B9%E6%8C%A8%E5%88%80-%E5%BA%A6%E9%87%8D%E6%8C%AB%E9%80%BE5-043300173.html",
-      "date": "10-12",
-      "source": "Yahoo奇摩股市"
-    },
-    {
-      "title": "外資賣超近600億本土接棒點火 台股守住49000點",
-      "url": "https://tw.news.yahoo.com/%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85%E8%BF%91600%E5%84%84%E6%9C%AC%E5%9C%9F%E6%8E%A5%E6%A3%92%E9%BB%9E%E7%81%AB-%E5%8F%B0%E8%82%A1%E5%AE%88%E4%BD%8F49000%E9%BB%9E-085335460.html",
-      "date": "10-12",
-      "source": "Yahoo奇摩股市"
-    },
-    {
-      "title": "侵權利空衝擊！台達電跌逾3%殺最兇 廣達、鴻海跌1%",
-      "url": "https://finance.ettoday.net/news/3252969",
-      "date": "10-12 09:21",
-      "source": "ETtoday新聞雲"
-    },
-    {
-      "title": "中東緊張情勢未見緩和 台指期夜盤回測下檔10日線",
-      "url": "https://udn.com/news/story/7255/9810225",
-      "date": "10-12 21:07",
-      "source": "經濟日報 UDN"
+      "source": "ETtoday"
     }
   ],
   "industry_news": [
     {
-      "title": "Lumentum喊AI光通訊嚴重供不應求　台廠3Q26營收報佳音",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=30&id=0000771197_38001XRFLX33BX6FEMIIV",
+      "title": "美國啟動337調查衝擊幾何？台達電、鴻海強調客戶合作與供應鏈運作未受影響",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771086_PGALY6QK94YVXT5R04KLG",
       "date": "10-12",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI載板材料缺貨壓力趨緩　高階製程設備成下一擴產瓶頸",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&cat=40&id=0000771187_ZRW0HDSD9KX5L66GLGH40",
+      "title": "美國發起337調查 20家AI巨頭被Vicor拖入專利戰、劍指AI伺服器電源供應鏈",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771088_ZFBLUW8J9LMGYF78P9H87",
       "date": "10-12",
       "source": "DIGITIMES"
     },
     {
-      "title": "微軟2奈米ASIC終出爐！「四大天王」到齊引爆2027供應鏈動能",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=771185",
+      "title": "Vicor掀垂直供電專利爭議 美國337調查延伸伺服器電源供應鏈",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771077_A4U1IWL369B9EM8P4XWFD",
       "date": "10-12",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "CPI 消費者物價指數（9月數據）",
+      "title": "美國9月CPI消費者物價指數公布",
       "date": "2026-10-14",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "美國9月PPI生產者物價指數公布",
+      "date": "2026-10-15",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "FOMC 10月利率決策會議（27-28日，決議台北時間29日02:00公布）",
+      "date": "2026-10-27",
+      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
     }
   ]
 }
