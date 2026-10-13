@@ -1,74 +1,73 @@
 {
-  "written_at": "2026-10-13T02:46:57Z",
+  "written_at": "2026-10-13T21:38:14Z",
   "status": "ok",
-  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股重挫！早盤暴跌逾900點 台積電慘摔40元 南亞科跌4％",
-      "url": "https://www.chinatimes.com/realtimenews/20261013001248-260410",
-      "date": "10-13",
-      "source": "中時"
+      "title": "〈台股盤後〉台積電領跌！股匯雙殺急挫960點 CCL、記憶體成重災區",
+      "url": "https://news.cnyes.com/news/id/6629365",
+      "date": "10-13 14:00",
+      "source": "鉅亨網"
     },
     {
-      "title": "台股一度急殺900點！台積電2,500元警報響 台塑、金控股相對抗跌",
-      "url": "https://money.udn.com/money/story/5607/9810820",
-      "date": "10-13",
-      "source": "經濟日報"
+      "title": "台股帶量收跌960點失守10日均線及大盤49K 台積電收低50元",
+      "url": "https://udn.com/news/story/7251/9811704",
+      "date": "10-13 14:00",
+      "source": "聯合新聞網"
     },
     {
-      "title": "費半重挫拖累台股早盤跌逾930點 台積電法說倒數、聚焦2027年展望",
-      "url": "https://money.udn.com/money/story/5607/9810903",
-      "date": "10-13",
-      "source": "經濟日報"
+      "title": "台股重挫逾960點！台積電跌50元收最低 台達電、聯發科同步重挫",
+      "url": "https://www.nownews.com/news/6882974",
+      "date": "10-13 14:00",
+      "source": "NOWnews"
     },
     {
-      "title": "10月13日盤前／台積電法說將釋出樂觀展望 預期本周先蹲後跳",
-      "url": "https://money.udn.com/money/story/5607/9810725",
-      "date": "10-13",
-      "source": "經濟日報"
+      "title": "台股重挫千點 這4檔電子股造成過半跌點 等待台積電法說注強心針",
+      "url": "https://news.cnyes.com/news/id/6629247",
+      "date": "10-13 13:00",
+      "source": "鉅亨網"
     },
     {
-      "title": "台積電跌10元至2540 台股收跌11點",
-      "url": "https://finance.ettoday.net/news/3253201",
-      "date": "10-12",
-      "source": "ETtoday"
+      "title": "台積電法說會倒數！外資最高喊上4410元 6檔含積ETF搭行情",
+      "url": "https://news.tvbs.com.tw/money/4035471",
+      "date": "10-13",
+      "source": "TVBS"
     }
   ],
   "industry_news": [
     {
-      "title": "美國啟動337調查衝擊幾何？台達電、鴻海強調客戶合作與供應鏈運作未受影響",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771086_PGALY6QK94YVXT5R04KLG",
+      "title": "AI基礎設施邁向大規模叢集 和碩OCP秀設計到部署實力",
+      "url": "https://digitimes.com.tw/tech/dt/n/shwnws.asp?id=771374",
+      "date": "10-13",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "全球9成AI伺服器仰賴台系供應 研調指對美出口成長力道趨緩",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770304_Q392VXKZ1RD26A3QHUQ7W",
       "date": "10-12",
       "source": "DIGITIMES"
     },
     {
-      "title": "美國發起337調查 20家AI巨頭被Vicor拖入專利戰、劍指AI伺服器電源供應鏈",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771088_ZFBLUW8J9LMGYF78P9H87",
+      "title": "AI伺服器專利戰開打！矛頭對準廣達、鴻海、台達電 一文看懂337調查",
+      "url": "https://setn.com/news/1921374",
       "date": "10-12",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "Vicor掀垂直供電專利爭議 美國337調查延伸伺服器電源供應鏈",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771077_A4U1IWL369B9EM8P4XWFD",
-      "date": "10-12",
-      "source": "DIGITIMES"
+      "source": "三立新聞網"
     }
   ],
   "macro_events": [
     {
       "title": "美國9月CPI消費者物價指數公布",
       "date": "2026-10-14",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
       "title": "美國9月PPI生產者物價指數公布",
       "date": "2026-10-15",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
-      "title": "FOMC 10月利率決策會議（27-28日，決議台北時間29日02:00公布）",
+      "title": "FOMC 10月利率決策會議（27-28日，決議美東28日14:00公布）",
       "date": "2026-10-27",
-      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     }
   ]
 }
