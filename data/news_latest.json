@@ -1,42 +1,42 @@
 {
-  "written_at": "2026-10-14T00:45:46Z",
+  "written_at": "2026-10-14T21:38:18Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股重挫逾960點 4檔電子股造成過半跌點 等待台積電法說注強心針",
-      "url": "https://news.cnyes.com/news/id/6629247",
-      "date": "10-13",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "〈台股開盤〉電子權值承壓 台積電陷2500元保衛戰 早盤挫逾900點",
-      "url": "https://news.cnyes.com/news/id/6629155",
-      "date": "10-13",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "台指期夜盤上揚 法人：台股可望回穩",
-      "url": "https://money.udn.com/money/story/5612/9813168",
+      "title": "10月14日盤前／台股受外部利空回測月線 靜待台積電法說會利多突圍",
+      "url": "https://money.udn.com/money/story/5607/9813156",
       "date": "10-14",
       "source": "經濟日報"
     },
     {
-      "title": "美股多空待變 台指期夜盤以守待攻",
-      "url": "https://udn.com/news/story/7255/9812644",
-      "date": "10-13",
-      "source": "經濟日報"
+      "title": "靜待美 CPI、台積電法說會 台股收盤漲284點、49,000點得而復失",
+      "url": "https://udn.com/news/story/7251/9814139",
+      "date": "10-14",
+      "source": "聯合新聞網"
     },
     {
-      "title": "12檔外資連買股 抗跌明燈",
-      "url": "https://money.udn.com/money/story/5607/9812477",
+      "title": "快訊／台股收漲285點 台積電尾盤遭砍、收2490平盤",
+      "url": "https://finance.ettoday.net/news/3254477",
       "date": "10-14",
-      "source": "經濟日報"
+      "source": "ETtoday財經"
+    },
+    {
+      "title": "權王最後一單爆近200億！台股漲點收斂 外資「連6賣」累計提款逾3,300億",
+      "url": "https://newtalk.tw/news/view/2026-10-14/1065492",
+      "date": "10-14",
+      "source": "新頭殼"
+    },
+    {
+      "title": "外資專挑尾盤殺？台積電最後一單遭提款近200億元 台股120漲點秒吐回",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E5%B0%88%E6%8C%91%E5%B0%BE%E7%9B%A4%E6%AE%BA%EF%BC%9F%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%9C%80%E5%BE%8C%E4%B8%80%E5%96%AE%E9%81%AD%E6%8F%90%E6%AC%BE%E8%BF%91200%E5%84%84%E5%85%83-%E5%8F%B0%E8%82%A1120%E6%BC%B2%E9%BB%9E%E7%A7%92%E5%90%90%E5%9B%9E-055701514.html",
+      "date": "10-14",
+      "source": "Yahoo奇摩股市"
     }
   ],
   "industry_news": [
     {
-      "title": "AI重塑全球供應鏈格局 大椽DIGITIMES 10/13登興櫃 瞄準高價值產業情報商機",
+      "title": "AI重塑全球供應鏈格局 大椽DIGITIMES 10/13登錄興櫃 瞄準高價值產業情報商機",
       "url": "https://www.ctee.com.tw/news/20261012700968-430201",
       "date": "10-12",
       "source": "工商時報"
@@ -62,7 +62,7 @@
     {
       "title": "美國9月零售銷售（Advance Retail Sales）公布",
       "date": "2026-10-15",
-      "source": "https://fedratecalc.com/us-economic-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
       "title": "FOMC 10月例會（10/27-10/28）",
@@ -72,7 +72,7 @@
     {
       "title": "Fed利率決議公布暨鮑爾記者會",
       "date": "2026-10-28",
-      "source": "https://fedratecalc.com/fomc-meeting-schedule/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     }
   ]
 }
