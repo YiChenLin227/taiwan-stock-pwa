@@ -1,73 +1,78 @@
 {
-  "written_at": "2026-10-13T21:38:14Z",
+  "written_at": "2026-10-14T00:45:46Z",
   "status": "ok",
+  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "〈台股盤後〉台積電領跌！股匯雙殺急挫960點 CCL、記憶體成重災區",
-      "url": "https://news.cnyes.com/news/id/6629365",
-      "date": "10-13 14:00",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "台股帶量收跌960點失守10日均線及大盤49K 台積電收低50元",
-      "url": "https://udn.com/news/story/7251/9811704",
-      "date": "10-13 14:00",
-      "source": "聯合新聞網"
-    },
-    {
-      "title": "台股重挫逾960點！台積電跌50元收最低 台達電、聯發科同步重挫",
-      "url": "https://www.nownews.com/news/6882974",
-      "date": "10-13 14:00",
-      "source": "NOWnews"
-    },
-    {
-      "title": "台股重挫千點 這4檔電子股造成過半跌點 等待台積電法說注強心針",
+      "title": "台股重挫逾960點 4檔電子股造成過半跌點 等待台積電法說注強心針",
       "url": "https://news.cnyes.com/news/id/6629247",
-      "date": "10-13 13:00",
+      "date": "10-13",
       "source": "鉅亨網"
     },
     {
-      "title": "台積電法說會倒數！外資最高喊上4410元 6檔含積ETF搭行情",
-      "url": "https://news.tvbs.com.tw/money/4035471",
+      "title": "〈台股開盤〉電子權值承壓 台積電陷2500元保衛戰 早盤挫逾900點",
+      "url": "https://news.cnyes.com/news/id/6629155",
       "date": "10-13",
-      "source": "TVBS"
+      "source": "鉅亨網"
+    },
+    {
+      "title": "台指期夜盤上揚 法人：台股可望回穩",
+      "url": "https://money.udn.com/money/story/5612/9813168",
+      "date": "10-14",
+      "source": "經濟日報"
+    },
+    {
+      "title": "美股多空待變 台指期夜盤以守待攻",
+      "url": "https://udn.com/news/story/7255/9812644",
+      "date": "10-13",
+      "source": "經濟日報"
+    },
+    {
+      "title": "12檔外資連買股 抗跌明燈",
+      "url": "https://money.udn.com/money/story/5607/9812477",
+      "date": "10-14",
+      "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "AI基礎設施邁向大規模叢集 和碩OCP秀設計到部署實力",
-      "url": "https://digitimes.com.tw/tech/dt/n/shwnws.asp?id=771374",
-      "date": "10-13",
-      "source": "DIGITIMES"
+      "title": "AI重塑全球供應鏈格局 大椽DIGITIMES 10/13登興櫃 瞄準高價值產業情報商機",
+      "url": "https://www.ctee.com.tw/news/20261012700968-430201",
+      "date": "10-12",
+      "source": "工商時報"
     },
     {
-      "title": "全球9成AI伺服器仰賴台系供應 研調指對美出口成長力道趨緩",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770304_Q392VXKZ1RD26A3QHUQ7W",
-      "date": "10-12",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "AI伺服器專利戰開打！矛頭對準廣達、鴻海、台達電 一文看懂337調查",
-      "url": "https://setn.com/news/1921374",
-      "date": "10-12",
-      "source": "三立新聞網"
+      "title": "京元電赴美設廠 輝達搶產能 雙方簽訂客戶預付款協議",
+      "url": "https://money.udn.com/money/story/5607/9813030",
+      "date": "10-14",
+      "source": "經濟日報"
     }
   ],
   "macro_events": [
     {
-      "title": "美國9月CPI消費者物價指數公布",
+      "title": "美國9月消費者物價指數（CPI）公布",
       "date": "2026-10-14",
       "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
-      "title": "美國9月PPI生產者物價指數公布",
+      "title": "美國9月生產者物價指數（PPI）公布",
       "date": "2026-10-15",
       "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
-      "title": "FOMC 10月利率決策會議（27-28日，決議美東28日14:00公布）",
+      "title": "美國9月零售銷售（Advance Retail Sales）公布",
+      "date": "2026-10-15",
+      "source": "https://fedratecalc.com/us-economic-calendar/"
+    },
+    {
+      "title": "FOMC 10月例會（10/27-10/28）",
       "date": "2026-10-27",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "title": "Fed利率決議公布暨鮑爾記者會",
+      "date": "2026-10-28",
+      "source": "https://fedratecalc.com/fomc-meeting-schedule/"
     }
   ]
 }
