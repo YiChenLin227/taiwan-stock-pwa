@@ -1,78 +1,89 @@
 {
-  "written_at": "2026-10-14T21:38:18Z",
+  "written_at": "2026-10-15T00:12:07Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "10月14日盤前／台股受外部利空回測月線 靜待台積電法說會利多突圍",
-      "url": "https://money.udn.com/money/story/5607/9813156",
+      "title": "台積電法說前夕 外資賣超200億元連6賣 倒貨南亞科、京元電",
+      "url": "https://tw.stock.yahoo.com/quote/2330.TW/news",
+      "date": "10-14",
+      "source": "Yahoo奇摩股市/鉅亨網"
+    },
+    {
+      "title": "10月15日五件財經大事：艾司摩爾財測三度上調 台積法說前夕夥伴報佳音",
+      "url": "https://money.udn.com/money/story/5607/9815494",
+      "date": "10-15",
+      "source": "經濟日報"
+    },
+    {
+      "title": "美CPI意外升溫、費半重挫逾4% 台指期夜盤暴殺853點",
+      "url": "https://www.4gtv.tv/article/2026101506000001",
+      "date": "10-15",
+      "source": "4gtv新聞網"
+    },
+    {
+      "title": "9月CPI年增3.7%高於預期 美國股債雙殺 台指期夜盤直墜翻黑",
+      "url": "https://udn.com/news/story/7255/9815139",
       "date": "10-14",
       "source": "經濟日報"
     },
     {
-      "title": "靜待美 CPI、台積電法說會 台股收盤漲284點、49,000點得而復失",
-      "url": "https://udn.com/news/story/7251/9814139",
+      "title": "期交所10/14夜盤行情：台指期盤後上漲133點收48,931點",
+      "url": "https://www.ctee.com.tw/news/20261014701995-430202",
       "date": "10-14",
-      "source": "聯合新聞網"
-    },
-    {
-      "title": "快訊／台股收漲285點 台積電尾盤遭砍、收2490平盤",
-      "url": "https://finance.ettoday.net/news/3254477",
-      "date": "10-14",
-      "source": "ETtoday財經"
-    },
-    {
-      "title": "權王最後一單爆近200億！台股漲點收斂 外資「連6賣」累計提款逾3,300億",
-      "url": "https://newtalk.tw/news/view/2026-10-14/1065492",
-      "date": "10-14",
-      "source": "新頭殼"
-    },
-    {
-      "title": "外資專挑尾盤殺？台積電最後一單遭提款近200億元 台股120漲點秒吐回",
-      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E5%B0%88%E6%8C%91%E5%B0%BE%E7%9B%A4%E6%AE%BA%EF%BC%9F%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%9C%80%E5%BE%8C%E4%B8%80%E5%96%AE%E9%81%AD%E6%8F%90%E6%AC%BE%E8%BF%91200%E5%84%84%E5%85%83-%E5%8F%B0%E8%82%A1120%E6%BC%B2%E9%BB%9E%E7%A7%92%E5%90%90%E5%9B%9E-055701514.html",
-      "date": "10-14",
-      "source": "Yahoo奇摩股市"
+      "source": "工商時報"
     }
   ],
   "industry_news": [
     {
-      "title": "AI重塑全球供應鏈格局 大椽DIGITIMES 10/13登錄興櫃 瞄準高價值產業情報商機",
-      "url": "https://www.ctee.com.tw/news/20261012700968-430201",
-      "date": "10-12",
-      "source": "工商時報"
+      "title": "ASML 3Q26營收衝歷史新高 CEO：客戶已著手下單2029、2030年設備",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771513_J9V45PRR2REEUH2E5I4T3",
+      "date": "10-14",
+      "source": "DIGITIMES"
     },
     {
-      "title": "京元電赴美設廠 輝達搶產能 雙方簽訂客戶預付款協議",
-      "url": "https://money.udn.com/money/story/5607/9813030",
+      "title": "AI強勁需求推升 ASML第三季營收獲利創新高 全年財測連3季上調",
+      "url": "https://finance.technews.tw/2026/10/14/asmls-third-quarter-revenue-and-profit-hit-record-highs",
+      "date": "10-14",
+      "source": "科技新報"
+    },
+    {
+      "title": "2026 OCP全球峰會 緯穎攜手Ayar Labs、創意電子 實機展示CPO光互連技術",
+      "url": "https://money.udn.com/money/story/5612/9813620",
       "date": "10-14",
       "source": "經濟日報"
     }
   ],
   "macro_events": [
     {
-      "title": "美國9月消費者物價指數（CPI）公布",
-      "date": "2026-10-14",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
-    },
-    {
-      "title": "美國9月生產者物價指數（PPI）公布",
+      "title": "美國9月PPI、核心PPI公布",
       "date": "2026-10-15",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://hk.investing.com/economic-calendar/ppi-li-735"
     },
     {
-      "title": "美國9月零售銷售（Advance Retail Sales）公布",
+      "title": "美國9月零售銷售數據公布",
       "date": "2026-10-15",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6a946553-5c1b-4768-a9d1-908cc96ffc3b"
     },
     {
-      "title": "FOMC 10月例會（10/27-10/28）",
+      "title": "FOMC噤聲期開始（Fed官員停止公開談論貨幣政策，至10/29止）",
+      "date": "2026-10-17",
+      "source": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
+    },
+    {
+      "title": "FOMC十月利率會議召開（美東時間，為期兩天）",
       "date": "2026-10-27",
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "source": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
     },
     {
-      "title": "Fed利率決議公布暨鮑爾記者會",
+      "title": "FOMC利率決議公布（美東14:00，市場預期維持利率不變機率約8成）",
       "date": "2026-10-28",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
+    },
+    {
+      "title": "Fed主席Kevin Warsh記者會（台灣時間凌晨02:30）",
+      "date": "2026-10-29",
+      "source": "https://dolag.com.tw/%E7%BE%8E%E5%9C%8B%E5%88%A9%E7%8E%87%E6%B1%BA%E8%AD%B0%E6%99%82%E9%96%93%E8%A1%A8%E5%8D%87%E6%81%AF%E7%BE%8E%E5%85%83%E8%82%A1%E5%B8%82.html"
     }
   ]
 }
