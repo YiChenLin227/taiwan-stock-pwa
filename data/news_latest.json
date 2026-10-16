@@ -1,89 +1,79 @@
 {
-  "written_at": "2026-10-15T00:12:07Z",
+  "written_at": "2026-10-15T23:58:46Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台積電法說前夕 外資賣超200億元連6賣 倒貨南亞科、京元電",
-      "url": "https://tw.stock.yahoo.com/quote/2330.TW/news",
-      "date": "10-14",
-      "source": "Yahoo奇摩股市/鉅亨網"
+      "title": "台股盤後狂瀉1655點創史上第六大跌點 收46969點摜破月線",
+      "url": "https://news.cnyes.com/news/id/6631120",
+      "date": "10-15",
+      "source": "鉅亨網"
     },
     {
-      "title": "10月15日五件財經大事：艾司摩爾財測三度上調 台積法說前夕夥伴報佳音",
-      "url": "https://money.udn.com/money/story/5607/9815494",
+      "title": "台積電法說：Q3純益7630.6億元季增8% EPS29.43元續創單季新高",
+      "url": "https://news.cnyes.com/news/id/6631116",
+      "date": "10-15",
+      "source": "鉅亨網"
+    },
+    {
+      "title": "台指期夜盤面臨47K攻防戰 那指下殺300點、費半跌逾3%",
+      "url": "https://www.chinatimes.com/realtimenews/20261015004710-260410",
+      "date": "10-15",
+      "source": "中時新聞網"
+    },
+    {
+      "title": "外資史上第一大賣超！台股重跌1,655點 三大法人狂砍3,700億元",
+      "url": "https://udn.com/news/story/7251/9816843",
       "date": "10-15",
       "source": "經濟日報"
     },
     {
-      "title": "美CPI意外升溫、費半重挫逾4% 台指期夜盤暴殺853點",
-      "url": "https://www.4gtv.tv/article/2026101506000001",
+      "title": "美CPI升溫、AI融資疑慮夾擊 費半重摔超4% 台積電ADR跌逾3%",
+      "url": "https://news.cnyes.com/news/id/6630802",
       "date": "10-15",
-      "source": "4gtv新聞網"
-    },
-    {
-      "title": "9月CPI年增3.7%高於預期 美國股債雙殺 台指期夜盤直墜翻黑",
-      "url": "https://udn.com/news/story/7255/9815139",
-      "date": "10-14",
-      "source": "經濟日報"
-    },
-    {
-      "title": "期交所10/14夜盤行情：台指期盤後上漲133點收48,931點",
-      "url": "https://www.ctee.com.tw/news/20261014701995-430202",
-      "date": "10-14",
-      "source": "工商時報"
+      "source": "鉅亨網"
     }
   ],
   "industry_news": [
     {
-      "title": "ASML 3Q26營收衝歷史新高 CEO：客戶已著手下單2029、2030年設備",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771513_J9V45PRR2REEUH2E5I4T3",
+      "title": "台積電法說證實與Terafab洽談合作 魏哲家：晶圓廠須由台積營運",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771652_WSH5SD2Q62REIG1JNE6FV",
+      "date": "10-15",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "AI晶片愈做愈複雜 應材看旺AI半導體設備需求至2030年",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771529_XJT44FPC3JF8MF8M5GC1U",
       "date": "10-14",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI強勁需求推升 ASML第三季營收獲利創新高 全年財測連3季上調",
-      "url": "https://finance.technews.tw/2026/10/14/asmls-third-quarter-revenue-and-profit-hit-record-highs",
-      "date": "10-14",
-      "source": "科技新報"
-    },
-    {
-      "title": "2026 OCP全球峰會 緯穎攜手Ayar Labs、創意電子 實機展示CPO光互連技術",
-      "url": "https://money.udn.com/money/story/5612/9813620",
-      "date": "10-14",
-      "source": "經濟日報"
+      "title": "台積電法說：魏哲家封殺晶圓產能轉售 能多快就多快、商機不給別人吃",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771658_9IX7LFGW4HSL2J9AGV82S",
+      "date": "10-15",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "美國9月PPI、核心PPI公布",
-      "date": "2026-10-15",
-      "source": "https://hk.investing.com/economic-calendar/ppi-li-735"
-    },
-    {
-      "title": "美國9月零售銷售數據公布",
-      "date": "2026-10-15",
-      "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6a946553-5c1b-4768-a9d1-908cc96ffc3b"
-    },
-    {
-      "title": "FOMC噤聲期開始（Fed官員停止公開談論貨幣政策，至10/29止）",
-      "date": "2026-10-17",
-      "source": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
-    },
-    {
-      "title": "FOMC十月利率會議召開（美東時間，為期兩天）",
+      "title": "美國10月FOMC會議（第一天）",
       "date": "2026-10-27",
-      "source": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
+      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
     },
     {
-      "title": "FOMC利率決議公布（美東14:00，市場預期維持利率不變機率約8成）",
+      "title": "美國10月FOMC會議（第二天）暨利率決議公布（台灣時間10/29凌晨2:00）",
       "date": "2026-10-28",
-      "source": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
+      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
     },
     {
-      "title": "Fed主席Kevin Warsh記者會（台灣時間凌晨02:30）",
+      "title": "Fed主席鮑爾FOMC會後記者會（台灣時間凌晨2:30）",
       "date": "2026-10-29",
-      "source": "https://dolag.com.tw/%E7%BE%8E%E5%9C%8B%E5%88%A9%E7%8E%87%E6%B1%BA%E8%AD%B0%E6%99%82%E9%96%93%E8%A1%A8%E5%8D%87%E6%81%AF%E7%BE%8E%E5%85%83%E8%82%A1%E5%B8%82.html"
+      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
+    },
+    {
+      "title": "美國9月PCE物價指數與Q3 GDP初值公布",
+      "date": "2026-10-29",
+      "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
     }
   ]
 }
