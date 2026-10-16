@@ -1,37 +1,36 @@
 {
-  "written_at": "2026-10-15T23:58:46Z",
+  "written_at": "2026-10-16T08:15:10Z",
   "status": "ok",
-  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股盤後狂瀉1655點創史上第六大跌點 收46969點摜破月線",
-      "url": "https://news.cnyes.com/news/id/6631120",
+      "title": "外資狂賣3025億創紀錄、台股崩1655點失守4萬7 台積電Q3大賺7630億",
+      "url": "https://www.storm.mg/lifestyle/11172642",
       "date": "10-15",
-      "source": "鉅亨網"
+      "source": "風傳媒"
     },
     {
-      "title": "台積電法說：Q3純益7630.6億元季增8% EPS29.43元續創單季新高",
-      "url": "https://news.cnyes.com/news/id/6631116",
-      "date": "10-15",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "台指期夜盤面臨47K攻防戰 那指下殺300點、費半跌逾3%",
-      "url": "https://www.chinatimes.com/realtimenews/20261015004710-260410",
-      "date": "10-15",
-      "source": "中時新聞網"
-    },
-    {
-      "title": "外資史上第一大賣超！台股重跌1,655點 三大法人狂砍3,700億元",
-      "url": "https://udn.com/news/story/7251/9816843",
+      "title": "台積電法說會登場 市場不押寶？外資連七賣 今續賣3.4萬張",
+      "url": "https://udn.com/news/story/7251/9817195",
       "date": "10-15",
       "source": "經濟日報"
     },
     {
-      "title": "美CPI升溫、AI融資疑慮夾擊 費半重摔超4% 台積電ADR跌逾3%",
-      "url": "https://news.cnyes.com/news/id/6630802",
+      "title": "外資史上最大提款3,026億！台積電遭賣超3.4萬張 前20大還砍誰？",
+      "url": "https://newtalk.tw/news/view/2026-10-15/1065752",
       "date": "10-15",
-      "source": "鉅亨網"
+      "source": "新頭殼"
+    },
+    {
+      "title": "外資瘋砍台股3025億元破紀錄！三大法人、自營商也是史上最殺",
+      "url": "https://www.chinatimes.com/realtimenews/20261015003223-260410",
+      "date": "10-15",
+      "source": "中時新聞網"
+    },
+    {
+      "title": "快訊／台股收盤大跌1655點、刷史上第6大跌點 台積電下挫50元",
+      "url": "https://finance.ettoday.net/news/3255128",
+      "date": "10-15",
+      "source": "ETtoday"
     }
   ],
   "industry_news": [
@@ -56,24 +55,19 @@
   ],
   "macro_events": [
     {
-      "title": "美國10月FOMC會議（第一天）",
-      "date": "2026-10-27",
-      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
-    },
-    {
-      "title": "美國10月FOMC會議（第二天）暨利率決議公布（台灣時間10/29凌晨2:00）",
+      "title": "美國 FOMC 利率決議（10/27-28 會議，美東10/28 14:00）",
       "date": "2026-10-28",
-      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
-      "title": "Fed主席鮑爾FOMC會後記者會（台灣時間凌晨2:30）",
+      "title": "美國 Q3 GDP 初值（美東 08:30）",
       "date": "2026-10-29",
-      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
-      "title": "美國9月PCE物價指數與Q3 GDP初值公布",
+      "title": "美國 9月 PCE 物價指數 Personal Income and Outlays（美東 08:30）",
       "date": "2026-10-29",
-      "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     }
   ]
 }
