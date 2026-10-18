@@ -1,55 +1,55 @@
 {
-  "written_at": "2026-10-16T08:15:10Z",
+  "written_at": "2026-10-18T21:38:08Z",
   "status": "ok",
   "yahoo_tw_news": [
     {
-      "title": "外資狂賣3025億創紀錄、台股崩1655點失守4萬7 台積電Q3大賺7630億",
-      "url": "https://www.storm.mg/lifestyle/11172642",
-      "date": "10-15",
+      "title": "台股反彈141點仍週跌2202點！台積電法說後收黑、資金狂追「這族群」，10/16股市重點懶人包一次看",
+      "url": "https://www.storm.mg/lifestyle/11173036",
+      "date": "10-16",
       "source": "風傳媒"
     },
     {
-      "title": "台積電法說會登場 市場不押寶？外資連七賣 今續賣3.4萬張",
-      "url": "https://udn.com/news/story/7251/9817195",
-      "date": "10-15",
-      "source": "經濟日報"
-    },
-    {
-      "title": "外資史上最大提款3,026億！台積電遭賣超3.4萬張 前20大還砍誰？",
-      "url": "https://newtalk.tw/news/view/2026-10-15/1065752",
-      "date": "10-15",
-      "source": "新頭殼"
-    },
-    {
-      "title": "外資瘋砍台股3025億元破紀錄！三大法人、自營商也是史上最殺",
-      "url": "https://www.chinatimes.com/realtimenews/20261015003223-260410",
-      "date": "10-15",
-      "source": "中時新聞網"
-    },
-    {
-      "title": "快訊／台股收盤大跌1655點、刷史上第6大跌點 台積電下挫50元",
-      "url": "https://finance.ettoday.net/news/3255128",
-      "date": "10-15",
+      "title": "快訊／台股收漲141點 台積電尾盤見6066張賣單、收跌20元",
+      "url": "https://finance.ettoday.net/news/3255768",
+      "date": "10-16",
       "source": "ETtoday"
+    },
+    {
+      "title": "三大法人買賣超》外資連8賣、投信逆勢連6買！台股反彈141點，法人仍賣超678億元",
+      "url": "https://www.storm.mg/article/11173059",
+      "date": "10-16",
+      "source": "風傳媒"
+    },
+    {
+      "title": "台股重新站回47000點 外資賣超台幣走弱收32.3元",
+      "url": "https://news.pts.org.tw/article/831751",
+      "date": "10-16",
+      "source": "公視新聞網 PNN"
+    },
+    {
+      "title": "外資繼續賣台積電、賣超461億 股民、投信聯手把台股買回4萬7千點",
+      "url": "https://www.cmmedia.com.tw/home/articles/63367",
+      "date": "10-16",
+      "source": "中廣新聞網"
     }
   ],
   "industry_news": [
     {
-      "title": "台積電法說證實與Terafab洽談合作 魏哲家：晶圓廠須由台積營運",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771652_WSH5SD2Q62REIG1JNE6FV",
-      "date": "10-15",
+      "title": "AI買家預付款、長約綁產能 台灣民間投資迎新台幣7兆元",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771635_V8I74OT022OIC56B5ZWK7",
+      "date": "10-16",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "（台積電法說）AI加速器成長預估未納入CPU 與GF等合作強化後段供應",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771664_NR05WYKO7VBWH930EN5IU",
+      "date": "10-16",
       "source": "DIGITIMES"
     },
     {
       "title": "AI晶片愈做愈複雜 應材看旺AI半導體設備需求至2030年",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771529_XJT44FPC3JF8MF8M5GC1U",
       "date": "10-14",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "台積電法說：魏哲家封殺晶圓產能轉售 能多快就多快、商機不給別人吃",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771658_9IX7LFGW4HSL2J9AGV82S",
-      "date": "10-15",
       "source": "DIGITIMES"
     }
   ],
