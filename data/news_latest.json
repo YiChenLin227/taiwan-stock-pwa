@@ -1,84 +1,63 @@
 {
-  "written_at": "2026-10-19T21:38:17Z",
+  "written_at": "2026-10-20T00:50:25Z",
   "status": "ok",
+  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "外資賣超不手軟！三大法人續砍899億元 台積電急拉收平、台股跌289點",
-      "url": "https://money.udn.com/money/story/5607/9824127",
-      "date": "10-19",
-      "source": "經濟日報"
-    },
-    {
-      "title": "外資連9賣狂砍767億元！台股跌點收斂，是誰在護盤？",
-      "url": "https://www.storm.mg/article/11173737",
-      "date": "10-19",
-      "source": "風傳媒"
-    },
-    {
-      "title": "〈台股盤後〉台積電尾盤急拉 跌289點收46822點守住季線關",
-      "url": "https://uanalyze.com.tw/articles/7413357357",
-      "date": "10-19",
-      "source": "uanalyze"
-    },
-    {
       "title": "外資再提款767億元連九賣 瞄準台積電與記憶體族群減碼",
-      "url": "https://news.cnyes.com/news/id/6633504",
+      "url": "https://m.cnyes.com/news/id/6633504",
       "date": "10-19",
       "source": "鉅亨網"
     },
     {
-      "title": "外資再賣767億、連9日提款7,585億！力積電遭砍4.6萬張、中鋼卻連7買",
-      "url": "https://udn.com/news/story/7251/9824352",
+      "title": "輝達GTC柏林大會即將登場 台指期夜盤先反彈",
+      "url": "https://udn.com/news/story/7255/9824707",
       "date": "10-19",
+      "source": "經濟日報"
+    },
+    {
+      "title": "期貨最新報價10/19期交所夜盤行情",
+      "url": "https://www.ctee.com.tw/news/20261019701720-430202",
+      "date": "10-19",
+      "source": "工商時報"
+    },
+    {
+      "title": "美股盤後：AI買盤回流！那指費半走高逾1% 晶片股領漲 道瓊小幅收黑",
+      "url": "https://news.cnyes.com/news/id/6633799",
+      "date": "10-20",
+      "source": "鉅亨網"
+    },
+    {
+      "title": "華許避談決策前景 Fed利率估按兵不動",
+      "url": "https://money.udn.com/money/story/5599/9820032",
+      "date": "10-16",
       "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "《新聞聚焦》美國337調查盯上台廠 AI伺服器對美出貨添變數？",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=771780",
-      "date": "10-16",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "AI驅動載板面積變大、層數升 長廣等設備股料受惠",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7e6700f6-b62f-4bf2-a127-dc4a09d52f29",
-      "date": "10-16",
-      "source": "MoneyDJ"
-    },
-    {
-      "title": "AI熱潮推高價位 中國9月IC出口額年增136%達450億美元",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771583_1PE4LVEZ98BHUN24YYYSO",
-      "date": "10-16",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "AI晶片需求有多強？魏哲家：所有AI業者都與台積電合作",
-      "url": "https://technews.tw/2026/10/15/tsmc-ai-demand-is-booming/",
-      "date": "10-15",
+      "title": "小摩估台積電拚2028年上半年量產1.4奈米 蘋果A22 Pro有望率先採用",
+      "url": "https://technews.tw/2026/10/19/apple-1-4nm-chips-and-tsmc",
+      "date": "10-19",
       "source": "科技新報"
+    },
+    {
+      "title": "記憶體族群全面走跌 大廠跌幅逾半根 市場賣壓湧現",
+      "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1281618",
+      "date": "10-19",
+      "source": "CMoney"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC 10月利率決策會議首日",
-      "date": "2026-10-27",
-      "source": "https://klaroinvest.com/blog/fomc-2026-schedule/"
-    },
-    {
-      "title": "FOMC利率決議公布暨記者會（台灣時間10/29凌晨2點）",
+      "title": "FOMC 10月利率決策會議（27-28日，台灣時間29日凌晨公布結果）",
       "date": "2026-10-28",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://www.mpamag.com/us/mortgage-industry/industry-trends/key-dates-that-will-define-kevin-warshs-opening-months-as-fed-chair/576298"
     },
     {
-      "title": "美國第三季GDP初值公布",
+      "title": "美國9月PCE物價指數、第三季GDP初值公布",
       "date": "2026-10-29",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
-    },
-    {
-      "title": "美國9月PCE物價指數公布",
-      "date": "2026-10-29",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
     }
   ]
 }
