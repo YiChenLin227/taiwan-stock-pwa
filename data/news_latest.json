@@ -1,74 +1,79 @@
 {
-  "written_at": "2026-10-20T21:37:24Z",
+  "written_at": "2026-10-21T00:15:44Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "外資賣超767億元連9賣 調節力積電4.64萬張居首",
-      "url": "https://money.udn.com/money/story/5612/9824526",
-      "date": "10-19",
+      "title": "台股收盤下跌529點再探季線 台積電收低15元",
+      "url": "https://udn.com/news/story/7251/9826188",
+      "date": "10-20",
       "source": "經濟日報"
     },
     {
-      "title": "外資賣超不手軟！三大法人續砍899億元 台積電急拉收平、台股跌289點",
-      "url": "https://money.udn.com/money/story/5607/9824127",
-      "date": "10-19",
+      "title": "台積電跌25元至2395元 台股早盤挫逾400點",
+      "url": "https://www.cna.com.tw/news/afe/202610200029.aspx",
+      "date": "10-20",
+      "source": "中央社"
+    },
+    {
+      "title": "台指期夜盤重返47K！企業財報助攻 道指噴漲700點",
+      "url": "https://www.chinatimes.com/realtimenews/20261020004797-260410",
+      "date": "10-20",
+      "source": "工商時報/中時"
+    },
+    {
+      "title": "外資連10賣台股 今年累計賣超規模逾2.1兆元",
+      "url": "https://money.udn.com/money/story/5607/9826647",
+      "date": "10-20",
       "source": "經濟日報"
     },
     {
-      "title": "台積電爆4040張救場買單收平盤 台股僅收跌289點",
-      "url": "https://finance.ettoday.net/news/3257249",
-      "date": "10-19",
-      "source": "ETtoday"
-    },
-    {
-      "title": "快新聞／開低走高！台股小跌289點 台積電收平盤",
-      "url": "https://www.ftvnews.com.tw/news/detail/2026A19W0364",
-      "date": "10-19",
-      "source": "民視新聞網"
-    },
-    {
-      "title": "美股盤後：AI買盤回流！那指費半走高逾1% 晶片股領漲 道瓊小幅收黑",
-      "url": "https://news.cnyes.com/news/id/6633799",
+      "title": "百名經濟學家全押12月升息！Fed本月料先按兵不動",
+      "url": "https://news.cnyes.com/news/id/6634486",
       "date": "10-20",
       "source": "鉅亨網"
     }
   ],
   "industry_news": [
     {
-      "title": "高盛建議放空台灣半導體！示警AI族群股價恐下殺15％",
-      "url": "https://www.ctee.com.tw/news/20261019701084-430702",
-      "date": "10-19",
-      "source": "工商時報"
+      "title": "AI伺服器推升TVS、ESD需求 德微旗下亞昕打入國際供應鏈",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771915_ACI8GXJW2LRIMR4LAMV8S",
+      "date": "10-20",
+      "source": "DIGITIMES"
     },
     {
-      "title": "台積電、聯電 法人按讚",
-      "url": "https://www.ctee.com.tw/news/20261019700217-439901",
+      "title": "輝達要求統一製程 三星首採台積電3奈米造HBM",
+      "url": "https://www.ttv.com.tw/finance/view/?i=102026190738F17F3A08601D425690A49B4859404C9E26A6&from=587",
       "date": "10-19",
-      "source": "工商時報"
+      "source": "MoneyDJ"
     },
     {
-      "title": "台積電全球擴廠 廠務設備鏈High",
-      "url": "https://www.ctee.com.tw/news/20261016700071-439901",
-      "date": "10-16",
-      "source": "工商時報"
+      "title": "日本AI服務商GMO追加投資、採購輝達B300伺服器",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=63e6c70b-540f-48b9-87ba-e3a33cf792c7",
+      "date": "10-20",
+      "source": "MoneyDJ"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC 10月利率決策會議（27-28日，台灣時間29日凌晨公布結果）",
+      "title": "FOMC會議登場（為期兩天）",
+      "date": "2026-10-27",
+      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
+    },
+    {
+      "title": "FOMC利率決策公布（台灣時間10/29凌晨2:00）",
       "date": "2026-10-28",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
     },
     {
-      "title": "美國第三季GDP初值（Advance Estimate）",
+      "title": "Fed主席記者會（台灣時間凌晨2:30）",
       "date": "2026-10-29",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://applealmondrealty.com/posts/49962"
     },
     {
-      "title": "美國9月PCE物價指數（Personal Income and Outlays）",
+      "title": "美國9月PCE物價指數與第三季GDP初值公布",
       "date": "2026-10-29",
-      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     }
   ]
 }
