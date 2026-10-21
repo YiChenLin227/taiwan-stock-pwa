@@ -1,31 +1,31 @@
 {
-  "written_at": "2026-10-21T00:15:44Z",
+  "written_at": "2026-10-21T21:40:00Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股收盤下跌529點再探季線 台積電收低15元",
-      "url": "https://udn.com/news/story/7251/9826188",
-      "date": "10-20",
+      "title": "外資連10賣台股 今年累計賣超規模逾2.1兆元",
+      "url": "https://udn.com/news/story/7251/9826647",
+      "date": "10-20 17:42",
       "source": "經濟日報"
     },
     {
-      "title": "台積電跌25元至2395元 台股早盤挫逾400點",
-      "url": "https://www.cna.com.tw/news/afe/202610200029.aspx",
-      "date": "10-20",
-      "source": "中央社"
+      "title": "外資今年賣超2兆免驚 張錫看好台積電這時攻5千元",
+      "url": "https://www.chinatimes.com/realtimenews/20261020003470-260410",
+      "date": "10-20 16:30",
+      "source": "工商時報/中時"
+    },
+    {
+      "title": "快訊／台股收跌529點 台積電跌15元收2405",
+      "url": "https://finance.ettoday.net/news/3257846",
+      "date": "10-20 13:34",
+      "source": "ETtoday"
     },
     {
       "title": "台指期夜盤重返47K！企業財報助攻 道指噴漲700點",
       "url": "https://www.chinatimes.com/realtimenews/20261020004797-260410",
       "date": "10-20",
       "source": "工商時報/中時"
-    },
-    {
-      "title": "外資連10賣台股 今年累計賣超規模逾2.1兆元",
-      "url": "https://money.udn.com/money/story/5607/9826647",
-      "date": "10-20",
-      "source": "經濟日報"
     },
     {
       "title": "百名經濟學家全押12月升息！Fed本月料先按兵不動",
@@ -36,22 +36,22 @@
   ],
   "industry_news": [
     {
+      "title": "英特爾晶圓代工另闢戰場？12吋InP技術搶攻光通訊商機",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=771998",
+      "date": "10-21 05:00",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "中國RISC-V欲攻伺服器市場 玄鐵累計出貨已逾60億顆",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=772013",
+      "date": "10-21 05:00",
+      "source": "DIGITIMES"
+    },
+    {
       "title": "AI伺服器推升TVS、ESD需求 德微旗下亞昕打入國際供應鏈",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771915_ACI8GXJW2LRIMR4LAMV8S",
       "date": "10-20",
       "source": "DIGITIMES"
-    },
-    {
-      "title": "輝達要求統一製程 三星首採台積電3奈米造HBM",
-      "url": "https://www.ttv.com.tw/finance/view/?i=102026190738F17F3A08601D425690A49B4859404C9E26A6&from=587",
-      "date": "10-19",
-      "source": "MoneyDJ"
-    },
-    {
-      "title": "日本AI服務商GMO追加投資、採購輝達B300伺服器",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=63e6c70b-540f-48b9-87ba-e3a33cf792c7",
-      "date": "10-20",
-      "source": "MoneyDJ"
     }
   ],
   "macro_events": [
@@ -63,7 +63,7 @@
     {
       "title": "FOMC利率決策公布（台灣時間10/29凌晨2:00）",
       "date": "2026-10-28",
-      "source": "https://klaroinvest.com/zh-Hans/blog/fomc-2026-schedule/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     },
     {
       "title": "Fed主席記者會（台灣時間凌晨2:30）",
@@ -73,7 +73,7 @@
     {
       "title": "美國9月PCE物價指數與第三季GDP初值公布",
       "date": "2026-10-29",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/october-2026/"
     }
   ]
 }
