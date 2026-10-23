@@ -1,79 +1,89 @@
 {
-  "written_at": "2026-10-22T00:20:08Z",
+  "written_at": "2026-10-23T00:16:05Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "內外資加持 台積拉尾盤 收復5日線",
-      "url": "https://udn.com/news/story/7252/9829697",
+      "title": "台股重挫846點破季線 外資大砍816億 台積電列賣超第5大",
+      "url": "https://finance.ettoday.net/news/3259315",
+      "date": "10-22",
+      "source": "ETtoday財經"
+    },
+    {
+      "title": "美股盤中四指全綠 那指、費半重挫 台指期失守4.6萬",
+      "url": "https://www.mirrormedia.mg/external/setn_1926952",
+      "date": "10-22",
+      "source": "鏡週刊"
+    },
+    {
+      "title": "台指期夜盤多空拉鋸 47K關卡成攻防焦點",
+      "url": "https://udn.com/news/story/7255/9832277",
       "date": "10-22",
       "source": "經濟日報"
     },
     {
-      "title": "外資終止連10賣！三大法人買超5.68億元 台積電領軍台股收復5日線",
-      "url": "https://udn.com/news/story/7251/9828793",
-      "date": "10-21",
+      "title": "路透：台積電擬減少或排除設備中的稀土 降低對中國依賴",
+      "url": "https://money.udn.com/money/story/5599/9831567",
+      "date": "10-22",
       "source": "經濟日報"
     },
     {
-      "title": "中東緊張暫降溫 台指期夜盤再衝一波",
-      "url": "https://udn.com/news/story/7255/9829502",
-      "date": "10-21",
-      "source": "經濟日報"
-    },
-    {
-      "title": "AI交易回溫 台指期狂飆400點 費半漲2％",
-      "url": "https://www.chinatimes.com/realtimenews/20261021004819-260410",
-      "date": "10-21",
-      "source": "中國時報"
-    },
-    {
-      "title": "外資空單減 台指期夜盤站上47K",
-      "url": "https://www.ctee.com.tw/news/20261021701449-430202",
-      "date": "10-21",
+      "title": "台股開高走低收最低 跌破季線46207點 台積電、聯發科警鈴大響",
+      "url": "https://www.chinatimes.com/realtimenews/20261022004056-260410",
+      "date": "10-22",
       "source": "工商時報"
     }
   ],
   "industry_news": [
     {
-      "title": "DIGITIMES Today：NVIDIA中國AI加速器市佔縮水8成",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000772274_Y7N119HD8EWINU307NQYT",
+      "title": "路透：台積電尋求使用無稀土馬達 擺脫中國稀土壟斷控制",
+      "url": "https://news.cnyes.com/news/id/6635999",
+      "date": "10-22",
+      "source": "鉅亨網"
+    },
+    {
+      "title": "DIGITIMES Today：NVIDIA中國AI加速器市佔縮水8成、台航太鏈擠身前線",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772274_Y7N119HD8EWINU307NQYT",
       "date": "10-22",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI訂單太旺 美超微大幅上修財測、盤後噴漲16%",
-      "url": "https://cdn.technews.tw/",
-      "date": "10-21",
-      "source": "MoneyDJ／科技新報"
-    },
-    {
-      "title": "需求激增 Canon微影設備傳擴產5成",
-      "url": "https://cdn.technews.tw/",
-      "date": "10-21",
-      "source": "MoneyDJ／科技新報"
+      "title": "美光台灣廠爆24小時罷工 記憶體供應受關注 南亞科、華邦電成焦點",
+      "url": "https://vocus.cc/article/6ad97da2fd89780001018229",
+      "date": "10-22",
+      "source": "MoneyDJ(轉載)"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC會議召開（為期兩天，至10/28）",
-      "date": "2026-10-27",
+      "title": "FOMC十月利率決議會議（10/29台北時間公布結果）",
+      "date": "2026-10-28",
       "source": "https://klaroinvest.com/blog/fomc-2026-schedule/"
     },
     {
-      "title": "FOMC利率決議公布暨鮑爾主席記者會（台灣時間凌晨2:00）",
-      "date": "2026-10-29",
-      "source": "https://www.readmarkets.com/macro/fomc"
+      "title": "Fed主席鮑爾會後記者會",
+      "date": "2026-10-28",
+      "source": "https://www.yuantatop.com/news-post/2026fomc/"
     },
     {
-      "title": "美國9月核心PCE物價指數、Q3 GDP初值公布",
+      "title": "美國第三季(Q3)GDP初值公布",
       "date": "2026-10-29",
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月ADP小非農就業報告公布",
+      "title": "美國9月核心PCE物價指數公布",
+      "date": "2026-10-29",
+      "source": "https://www.investing.com/economic-calendar/core-pce-price-index-905"
+    },
+    {
+      "title": "美國10月ADP就業報告(小非農)公布",
       "date": "2026-11-04",
       "source": "https://www.nhks.com.tw/%E9%83%A8%E8%90%BD%E6%A0%BC/%E9%87%91%E8%9E%8D%E6%8C%87%E6%A8%99/2026-%E7%BE%8E%E5%9C%8B%E5%B0%8F%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD%E4%BA%BA%E6%95%B8adp%E5%85%AC%E5%B8%83%E6%99%82%E9%96%93%E8%A1%A8%E4%B8%80%E8%A6%BD/"
+    },
+    {
+      "title": "美國10月非農就業報告(NFP)公布",
+      "date": "2026-11-06",
+      "source": "https://www.yuantatop.com/news-post/2026nfp/"
     }
   ]
 }
