@@ -1,89 +1,82 @@
 {
-  "written_at": "2026-10-23T00:16:05Z",
+  "written_at": "2026-10-27T01:00:59Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股重挫846點破季線 外資大砍816億 台積電列賣超第5大",
-      "url": "https://finance.ettoday.net/news/3259315",
-      "date": "10-22",
-      "source": "ETtoday財經"
+      "title": "外資連10賣創天量 台股連假後恐補跌千點",
+      "url": "https://finance.technews.tw/2026/10/26/a-catch-up-decline",
+      "date": "10-26",
+      "source": "科技新報"
     },
     {
-      "title": "美股盤中四指全綠 那指、費半重挫 台指期失守4.6萬",
-      "url": "https://www.mirrormedia.mg/external/setn_1926952",
-      "date": "10-22",
-      "source": "鏡週刊"
+      "title": "就市論勢／AI供應鏈不看淡 外資賣超創紀錄、投信逆勢承接",
+      "url": "https://udn.com/news/story/7251/9836554",
+      "date": "10-26",
+      "source": "經濟日報(udn)"
     },
     {
-      "title": "台指期夜盤多空拉鋸 47K關卡成攻防焦點",
-      "url": "https://udn.com/news/story/7255/9832277",
-      "date": "10-22",
-      "source": "經濟日報"
+      "title": "美股三大指數收高 Anthropic遞交IPO文件重燃AI熱情 半導體股全面上漲",
+      "url": "https://m.21jingji.com/article/20261027/herald/484296ed9ffb02e48bdb0a2ee684c2c1.html",
+      "date": "10-27",
+      "source": "21世紀經濟報導"
     },
     {
-      "title": "路透：台積電擬減少或排除設備中的稀土 降低對中國依賴",
-      "url": "https://money.udn.com/money/story/5599/9831567",
-      "date": "10-22",
-      "source": "經濟日報"
-    },
-    {
-      "title": "台股開高走低收最低 跌破季線46207點 台積電、聯發科警鈴大響",
-      "url": "https://www.chinatimes.com/realtimenews/20261022004056-260410",
-      "date": "10-22",
-      "source": "工商時報"
+      "title": "穆迪首席經濟學家連兩月示警：Fed升息將是一個「錯誤」",
+      "url": "https://www.cnyes.com/usstock",
+      "date": "10-27",
+      "source": "鉅亨網"
     }
   ],
   "industry_news": [
     {
-      "title": "路透：台積電尋求使用無稀土馬達 擺脫中國稀土壟斷控制",
-      "url": "https://news.cnyes.com/news/id/6635999",
-      "date": "10-22",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "DIGITIMES Today：NVIDIA中國AI加速器市佔縮水8成、台航太鏈擠身前線",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772274_Y7N119HD8EWINU307NQYT",
-      "date": "10-22",
+      "title": "超微、NVIDIA鎖定載板產能 喊4倍擴產仍遇多重資源限制",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772511_FXH67Q1J0326XO25L1OE9",
+      "date": "10-27",
       "source": "DIGITIMES"
     },
     {
-      "title": "美光台灣廠爆24小時罷工 記憶體供應受關注 南亞科、華邦電成焦點",
-      "url": "https://vocus.cc/article/6ad97da2fd89780001018229",
-      "date": "10-22",
-      "source": "MoneyDJ(轉載)"
+      "title": "半導體設備交期非最大難題 供應鏈揭AI晶片擴展瓶頸「接力」",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772498_Y0I5G2VQ8QPW649K8GMF1",
+      "date": "10-27",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC十月利率決議會議（10/29台北時間公布結果）",
-      "date": "2026-10-28",
-      "source": "https://klaroinvest.com/blog/fomc-2026-schedule/"
+      "title": "FOMC利率決議會議召開（為期兩天）",
+      "date": "2026-10-27",
+      "source": "https://www.fundamentals.top/2026/09/2026-october-fomc-outlook.html"
     },
     {
-      "title": "Fed主席鮑爾會後記者會",
+      "title": "FOMC公布利率決議、Fed主席記者會（台灣時間10/29凌晨）",
       "date": "2026-10-28",
-      "source": "https://www.yuantatop.com/news-post/2026fomc/"
+      "source": "https://stockmarkethours.org/ja/events/fomc-meeting"
     },
     {
-      "title": "美國第三季(Q3)GDP初值公布",
+      "title": "美國第三季GDP初值、9月核心PCE物價指數公布",
       "date": "2026-10-29",
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國9月核心PCE物價指數公布",
-      "date": "2026-10-29",
-      "source": "https://www.investing.com/economic-calendar/core-pce-price-index-905"
+      "title": "美國10月ISM製造業PMI公布",
+      "date": "2026-11-02",
+      "source": "https://www.nhks.com.tw/部落格/金融指標/2026-美國ism製造業非製造業pmi時間表一覽/"
     },
     {
-      "title": "美國10月ADP就業報告(小非農)公布",
+      "title": "美國10月ISM非製造業(服務業)PMI公布",
       "date": "2026-11-04",
-      "source": "https://www.nhks.com.tw/%E9%83%A8%E8%90%BD%E6%A0%BC/%E9%87%91%E8%9E%8D%E6%8C%87%E6%A8%99/2026-%E7%BE%8E%E5%9C%8B%E5%B0%8F%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD%E4%BA%BA%E6%95%B8adp%E5%85%AC%E5%B8%83%E6%99%82%E9%96%93%E8%A1%A8%E4%B8%80%E8%A6%BD/"
+      "source": "https://www.nhks.com.tw/部落格/金融指標/2026-美國ism製造業非製造業pmi時間表一覽/"
     },
     {
-      "title": "美國10月非農就業報告(NFP)公布",
+      "title": "美國10月非農就業報告公布",
       "date": "2026-11-06",
-      "source": "https://www.yuantatop.com/news-post/2026nfp/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "美國10月CPI消費者物價指數公布",
+      "date": "2026-11-10",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     }
   ]
 }
