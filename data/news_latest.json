@@ -1,79 +1,79 @@
 {
-  "written_at": "2026-10-28T00:50:53Z",
+  "written_at": "2026-10-29T01:26:08Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "多空交戰季線！台股收漲54點，台積電收高15元站穩2400元",
-      "url": "https://money.udn.com/money/story/5607/9839701",
-      "date": "10-27",
-      "source": "經濟日報"
+      "title": "Fed維持利率不變 美股道瓊連3漲、台積電ADR漲0.6%",
+      "url": "https://newtalk.tw/news/view/2026-10-29/1068023",
+      "date": "10-29",
+      "source": "新頭殼/鉅亨網"
     },
     {
-      "title": "外資賣超前10名8檔ETF，調節友達逾9.5萬張居冠",
-      "url": "https://www.cna.com.tw/news/afe/202610270252.aspx",
-      "date": "10-27",
-      "source": "中央社"
+      "title": "台股大反攻是假象？專家警告台積電季線下彎恐有空頭風暴",
+      "url": "https://www.chinatimes.com/realtimenews/20261029001391-260410",
+      "date": "10-29",
+      "source": "工商時報"
     },
     {
-      "title": "三大法人買超台股31.42億元，投信連11買狂掃236億",
-      "url": "https://www.cna.com.tw/news/afe/202610270159.aspx",
-      "date": "10-27",
-      "source": "中央社"
+      "title": "Google財報不如預期引爆殺機 台股早盤下殺逾160點、三大權值股趴地",
+      "url": "https://www.chinatimes.com/realtimenews/20261029001409-260410",
+      "date": "10-29",
+      "source": "工商時報"
     },
     {
-      "title": "美AI股勁揚、台積電ADR漲近3% 法人：台股拚收復季線",
-      "url": "https://money.udn.com/money/story/5612/9841240",
+      "title": "外資買超台股159億元加碼ETF 連14日減碼台積電、聯發科",
+      "url": "https://tw.stock.yahoo.com/tw-market",
       "date": "10-28",
-      "source": "經濟日報"
+      "source": "Yahoo股市/中央社"
     },
     {
-      "title": "美股收盤｜AI買氣延續 那指漲1.18%，晶片股連三日走高",
-      "url": "https://uanalyze.com.tw/articles/5423257816",
-      "date": "10-28",
-      "source": "優分析"
+      "title": "台積電ADR連四漲收439.51美元 台指期夜盤跌128點",
+      "url": "https://udn.com/news/story/7251/9843693",
+      "date": "10-29",
+      "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "超微、NVIDIA鎖定載板產能 喊4倍擴產仍遇多重資源限制",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772511_FXH67Q1J0326XO25L1OE9",
-      "date": "10-27",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "半導體設備交期非最大難題 供應鏈揭AI晶片擴展瓶頸「接力」",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772498_Y0I5G2VQ8QPW649K8GMF1",
-      "date": "10-27",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "DIGITIMES Today：美光挖角南韓來台擴充戰力？桃園廠獎金爭議再協商",
+      "title": "DIGITIMES Today：美光挖角南韓來台擴充戰力？台系IC設計法說會接力登場",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772700_XZ28KGOKLJ893A1FRR6DB",
       "date": "10-28",
       "source": "DIGITIMES"
+    },
+    {
+      "title": "聯發科、瑞昱與譜瑞法說在即 手機與PC有多冷、雲端AI能熱多久？",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772676_DUL5EMZV8MUJLI5B8O47L",
+      "date": "10-28",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "台股重量級法說會登場！聯發科、台達電、聯電上陣 AI需求能變獲利？",
+      "url": "https://money.udn.com/money/story/5607/9836939",
+      "date": "10-27",
+      "source": "經濟日報"
     }
   ],
   "macro_events": [
     {
-      "title": "FOMC 10月利率決議公布（台灣時間10/29凌晨2時）暨Fed主席記者會",
-      "date": "2026-10-28",
-      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
-    {
-      "title": "美國第三季GDP初值、9月PCE物價指數公布",
+      "title": "FOMC利率決議公布（結果：維持利率3.75%-4.00%不變）",
       "date": "2026-10-29",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://www.cnbc.com/video/2026/10/28/fomc-votes-to-leave-interest-rates-unchanged.html"
     },
     {
-      "title": "美國10月非農就業人口與失業率公布",
+      "title": "美國10月非農就業報告公布",
       "date": "2026-11-06",
-      "source": "https://www.nhks.com.tw/%E9%83%A8%E8%90%BD%E6%A0%BC/%E9%87%91%E8%9E%8D%E6%8C%87%E6%A8%99/2026%E7%BE%8E%E5%9C%8B%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD%E4%BA%BA%E6%95%B8%E5%85%AC%E5%B8%83%E6%99%82%E9%96%93%E8%A1%A8%E4%B8%80%E8%A6%BD/"
+      "source": "https://www.yuantatop.com/2026/2026nfp-2/"
     },
     {
-      "title": "美國10月CPI消費者物價指數公布",
+      "title": "美國10月CPI（消費者物價指數）公布",
       "date": "2026-11-10",
-      "source": "https://www.nhks.com.tw/%E9%83%A8%E8%90%BD%E6%A0%BC/%E9%87%91%E8%9E%8D%E6%8C%87%E6%A8%99/%E6%9C%80%E6%96%B0%E6%9B%B4%E6%96%B0-2026%E7%BE%8E%E5%9C%8Bcpi%E5%85%AC%E5%B8%83%E6%99%82%E9%96%93/"
+      "source": "https://www.yuantatop.com/2026/2026cpi/"
+    },
+    {
+      "title": "FOMC（10月會議）會議紀要公布",
+      "date": "2026-11-11",
+      "source": "https://bank.fx678.com/FED"
     }
   ]
 }
