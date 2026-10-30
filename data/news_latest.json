@@ -1,13 +1,18 @@
 {
-  "written_at": "2026-10-30T01:28:00Z",
+  "written_at": "2026-10-30T09:25:50Z",
   "status": "ok",
-  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
       "title": "台股大逃殺！早盤崩跌1277點 台積電跌35元開出",
       "url": "https://news.nextapple.com/finance/20261030/C7ECDA045626805B0BF24515783277EF",
       "date": "10-30",
       "source": "蘋果新聞網"
+    },
+    {
+      "title": "台股收盤下跌667點失守季線 台積電收低10元",
+      "url": "https://udn.com/news/story/7251/9844640",
+      "date": "10-29",
+      "source": "經濟日報"
     },
     {
       "title": "台積電ADR29日下跌7.70美元 跌幅1.75% 折台股2806.07元",
@@ -58,17 +63,12 @@
     {
       "title": "美國10月非農就業人數(NFP)公布",
       "date": "2026-11-06",
-      "source": "https://www.nhks.com.tw/%E9%83%A8%E8%90%BD%E6%A0%BC/%E9%87%91%E8%9E%8D%E6%8C%87%E6%A8%99/2026%E7%BE%8E%E5%9C%8B%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD%E4%BA%BA%E6%95%B8%E5%85%AC%E5%B8%83%E6%99%82%E9%96%93%E8%A1%A8%E4%B8%80%E8%A6%BD/"
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     },
     {
       "title": "美國10月CPI公布",
       "date": "2026-11-10",
-      "source": "https://klaroinvest.com/blog/cpi-inflation/"
-    },
-    {
-      "title": "10月FOMC會議紀要(Minutes)公布",
-      "date": "2026-11-11",
-      "source": "https://bank.fx678.com/"
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     }
   ]
 }
