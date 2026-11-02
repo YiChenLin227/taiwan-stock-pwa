@@ -1,74 +1,79 @@
 {
-  "written_at": "2026-10-30T09:25:50Z",
+  "written_at": "2026-11-02T01:08:44Z",
   "status": "ok",
+  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股大逃殺！早盤崩跌1277點 台積電跌35元開出",
-      "url": "https://news.nextapple.com/finance/20261030/C7ECDA045626805B0BF24515783277EF",
-      "date": "10-30",
-      "source": "蘋果新聞網"
+      "title": "台股11月先下後上，融資追繳壓力浮現，止跌需觀察四大關鍵",
+      "url": "https://www.ctee.com.tw/news/20261102700036-439901",
+      "date": "11-02",
+      "source": "工商時報"
     },
     {
-      "title": "台股收盤下跌667點失守季線 台積電收低10元",
-      "url": "https://udn.com/news/story/7251/9844640",
-      "date": "10-29",
-      "source": "經濟日報"
+      "title": "台指夜盤跌867點 今迎空頭殺盤，外資空單增至9.2萬口",
+      "url": "https://www.mirrormedia.mg/external/setn_1931180",
+      "date": "11-02",
+      "source": "鏡週刊"
     },
     {
-      "title": "台積電ADR29日下跌7.70美元 跌幅1.75% 折台股2806.07元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBadr29%E6%97%A5%E4%B8%8B%E8%B7%8C7-70%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%851-75-%E6%8A%98%E5%8F%B0%E8%82%A12806-07%E5%85%83-214135155.html",
-      "date": "10-30",
-      "source": "Yahoo奇摩股市"
+      "title": "11/2台股盤前展望：費半暴跌7.2%、台指期夜盤跌867點，44,600點支撐成關鍵",
+      "url": "https://vocus.cc/article/6ae04c17fd897800018e64f8",
+      "date": "11-02",
+      "source": "方格子(vocus)"
     },
     {
-      "title": "10月29日期交所夜盤行情：台指期收45926點 跌643點",
-      "url": "https://money.udn.com/money/story/11112/9846053",
-      "date": "10-30",
-      "source": "經濟日報"
+      "title": "台股11/2日盤前分析：美股那斯達克、費半、台積電ADR同步下跌",
+      "url": "https://n.yam.com/Article/20261031344848",
+      "date": "10-31",
+      "source": "Yam天空新聞"
     },
     {
-      "title": "外資賣超688億元 賣超聯電12.9萬張最多 友達、群創也齊遭大賣",
-      "url": "https://money.udn.com/money/story/5607/9845142",
-      "date": "10-29",
-      "source": "經濟日報"
-    },
-    {
-      "title": "美上季GDP大增3.4%…PCE通膨指標偏高 12月升息預期升溫",
-      "url": "https://udn.com/news/story/6811/9845840",
+      "title": "聯準會維持利率3.75%至4%不變，12月升息機率達8成",
+      "url": "https://udn.com/news/story/6811/9843792",
       "date": "10-29",
       "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "AI需求曝半導體協作難題 聯發科、日月光與漢民點出台鏈三關卡",
+      "title": "AI浪潮助攻記憶體廠商翻身，蘋果昔日強勢議價地位不再奏效",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773084_9Z1L492M93GEAA3JI1384",
+      "date": "11-02",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "AI需求曝半導體協作難題，聯發科、日月光與漢民點出台鏈三關卡",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773011_YE611OZJ0Z45WN21Y2KES",
       "date": "10-29",
       "source": "DIGITIMES"
     },
     {
-      "title": "台積電CoWoS傳漲價、交期延長，先進封裝供需拉鋸加劇",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c65b0f4c-0f8d-4713-88eb-40762fe6ed86",
-      "date": "10-28",
-      "source": "MoneyDJ"
-    },
-    {
-      "title": "台積電CoWoS傳漲價2成！AI晶片搶產能 設備交期拉長至8個月",
-      "url": "https://www.ctee.com.tw/news/20261027700053-439901",
-      "date": "10-27",
-      "source": "工商時報"
+      "title": "AI機器人掀起運算需求大戰，NVIDIA獨佔7成市占看不到車尾燈",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772669_FIF74UL95JZB1PLDRZ4J8",
+      "date": "10-30",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "美國10月非農就業人數(NFP)公布",
-      "date": "2026-11-06",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "title": "美國9月JOLTS職位空缺及勞動流動報告",
+      "date": "2026-11-03",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月CPI公布",
+      "title": "美國10月非農就業報告",
+      "date": "2026-11-06",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "美國10月CPI消費者物價指數",
       "date": "2026-11-10",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "美國10月PPI生產者物價指數",
+      "date": "2026-11-13",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     }
   ]
 }
