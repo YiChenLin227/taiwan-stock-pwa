@@ -1,37 +1,37 @@
 {
-  "written_at": "2026-11-03T03:12:33Z",
+  "written_at": "2026-11-03T21:37:35Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股殺紅眼！開盤重挫逾700點 台積電崩至2295元",
-      "url": "https://www.chinatimes.com/realtimenews/20261103001290-260410",
-      "date": "11-03",
-      "source": "工商時報"
+      "title": "11/3台股收盤重挫，記憶體跌停、台玻逆勢漲6%",
+      "url": "https://www.pocket.tw/school/articles/article-mw0hp35n/",
+      "date": "11-03 收盤",
+      "source": "Pocket證券"
     },
     {
-      "title": "費半續挫3.37%、台積電領跌！台股一度下殺767點 44,400點關卡攻防戰",
-      "url": "https://udn.com/news/story/7251/9853426",
+      "title": "外資狂砍台股千億！核心EMS大廠全面拉回 鴻海突發重訊",
+      "url": "https://news.ebc.net.tw/news/business/578901",
       "date": "11-03",
-      "source": "經濟日報"
+      "source": "東森新聞"
     },
     {
-      "title": "台指期夜盤崩逾900點！美伊和平曙光難救美股 費半跌3.37%",
-      "url": "https://finance.ettoday.net/news/3265220",
+      "title": "三大法人》合計提款1464億元！外資連4賣、華邦電遭倒貨3.8萬張，投信連16買只敢抱金融股",
+      "url": "https://www.storm.mg/article/11178110",
       "date": "11-03",
-      "source": "ETtoday"
+      "source": "風傳媒"
     },
     {
-      "title": "外資連3砍！今提款力積電、台積電最多 台股進出前10大一次看",
-      "url": "https://finance.ettoday.net/news/3265039",
-      "date": "11-02",
-      "source": "ETtoday"
+      "title": "三大法人砍1464億 剩這檔逆勢突圍漲逾6%",
+      "url": "https://www.mirrormedia.mg/external/setn_1932835",
+      "date": "11-03",
+      "source": "鏡週刊"
     },
     {
-      "title": "美科技股挫台指期夜盤跌917點 法人：台股面臨下探壓力",
-      "url": "https://money.udn.com/money/story/5612/9853344",
-      "date": "11-03",
-      "source": "經濟日報"
+      "title": "台湾加权指数11月3日收盘下跌1612.6点，跌幅3.59%，报43307.54点",
+      "url": "https://shishixinwen.news/news/jin10/20261103133521169800",
+      "date": "11-03 收盤",
+      "source": "金十數據"
     }
   ],
   "industry_news": [
@@ -52,27 +52,27 @@
     {
       "title": "9月JOLTS職位空缺及勞動流動率",
       "date": "2026-11-03",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     },
     {
-      "title": "美國10月非農就業報告",
+      "title": "美國10月非農就業報告 Nonfarm Payrolls",
       "date": "2026-11-06",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     },
     {
       "title": "美國10月CPI消費者物價指數",
       "date": "2026-11-10",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     },
     {
       "title": "美國10月PPI生產者物價指數",
       "date": "2026-11-13",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     },
     {
-      "title": "10月FOMC會議紀要公布",
-      "date": "2026-11-18",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "title": "美國10月零售銷售",
+      "date": "2026-11-17",
+      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
     }
   ]
 }
