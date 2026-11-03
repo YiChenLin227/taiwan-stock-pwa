@@ -1,77 +1,77 @@
 {
-  "written_at": "2026-11-02T21:37:06Z",
+  "written_at": "2026-11-03T03:12:33Z",
   "status": "ok",
+  "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股11月首戰遭重擊！終場失守45K 收44920點、台積電大跌40元",
-      "url": "https://news.ttv.com.tw/news/11511020001700W",
-      "date": "11-02",
-      "source": "台視新聞"
-    },
-    {
-      "title": "〈台股盤後〉11月開門出師不利台積電疲軟 跌292點失守4萬5",
-      "url": "https://news.cnyes.com/news/id/6643843",
-      "date": "11-02",
-      "source": "鉅亨網"
-    },
-    {
-      "title": "三大法人賣超台股526.91億元",
-      "url": "https://www.cna.com.tw/news/afe/202611020147.aspx",
-      "date": "11-02",
-      "source": "中央社"
-    },
-    {
-      "title": "台股收跌291點 外資「連3賣」今再倒735億 投信「連15買」逆勢護盤",
-      "url": "https://newtalk.tw/news/view/2026-11-02/1068812",
-      "date": "11-02",
-      "source": "新頭殼"
-    },
-    {
-      "title": "台積電領跌、台股跌291點失守45K 機器人、塑化股逆勢點火",
-      "url": "https://www.ctee.com.tw/news/20261102701195-430201",
-      "date": "11-02",
+      "title": "台股殺紅眼！開盤重挫逾700點 台積電崩至2295元",
+      "url": "https://www.chinatimes.com/realtimenews/20261103001290-260410",
+      "date": "11-03",
       "source": "工商時報"
+    },
+    {
+      "title": "費半續挫3.37%、台積電領跌！台股一度下殺767點 44,400點關卡攻防戰",
+      "url": "https://udn.com/news/story/7251/9853426",
+      "date": "11-03",
+      "source": "經濟日報"
+    },
+    {
+      "title": "台指期夜盤崩逾900點！美伊和平曙光難救美股 費半跌3.37%",
+      "url": "https://finance.ettoday.net/news/3265220",
+      "date": "11-03",
+      "source": "ETtoday"
+    },
+    {
+      "title": "外資連3砍！今提款力積電、台積電最多 台股進出前10大一次看",
+      "url": "https://finance.ettoday.net/news/3265039",
+      "date": "11-02",
+      "source": "ETtoday"
+    },
+    {
+      "title": "美科技股挫台指期夜盤跌917點 法人：台股面臨下探壓力",
+      "url": "https://money.udn.com/money/story/5612/9853344",
+      "date": "11-03",
+      "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "AI浪潮助攻記憶體廠商翻身，蘋果昔日強勢議價地位不再奏效",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773084_9Z1L492M93GEAA3JI1384",
-      "date": "11-02",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "AI需求曝半導體協作難題，聯發科、日月光與漢民點出台鏈三關卡",
+      "title": "AI需求曝半導體協作難題 聯發科、日月光與漢民點出台鏈三關卡",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773011_YE611OZJ0Z45WN21Y2KES",
       "date": "10-29",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI機器人掀起運算需求大戰，NVIDIA獨佔7成市占看不到車尾燈",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772669_FIF74UL95JZB1PLDRZ4J8",
-      "date": "10-30",
+      "title": "AI開發縮至1年、量產爬坡僅1個月 台積電袁立本籲供應鏈同步驗證",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773000_IHR1Q7MZLJIP1O1IQ2ILX",
+      "date": "10-29",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "美國9月JOLTS職位空缺及勞動流動報告",
+      "title": "9月JOLTS職位空缺及勞動流動率",
       "date": "2026-11-03",
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
       "title": "美國10月非農就業報告",
       "date": "2026-11-06",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
       "title": "美國10月CPI消費者物價指數",
       "date": "2026-11-10",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
       "title": "美國10月PPI生產者物價指數",
       "date": "2026-11-13",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "10月FOMC會議紀要公布",
+      "date": "2026-11-18",
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     }
   ]
