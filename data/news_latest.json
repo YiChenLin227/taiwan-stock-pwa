@@ -1,78 +1,79 @@
 {
-  "written_at": "2026-11-03T21:37:35Z",
+  "written_at": "2026-11-04T01:46:30Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "11/3台股收盤重挫，記憶體跌停、台玻逆勢漲6%",
-      "url": "https://www.pocket.tw/school/articles/article-mw0hp35n/",
-      "date": "11-03 收盤",
-      "source": "Pocket證券"
+      "title": "台股反彈漲逾400點！台積電漲25元 3大權值股也紅了",
+      "url": "https://www.chinatimes.com/realtimenews/20261104001355-260410",
+      "date": "11-04",
+      "source": "工商時報"
     },
     {
-      "title": "外資狂砍台股千億！核心EMS大廠全面拉回 鴻海突發重訊",
-      "url": "https://news.ebc.net.tw/news/business/578901",
+      "title": "費半勁揚2.6%！台股開盤上漲420點後急縮 外資狂砍1073億",
+      "url": "https://news.nextapple.com/finance/20261104/3872A6C210CEFDF2134F98C6502F021D",
+      "date": "11-04",
+      "source": "蘋果新聞網"
+    },
+    {
+      "title": "台指期夜盤崩逾900點！美伊和平曙光難救美股 費半跌3.37%",
+      "url": "https://finance.ettoday.net/news/3265220",
       "date": "11-03",
-      "source": "東森新聞"
+      "source": "ETtoday"
     },
     {
-      "title": "三大法人》合計提款1464億元！外資連4賣、華邦電遭倒貨3.8萬張，投信連16買只敢抱金融股",
-      "url": "https://www.storm.mg/article/11178110",
-      "date": "11-03",
-      "source": "風傳媒"
+      "title": "台指期夜盤上揚 法人：台股可望回穩",
+      "url": "https://udn.com/news/story/7251/9855844",
+      "date": "11-04",
+      "source": "中央社／經濟日報"
     },
     {
-      "title": "三大法人砍1464億 剩這檔逆勢突圍漲逾6%",
-      "url": "https://www.mirrormedia.mg/external/setn_1932835",
-      "date": "11-03",
-      "source": "鏡週刊"
-    },
-    {
-      "title": "台湾加权指数11月3日收盘下跌1612.6点，跌幅3.59%，报43307.54点",
-      "url": "https://shishixinwen.news/news/jin10/20261103133521169800",
-      "date": "11-03 收盤",
-      "source": "金十數據"
+      "title": "《美股》AI股選前回神 甲骨文、算力股、費半彈",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=090b4198-1c24-4b6b-9453-afc4ea369c1d",
+      "date": "11-04",
+      "source": "MoneyDJ"
     }
   ],
   "industry_news": [
     {
-      "title": "AI需求曝半導體協作難題 聯發科、日月光與漢民點出台鏈三關卡",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773011_YE611OZJ0Z45WN21Y2KES",
-      "date": "10-29",
+      "title": "年增近488%！南亞科10月營收464.76億元 續刷單月新高",
+      "url": "https://technews.tw/2026/11/03/nanya-technology-2026-oct-revenue/",
+      "date": "11-03",
+      "source": "科技新報"
+    },
+    {
+      "title": "華邦電731億元擴新廠 精挑10家PLTA客戶鎖2029~2032年產能",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773377_V3740PAR64DKE18CROZHO",
+      "date": "11-03",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI開發縮至1年、量產爬坡僅1個月 台積電袁立本籲供應鏈同步驗證",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773000_IHR1Q7MZLJIP1O1IQ2ILX",
-      "date": "10-29",
+      "title": "DIGITIMES Today：蘋果下令衝MacBook Neo｜友達賣廠給台積電｜Marvell收購Lumentum的啟發",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773466_N0B3TTAI76Z9F85NSJALW",
+      "date": "11-04",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "9月JOLTS職位空缺及勞動流動率",
-      "date": "2026-11-03",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
-    },
-    {
-      "title": "美國10月非農就業報告 Nonfarm Payrolls",
+      "title": "美國10月非農就業報告公布",
       "date": "2026-11-06",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月CPI消費者物價指數",
+      "title": "美國10月CPI公布",
       "date": "2026-11-10",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月PPI生產者物價指數",
+      "title": "美國10月PPI公布",
       "date": "2026-11-13",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月零售銷售",
-      "date": "2026-11-17",
-      "source": "https://fedratecalc.com/us-economic-calendar/november-2026/"
+      "title": "FOMC 10月會議紀要公布",
+      "date": "2026-11-18",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     }
   ]
 }
