@@ -1,55 +1,55 @@
 {
-  "written_at": "2026-11-04T01:46:30Z",
+  "written_at": "2026-11-05T01:54:40Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股反彈漲逾400點！台積電漲25元 3大權值股也紅了",
-      "url": "https://www.chinatimes.com/realtimenews/20261104001355-260410",
-      "date": "11-04",
-      "source": "工商時報"
+      "title": "台股狂殺！指數急跌崩逾千點 國巨、南亞科逼近跌停",
+      "url": "https://www.chinatimes.com/realtimenews/20261105001502-260410",
+      "date": "11-05",
+      "source": "中時"
     },
     {
-      "title": "費半勁揚2.6%！台股開盤上漲420點後急縮 外資狂砍1073億",
-      "url": "https://news.nextapple.com/finance/20261104/3872A6C210CEFDF2134F98C6502F021D",
-      "date": "11-04",
-      "source": "蘋果新聞網"
+      "title": "台股開低一度重挫逾千點！42,000點保衛戰開打 台積電能撐盤？",
+      "url": "https://money.udn.com/money/story/5607/9858538",
+      "date": "11-05",
+      "source": "經濟日報"
     },
     {
-      "title": "台指期夜盤崩逾900點！美伊和平曙光難救美股 費半跌3.37%",
-      "url": "https://finance.ettoday.net/news/3265220",
-      "date": "11-03",
-      "source": "ETtoday"
+      "title": "台積電ADR跌2.2% 台指期漲201點",
+      "url": "https://udn.com/news/story/6811/9858373",
+      "date": "11-05",
+      "source": "經濟日報"
     },
     {
-      "title": "台指期夜盤上揚 法人：台股可望回穩",
-      "url": "https://udn.com/news/story/7251/9855844",
+      "title": "明天穩了？台指期夜盤狂飆逾1000點 站回44K大關",
+      "url": "https://www.chinatimes.com/realtimenews/20261104004314-260410",
       "date": "11-04",
-      "source": "中央社／經濟日報"
+      "source": "中時"
     },
     {
-      "title": "《美股》AI股選前回神 甲骨文、算力股、費半彈",
-      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=090b4198-1c24-4b6b-9453-afc4ea369c1d",
-      "date": "11-04",
-      "source": "MoneyDJ"
+      "title": "不買輝達、英特爾！外媒揭退休投資人「只押台積電」",
+      "url": "https://www.chinatimes.com/realtimenews/20261105000018-260410",
+      "date": "11-05",
+      "source": "中時"
     }
   ],
   "industry_news": [
     {
-      "title": "年增近488%！南亞科10月營收464.76億元 續刷單月新高",
-      "url": "https://technews.tw/2026/11/03/nanya-technology-2026-oct-revenue/",
+      "title": "馬斯克態度轉彎？Terafab傳與台積電重談合作",
+      "url": "https://technews.tw/2026/11/03/musk-stance-shift-terafab-tsmc-renegotiates-cooperation/",
       "date": "11-03",
       "source": "科技新報"
     },
     {
-      "title": "華邦電731億元擴新廠 精挑10家PLTA客戶鎖2029~2032年產能",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773377_V3740PAR64DKE18CROZHO",
+      "title": "那斯達克高層：台積電成全球第七大企業，反映該國建立的成就",
+      "url": "https://finance.technews.tw/2026/11/03/edward-knight-says-tsmc-reflects-taiwan-achievements",
       "date": "11-03",
-      "source": "DIGITIMES"
+      "source": "科技新報"
     },
     {
-      "title": "DIGITIMES Today：蘋果下令衝MacBook Neo｜友達賣廠給台積電｜Marvell收購Lumentum的啟發",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773466_N0B3TTAI76Z9F85NSJALW",
+      "title": "明年雲端成「去中心化」新時代 台灣成供應鏈穩定關鍵",
+      "url": "https://tw.news.yahoo.com/%E6%98%8E%E5%B9%B4%E9%9B%B2%E7%AB%AF%E6%88%90-%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96-%E6%96%B0%E6%99%82%E4%BB%A3-%E5%8F%B0%E7%81%A3%E6%88%90%E4%BE%9B%E6%87%89%E9%8F%88%E7%A9%A9%E5%AE%9A%E9%97%9C%E9%8D%B5-063152539.html",
       "date": "11-04",
       "source": "DIGITIMES"
     }
@@ -61,12 +61,12 @@
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月CPI公布",
+      "title": "美國10月CPI消費者物價指數公布",
       "date": "2026-11-10",
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
     {
-      "title": "美國10月PPI公布",
+      "title": "美國10月PPI生產者物價指數公布",
       "date": "2026-11-13",
       "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     },
