@@ -1,55 +1,55 @@
 {
-  "written_at": "2026-11-05T01:54:40Z",
+  "written_at": "2026-11-06T01:56:20Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股狂殺！指數急跌崩逾千點 國巨、南亞科逼近跌停",
-      "url": "https://www.chinatimes.com/realtimenews/20261105001502-260410",
-      "date": "11-05",
-      "source": "中時"
+      "title": "台積電ADR重挫10.78%，折合台股約2321.7元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBadr5%E6%97%A5%E4%B8%8B%E8%B7%8C42-65%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%8510-78-%E6%8A%98%E5%8F%B0%E8%82%A12321-70%E5%85%83-215202066.html",
+      "date": "11-06",
+      "source": "Yahoo奇摩股市"
     },
     {
-      "title": "台股開低一度重挫逾千點！42,000點保衛戰開打 台積電能撐盤？",
-      "url": "https://money.udn.com/money/story/5607/9858538",
-      "date": "11-05",
-      "source": "經濟日報"
-    },
-    {
-      "title": "台積電ADR跌2.2% 台指期漲201點",
-      "url": "https://udn.com/news/story/6811/9858373",
+      "title": "三大法人賣超台股1234億 外資連6日狂砍逾千億",
+      "url": "https://money.udn.com/money/story/5607/9859665",
       "date": "11-05",
       "source": "經濟日報"
     },
     {
-      "title": "明天穩了？台指期夜盤狂飆逾1000點 站回44K大關",
-      "url": "https://www.chinatimes.com/realtimenews/20261104004314-260410",
-      "date": "11-04",
-      "source": "中時"
+      "title": "11/06 台股盤前：費半重挫12.25%，賣壓能否收斂？",
+      "url": "https://hao.cnyes.com/post/276194",
+      "date": "11-06",
+      "source": "鉅亨網"
     },
     {
-      "title": "不買輝達、英特爾！外媒揭退休投資人「只押台積電」",
-      "url": "https://www.chinatimes.com/realtimenews/20261105000018-260410",
+      "title": "11月5日期交所夜盤行情：台指期收跌2946點、台積電期貨跌221點",
+      "url": "https://money.udn.com/money/story/11112/9860894",
       "date": "11-05",
-      "source": "中時"
+      "source": "經濟日報"
+    },
+    {
+      "title": "台股連6黑、外資單月賣超9421億創2022年以來新高",
+      "url": "https://www.businessinsider.tw/article/9254",
+      "date": "11-05",
+      "source": "Business Insider"
     }
   ],
   "industry_news": [
     {
-      "title": "馬斯克態度轉彎？Terafab傳與台積電重談合作",
-      "url": "https://technews.tw/2026/11/03/musk-stance-shift-terafab-tsmc-renegotiates-cooperation/",
-      "date": "11-03",
-      "source": "科技新報"
+      "title": "民主黨大勝代表AI資料中心大敗？ODM決策高層：AI發展才剛開始",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=773711",
+      "date": "11-06",
+      "source": "DIGITIMES"
     },
     {
-      "title": "那斯達克高層：台積電成全球第七大企業，反映該國建立的成就",
-      "url": "https://finance.technews.tw/2026/11/03/edward-knight-says-tsmc-reflects-taiwan-achievements",
-      "date": "11-03",
-      "source": "科技新報"
+      "title": "AI永動機、現金流疑慮多 然伺服器供應鏈異口同聲需求強",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773578_Q4R6XVOG6WXLIJ9WDJSF7",
+      "date": "11-05",
+      "source": "DIGITIMES"
     },
     {
-      "title": "明年雲端成「去中心化」新時代 台灣成供應鏈穩定關鍵",
-      "url": "https://tw.news.yahoo.com/%E6%98%8E%E5%B9%B4%E9%9B%B2%E7%AB%AF%E6%88%90-%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96-%E6%96%B0%E6%99%82%E4%BB%A3-%E5%8F%B0%E7%81%A3%E6%88%90%E4%BE%9B%E6%87%89%E9%8F%88%E7%A9%A9%E5%AE%9A%E9%97%9C%E9%8D%B5-063152539.html",
+      "title": "DIGITIMES Today：三星首款AI眼鏡傳開賣、Anthropic算力需求大增帶動ASIC商機",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773318_5GA2VL3P2V2EUH7CB1JJX",
       "date": "11-04",
       "source": "DIGITIMES"
     }
@@ -58,22 +58,22 @@
     {
       "title": "美國10月非農就業報告公布",
       "date": "2026-11-06",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     },
     {
-      "title": "美國10月CPI消費者物價指數公布",
+      "title": "美國10月CPI（消費者物價指數）公布",
       "date": "2026-11-10",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://www.barits.com.tw/cpi-2026-rewrite/"
     },
     {
-      "title": "美國10月PPI生產者物價指數公布",
+      "title": "美國10月PPI（生產者物價指數）公布",
       "date": "2026-11-13",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     },
     {
-      "title": "FOMC 10月會議紀要公布",
-      "date": "2026-11-18",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "title": "Fed公布10月FOMC會議紀要（台北時間11/19凌晨3點）",
+      "date": "2026-11-19",
+      "source": "https://klaroinvest.com/blog/fomc-2026-schedule/"
     }
   ]
 }
