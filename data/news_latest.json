@@ -1,79 +1,89 @@
 {
-  "written_at": "2026-11-06T01:56:20Z",
+  "written_at": "2026-11-19T02:54:06Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台積電ADR重挫10.78%，折合台股約2321.7元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBadr5%E6%97%A5%E4%B8%8B%E8%B7%8C42-65%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%8510-78-%E6%8A%98%E5%8F%B0%E8%82%A12321-70%E5%85%83-215202066.html",
-      "date": "11-06",
-      "source": "Yahoo奇摩股市"
+      "title": "台股陷4萬點保衛戰！早盤震盪跌破關卡，台積電開2165元",
+      "url": "https://www.chinatimes.com/realtimenews/20261119001439-260410",
+      "date": "11-19",
+      "source": "中時新聞網"
     },
     {
-      "title": "三大法人賣超台股1234億 外資連6日狂砍逾千億",
-      "url": "https://money.udn.com/money/story/5607/9859665",
-      "date": "11-05",
-      "source": "經濟日報"
-    },
-    {
-      "title": "11/06 台股盤前：費半重挫12.25%，賣壓能否收斂？",
-      "url": "https://hao.cnyes.com/post/276194",
-      "date": "11-06",
+      "title": "輝達財報亮眼也難救！道瓊重挫561點、台指期夜盤跌345點",
+      "url": "https://news.cnyes.com/news/id/6666812",
+      "date": "11-19",
       "source": "鉅亨網"
     },
     {
-      "title": "11月5日期交所夜盤行情：台指期收跌2946點、台積電期貨跌221點",
-      "url": "https://money.udn.com/money/story/11112/9860894",
-      "date": "11-05",
+      "title": "外資賣超台股逾765億元，調節台積電逾1.5萬張",
+      "url": "https://money.udn.com/money/story/5612/9887205",
+      "date": "11-18",
       "source": "經濟日報"
     },
     {
-      "title": "台股連6黑、外資單月賣超9421億創2022年以來新高",
-      "url": "https://www.businessinsider.tw/article/9254",
-      "date": "11-05",
-      "source": "Business Insider"
+      "title": "聯準會會議紀錄：幾乎所有官員認為有必要進一步升息",
+      "url": "https://www.cna.com.tw/news/aopl/202611190023.aspx",
+      "date": "11-18",
+      "source": "中央社"
+    },
+    {
+      "title": "Fed理事華勒警告通膨惡化，籲12月考慮升息2碼",
+      "url": "https://www.ctee.com.tw/news/20261118702025-430701",
+      "date": "11-18",
+      "source": "工商時報"
     }
   ],
   "industry_news": [
     {
-      "title": "民主黨大勝代表AI資料中心大敗？ODM決策高層：AI發展才剛開始",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=773711",
-      "date": "11-06",
+      "title": "NVIDIA、矽品簽數十億美元協議，2029先進封裝產能增至3倍",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=775168",
+      "date": "11-18",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI永動機、現金流疑慮多 然伺服器供應鏈異口同聲需求強",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773578_Q4R6XVOG6WXLIJ9WDJSF7",
-      "date": "11-05",
+      "title": "黃仁勳辭任恐掀蝴蝶效應，記憶體三雄面臨議價新局",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775218_I8Q1Q08P27NBJP77MTHMP",
+      "date": "11-19",
       "source": "DIGITIMES"
     },
     {
-      "title": "DIGITIMES Today：三星首款AI眼鏡傳開賣、Anthropic算力需求大增帶動ASIC商機",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000773318_5GA2VL3P2V2EUH7CB1JJX",
-      "date": "11-04",
-      "source": "DIGITIMES"
+      "title": "AI旺，台灣主要IT廠營收暴增5成、首破3兆元",
+      "url": "https://technews.tw/2026/11/19/taiwan-major-it-firms-see-revenue-surge-50",
+      "date": "11-19",
+      "source": "科技新報"
     }
   ],
   "macro_events": [
     {
-      "title": "美國10月非農就業報告公布",
-      "date": "2026-11-06",
-      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
-    },
-    {
-      "title": "美國10月CPI（消費者物價指數）公布",
-      "date": "2026-11-10",
-      "source": "https://www.barits.com.tw/cpi-2026-rewrite/"
-    },
-    {
-      "title": "美國10月PPI（生產者物價指數）公布",
-      "date": "2026-11-13",
-      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
-    },
-    {
-      "title": "Fed公布10月FOMC會議紀要（台北時間11/19凌晨3點）",
+      "title": "Fed公布10月FOMC會議紀錄，幾乎所有官員傾向進一步升息",
       "date": "2026-11-19",
-      "source": "https://klaroinvest.com/blog/fomc-2026-schedule/"
+      "source": "https://www.cna.com.tw/news/aopl/202611190023.aspx"
+    },
+    {
+      "title": "美國10月PCE物價指數、第3季GDP修正值公布",
+      "date": "2026-11-25",
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
+    },
+    {
+      "title": "美國感恩節，美股休市",
+      "date": "2026-11-26",
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
+    },
+    {
+      "title": "感恩節後交易日（黑色星期五），美股縮短交易時段",
+      "date": "2026-11-27",
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
+    },
+    {
+      "title": "美國11月ISM製造業PMI公布",
+      "date": "2026-12-01",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "美國11月ADP就業報告、ISM非製造業PMI公布",
+      "date": "2026-12-03",
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
     }
   ]
 }
