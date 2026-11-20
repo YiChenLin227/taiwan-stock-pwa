@@ -1,89 +1,79 @@
 {
-  "written_at": "2026-11-19T02:54:06Z",
+  "written_at": "2026-11-20T02:46:03Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股陷4萬點保衛戰！早盤震盪跌破關卡，台積電開2165元",
-      "url": "https://www.chinatimes.com/realtimenews/20261119001439-260410",
-      "date": "11-19",
-      "source": "中時新聞網"
+      "title": "台積電陷2,000元關卡保衛戰 台股重挫逾2,000點創七個月新低",
+      "url": "https://udn.com/news/story/7251/9890690",
+      "date": "11-20",
+      "source": "經濟日報"
     },
     {
-      "title": "輝達財報亮眼也難救！道瓊重挫561點、台指期夜盤跌345點",
-      "url": "https://news.cnyes.com/news/id/6666812",
-      "date": "11-19",
-      "source": "鉅亨網"
+      "title": "台股開盤重挫780點！跌破38K 台積電跌60元至2,040元",
+      "url": "https://www.nownews.com/news/6893936",
+      "date": "11-20",
+      "source": "NOWnews"
     },
     {
-      "title": "外資賣超台股逾765億元，調節台積電逾1.5萬張",
+      "title": "美股四大指數全面收黑 道瓊重挫逾1,100點、費半跌2.42% 台指期夜盤重挫500點收38,107點",
+      "url": "https://www.storm.mg/article/11183333",
+      "date": "11-20",
+      "source": "風傳媒"
+    },
+    {
+      "title": "外資賣超台股逾765億元 調節台積電逾1.5萬張",
       "url": "https://money.udn.com/money/story/5612/9887205",
       "date": "11-18",
       "source": "經濟日報"
     },
     {
-      "title": "聯準會會議紀錄：幾乎所有官員認為有必要進一步升息",
-      "url": "https://www.cna.com.tw/news/aopl/202611190023.aspx",
-      "date": "11-18",
-      "source": "中央社"
-    },
-    {
-      "title": "Fed理事華勒警告通膨惡化，籲12月考慮升息2碼",
-      "url": "https://www.ctee.com.tw/news/20261118702025-430701",
-      "date": "11-18",
-      "source": "工商時報"
+      "title": "Fed幾乎全體官員挺升息 惟採取行動步調存在分歧",
+      "url": "https://udn.com/news/story/6811/9890067",
+      "date": "11-20",
+      "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "NVIDIA、矽品簽數十億美元協議，2029先進封裝產能增至3倍",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=775168",
-      "date": "11-18",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "黃仁勳辭任恐掀蝴蝶效應，記憶體三雄面臨議價新局",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775218_I8Q1Q08P27NBJP77MTHMP",
+      "title": "NVIDIA擴大台美韓夥伴合作承諾 獲點名供應鏈一覽",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775208_LZ91FKAX1WX5M57JC6CJS",
       "date": "11-19",
       "source": "DIGITIMES"
     },
     {
-      "title": "AI旺，台灣主要IT廠營收暴增5成、首破3兆元",
-      "url": "https://technews.tw/2026/11/19/taiwan-major-it-firms-see-revenue-surge-50",
+      "title": "AI算力需求續擴張 NVIDIA仍有供應鏈、融資與商業化考驗",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775199_XRE2JJCM82LBJCL6TKTA2",
       "date": "11-19",
-      "source": "科技新報"
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "NVIDIA強調產品節奏不變 AI晶片供應鏈估短期衝擊有限",
+      "url": "https://gb-www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775185_3QY2WF4U799ZCP6OVG8K0",
+      "date": "11-19",
+      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "Fed公布10月FOMC會議紀錄，幾乎所有官員傾向進一步升息",
-      "date": "2026-11-19",
-      "source": "https://www.cna.com.tw/news/aopl/202611190023.aspx"
+      "title": "Fed官員谷爾斯比、巴爾、巴金、鮑爾森等公開演說",
+      "date": "2026-11-20",
+      "source": "https://news.cnyes.com/news/id/6667052"
     },
     {
-      "title": "美國10月PCE物價指數、第3季GDP修正值公布",
+      "title": "美國第三季GDP第二次修正值公布",
+      "date": "2026-11-25",
+      "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+    },
+    {
+      "title": "美國10月PCE物價指數（含核心PCE）公布",
       "date": "2026-11-25",
       "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     },
     {
-      "title": "美國感恩節，美股休市",
-      "date": "2026-11-26",
-      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
-    },
-    {
-      "title": "感恩節後交易日（黑色星期五），美股縮短交易時段",
-      "date": "2026-11-27",
-      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
-    },
-    {
-      "title": "美國11月ISM製造業PMI公布",
-      "date": "2026-12-01",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
-    },
-    {
-      "title": "美國11月ADP就業報告、ISM非製造業PMI公布",
-      "date": "2026-12-03",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "title": "美國11月非農就業報告與失業率公布",
+      "date": "2026-12-04",
+      "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
     }
   ]
 }
