@@ -1,79 +1,69 @@
 {
-  "written_at": "2026-11-20T02:46:03Z",
+  "written_at": "2026-11-23T02:05:45Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台積電陷2,000元關卡保衛戰 台股重挫逾2,000點創七個月新低",
-      "url": "https://udn.com/news/story/7251/9890690",
-      "date": "11-20",
+      "title": "11月23日五件財經大事搶先看：台電砸千億穩台積電1奈米用電",
+      "url": "https://money.udn.com/money/story/5607/9895427",
+      "date": "11-23",
       "source": "經濟日報"
     },
     {
-      "title": "台股開盤重挫780點！跌破38K 台積電跌60元至2,040元",
-      "url": "https://www.nownews.com/news/6893936",
-      "date": "11-20",
-      "source": "NOWnews"
+      "title": "費半崩跌逾10%拖累！台股36K前震盪 聯電漲停打開",
+      "url": "https://money.udn.com/money/story/5607/9895615",
+      "date": "11-23",
+      "source": "經濟日報"
     },
     {
-      "title": "美股四大指數全面收黑 道瓊重挫逾1,100點、費半跌2.42% 台指期夜盤重挫500點收38,107點",
-      "url": "https://www.storm.mg/article/11183333",
-      "date": "11-20",
+      "title": "台股開盤10分鐘震盪1200點！聯電火速亮燈、台積電翻紅撐盤",
+      "url": "https://www.ftnn.com.tw/news/598650",
+      "date": "11-23",
+      "source": "FTNN新聞網"
+    },
+    {
+      "title": "台指期一度開跌800點 台積電個股期貨開低71元",
+      "url": "https://udn.com/news/story/7255/9895563",
+      "date": "11-23",
+      "source": "聯合新聞網"
+    },
+    {
+      "title": "美股全面重挫、金管會祭「全面禁空令」救市 台指期夜盤再崩1881點",
+      "url": "https://www.storm.mg/article/11183800",
+      "date": "11-22",
       "source": "風傳媒"
-    },
-    {
-      "title": "外資賣超台股逾765億元 調節台積電逾1.5萬張",
-      "url": "https://money.udn.com/money/story/5612/9887205",
-      "date": "11-18",
-      "source": "經濟日報"
-    },
-    {
-      "title": "Fed幾乎全體官員挺升息 惟採取行動步調存在分歧",
-      "url": "https://udn.com/news/story/6811/9890067",
-      "date": "11-20",
-      "source": "經濟日報"
     }
   ],
   "industry_news": [
     {
-      "title": "NVIDIA擴大台美韓夥伴合作承諾 獲點名供應鏈一覽",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775208_LZ91FKAX1WX5M57JC6CJS",
-      "date": "11-19",
-      "source": "DIGITIMES"
+      "title": "眾院披露核准出口中國高階AI晶片清單 供應鏈重整角力升高",
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=be60f0af-d460-4116-a743-75ac06f79011",
+      "date": "11-23",
+      "source": "MoneyDJ"
     },
     {
-      "title": "AI算力需求續擴張 NVIDIA仍有供應鏈、融資與商業化考驗",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775199_XRE2JJCM82LBJCL6TKTA2",
-      "date": "11-19",
-      "source": "DIGITIMES"
+      "title": "後黃仁勳時代輝達結盟供應鏈 穩主導地位宣示AI訂單無虞",
+      "url": "https://technews.tw/2026/11/23/nvidia-allies-supply-chain-post-jensen-huang-era-solidifying-dominant-position-ensuring-ai-orders-secure/",
+      "date": "11-23",
+      "source": "科技新報"
     },
     {
-      "title": "NVIDIA強調產品節奏不變 AI晶片供應鏈估短期衝擊有限",
-      "url": "https://gb-www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775185_3QY2WF4U799ZCP6OVG8K0",
-      "date": "11-19",
+      "title": "中國AI算力競賽「燒錢」加速 NVIDIA中國團隊「仁勳惶惶」？超微資料中心2027佔比衝8成",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000775572_ITY6OSNI6Z2BCA31W73QQ",
+      "date": "11-22",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "Fed官員谷爾斯比、巴爾、巴金、鮑爾森等公開演說",
-      "date": "2026-11-20",
-      "source": "https://news.cnyes.com/news/id/6667052"
-    },
-    {
-      "title": "美國第三季GDP第二次修正值公布",
+      "title": "美國10月PCE物價指數與第三季GDP二次修正值公布",
       "date": "2026-11-25",
-      "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
-    },
-    {
-      "title": "美國10月PCE物價指數（含核心PCE）公布",
-      "date": "2026-11-25",
-      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
-    },
-    {
-      "title": "美國11月非農就業報告與失業率公布",
-      "date": "2026-12-04",
       "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
+    },
+    {
+      "title": "美國11月非農就業報告公布",
+      "date": "2026-12-04",
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     }
   ]
 }
