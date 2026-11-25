@@ -1,79 +1,79 @@
 {
-  "written_at": "2026-11-24T05:41:23Z",
+  "written_at": "2026-11-25T04:42:58Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "黃仁勳回歸輝達 台股早盤暴漲逾3300點創史上最大漲點重返4萬點",
-      "url": "https://udn.com/news/story/7251/9897803",
-      "date": "11-24",
+      "title": "台股重摔逾3000點創盤中第2大跌點 台積電重挫210元",
+      "url": "https://www.cna.com.tw/news/afe/202611250068.aspx",
+      "date": "11-25",
+      "source": "中央社"
+    },
+    {
+      "title": "美股兩大利空！台股盤中重跌3441點 台積電跌幅逾9%",
+      "url": "https://money.udn.com/money/story/5607/9900477",
+      "date": "11-25",
       "source": "經濟日報"
     },
     {
-      "title": "台積電開盤直奔2230元漲停 單日市值暴增逾5兆元",
-      "url": "https://tw.stock.yahoo.com/tw-market",
-      "date": "11-24",
-      "source": "Yahoo股市"
+      "title": "美股收盤／輝達跌近6%、那斯達克回落1.48% 道瓊逆勢漲423點",
+      "url": "https://uanalyze.com.tw/articles/3773961173",
+      "date": "11-25",
+      "source": "優分析"
     },
     {
-      "title": "台積電竟然漲停了！黃仁勳回歸輝達點火衝上2230元",
-      "url": "https://udn.com/news/story/7252/9897847",
-      "date": "11-24",
-      "source": "經濟日報"
+      "title": "一日行情夢碎！台指期夜盤暴跌2300點 回測38000點大關",
+      "url": "https://www.setn.com/news/1944378",
+      "date": "11-25",
+      "source": "三立新聞網"
     },
     {
-      "title": "三大法人賣超511億 與政府護盤股市不同調",
-      "url": "https://udn.com/news/story/7251/9897502",
-      "date": "11-24",
-      "source": "經濟日報"
-    },
-    {
-      "title": "黃仁勳回歸 夜盤狂飆3170點！台積電期貨亦大漲",
-      "url": "https://www.chinatimes.com/realtimenews/20261124001363-260410",
-      "date": "11-24",
-      "source": "中時新聞網"
+      "title": "外資台股提款503億元！連7日賣超 第一金賣超最兇",
+      "url": "https://finance.ettoday.net/news/3277925",
+      "date": "11-25",
+      "source": "ETtoday"
     }
   ],
   "industry_news": [
     {
+      "title": "DIGITIMES Today：黃仁勳回歸暫鬆口氣 台積電德州布局再進展、美商務部擴大實體清單",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000775952_MA2LMYY748D6BQ3UDEUK2",
+      "date": "11-25",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "黃仁勳霸氣回歸 供應鏈更憂心美國AI晶片出口新規是否再變",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775850_B2O7QGG6691QRRL5RN9BG",
+      "date": "11-25",
+      "source": "DIGITIMES"
+    },
+    {
       "title": "台積電喊話穩住AI供應鏈信心 先進半導體製程產能持續供不應求",
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775819_Z167CRPH2NCPKH80G75DK",
-      "date": "11-23",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "美國商務部新規帶來轉單契機？台系IC設計關注「三大條件」",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775496_AAB352IALNHNWW5UL49YT",
-      "date": "11-23",
-      "source": "DIGITIMES"
-    },
-    {
-      "title": "DIGITIMES Today：中國AI算力競賽「燒錢」加速",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000775572_ITY6OSNI6Z2BCA31W73QQ",
-      "date": "11-23",
+      "date": "11-24",
       "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "美國10月PCE物價指數及第3季GDP修正值公布",
+      "title": "美國10月核心PCE物價指數暨第三季GDP修正值公布",
       "date": "2026-11-25",
       "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     },
     {
-      "title": "美國10月JOLTS職位空缺數據公布",
-      "date": "2026-12-01",
-      "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
-    },
-    {
-      "title": "美國11月非農就業報告公布",
+      "title": "美國11月非農就業人口公布",
       "date": "2026-12-04",
       "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     },
     {
-      "title": "聯準會12月FOMC會議召開（為期兩天，9日公布利率決議與點陣圖）",
+      "title": "Fed 12月FOMC會議開議（第一天）",
       "date": "2026-12-08",
-      "source": "https://klaroinvest.com/zh-Hans/blog/economic-data-calendar/"
+      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+    },
+    {
+      "title": "Fed 12月FOMC利率決議公布暨最新利率點陣圖（台灣時間12/10凌晨3時）",
+      "date": "2026-12-09",
+      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     }
   ]
 }
