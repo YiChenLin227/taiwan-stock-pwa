@@ -1,44 +1,50 @@
 {
-  "written_at": "2026-11-25T04:42:58Z",
+  "written_at": "2026-11-26T03:51:54Z",
   "status": "ok",
   "source": "anthropic_web_search",
   "yahoo_tw_news": [
     {
-      "title": "台股重摔逾3000點創盤中第2大跌點 台積電重挫210元",
-      "url": "https://www.cna.com.tw/news/afe/202611250068.aspx",
-      "date": "11-25",
-      "source": "中央社"
+      "title": "券商晨訊台股投資建議摘要：外資倒貨逾829億、台積電跌破年線",
+      "url": "https://tw.stock.yahoo.com/news/%E5%88%B8%E5%95%86%E6%99%A8%E8%A8%8A%E5%8F%B0%E8%82%A1%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%E6%91%98%E8%A6%81-1-2026%E5%B9%B411%E6%9C%8826%E6%97%A5-004554843.html",
+      "date": "11-26",
+      "source": "Yahoo奇摩股市"
     },
     {
-      "title": "美股兩大利空！台股盤中重跌3441點 台積電跌幅逾9%",
-      "url": "https://money.udn.com/money/story/5607/9900477",
+      "title": "外資狂賣台積電 內資搶接盤，AI股災市值蒸發15兆",
+      "url": "https://www.ctee.com.tw/news/20261124700220-439901",
+      "date": "11-24",
+      "source": "工商時報"
+    },
+    {
+      "title": "川普開金口 美股電子盤、黃金腳軟 台指期夜盤倒地",
+      "url": "https://money.udn.com/money/story/11112/9902068",
       "date": "11-25",
       "source": "經濟日報"
     },
     {
-      "title": "美股收盤／輝達跌近6%、那斯達克回落1.48% 道瓊逆勢漲423點",
-      "url": "https://uanalyze.com.tw/articles/3773961173",
+      "title": "驚天大逆轉！道瓊狂瀉逾千點翻紅 台指期夜盤震盪2464點",
+      "url": "https://news.ebc.net.tw/news/business/582485",
       "date": "11-25",
-      "source": "優分析"
+      "source": "東森財經"
     },
     {
-      "title": "一日行情夢碎！台指期夜盤暴跌2300點 回測38000點大關",
-      "url": "https://www.setn.com/news/1944378",
-      "date": "11-25",
-      "source": "三立新聞網"
-    },
-    {
-      "title": "外資台股提款503億元！連7日賣超 第一金賣超最兇",
-      "url": "https://finance.ettoday.net/news/3277925",
-      "date": "11-25",
-      "source": "ETtoday"
+      "title": "台積電漲10元至2160 台股漲796點來到38991點",
+      "url": "https://finance.ettoday.net/news/3278663",
+      "date": "11-26",
+      "source": "ETtoday財經"
     }
   ],
   "industry_news": [
     {
-      "title": "DIGITIMES Today：黃仁勳回歸暫鬆口氣 台積電德州布局再進展、美商務部擴大實體清單",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000775952_MA2LMYY748D6BQ3UDEUK2",
+      "title": "DIGITIMES Today：黃仁勳回歸暫鬆口氣｜美國會三大AI晶片出口法案磨刀霍霍",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775952_MA2LMYY748D6BQ3UDEUK2",
       "date": "11-25",
+      "source": "DIGITIMES"
+    },
+    {
+      "title": "獨家：AI供應鏈出貨添變數 KYC擴大已核准訂單也須「重審補件」",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000776095_QZH1RAKD8GI9DF6PKZ7VU",
+      "date": "11-26",
       "source": "DIGITIMES"
     },
     {
@@ -46,33 +52,27 @@
       "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775850_B2O7QGG6691QRRL5RN9BG",
       "date": "11-25",
       "source": "DIGITIMES"
-    },
-    {
-      "title": "台積電喊話穩住AI供應鏈信心 先進半導體製程產能持續供不應求",
-      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775819_Z167CRPH2NCPKH80G75DK",
-      "date": "11-24",
-      "source": "DIGITIMES"
     }
   ],
   "macro_events": [
     {
-      "title": "美國10月核心PCE物價指數暨第三季GDP修正值公布",
-      "date": "2026-11-25",
-      "source": "https://www.barits.com.tw/us-economic-data-calendar/"
-    },
-    {
-      "title": "美國11月非農就業人口公布",
+      "title": "美國11月非農就業報告公布",
       "date": "2026-12-04",
       "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     },
     {
-      "title": "Fed 12月FOMC會議開議（第一天）",
+      "title": "FOMC 12月議息會議召開（至12/9）",
       "date": "2026-12-08",
-      "source": "https://klaroinvest.com/blog/economic-data-calendar/"
+      "source": "https://www.yuantatop.com/news-post/2026fomc/"
     },
     {
-      "title": "Fed 12月FOMC利率決議公布暨最新利率點陣圖（台灣時間12/10凌晨3時）",
-      "date": "2026-12-09",
+      "title": "FOMC利率決議、經濟預測摘要(SEP)及鮑爾記者會公布",
+      "date": "2026-12-10",
+      "source": "https://econmanblog.com/fed-meeting-dates-2026/"
+    },
+    {
+      "title": "美國11月CPI數據公布",
+      "date": "2026-12-10",
       "source": "https://www.barits.com.tw/us-economic-data-calendar/"
     }
   ]
